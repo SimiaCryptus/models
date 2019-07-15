@@ -38,19 +38,21 @@ blaze-bin/$x --logtostderr \
 import glob
 import math
 import multiprocessing
-from multiprocessing.pool import ThreadPool
 import os
-from random import shuffle
 import re
-from StringIO import StringIO
+from multiprocessing.pool import ThreadPool
+from random import shuffle
+
 import cv2
+import tensorflow.google as tf
 from PIL import Image
 from PIL import ImageFile
+from StringIO import StringIO
 from preprocessing import cv2resizeminedge
 from preprocessing import cv2rotateimage
 from preprocessing import shapestring
 from utils.progress import Progress
-import tensorflow.google as tf
+
 tf.logging.set_verbosity(tf.logging.INFO)
 
 

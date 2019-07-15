@@ -24,12 +24,15 @@ r"""Implements loading and rendering of meshes. Contains 2 classes:
     here. 
 """
 
-import numpy as np, os
-import cv2, ctypes, logging, os, numpy as np
+import ctypes
+import cv2
+import logging
+import numpy as np
+import os
 import pyassimp as assimp
-from OpenGL.GLES2 import *
+import src.rotation_utils as ru
 from OpenGL.EGL import *
-import src.rotation_utils as ru 
+from OpenGL.GLES2 import *
 
 __version__ = 'swiftshader_renderer'
 

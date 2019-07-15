@@ -55,7 +55,6 @@ from object_detection.models.ssd_mobilenet_v2_keras_feature_extractor import SSD
 from object_detection.models.ssd_pnasnet_feature_extractor import SSDPNASNetFeatureExtractor
 from object_detection.predictors import rfcn_box_predictor
 from object_detection.predictors import rfcn_keras_box_predictor
-from object_detection.predictors.heads import mask_head
 from object_detection.protos import model_pb2
 from object_detection.utils import ops
 

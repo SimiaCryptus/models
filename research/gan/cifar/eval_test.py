@@ -18,11 +18,10 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-
+import eval  # pylint:disable=redefined-builtin
+import tensorflow as tf
 from absl import flags
 from absl.testing import parameterized
-import tensorflow as tf
-import eval  # pylint:disable=redefined-builtin
 
 FLAGS = flags.FLAGS
 mock = tf.test.mock

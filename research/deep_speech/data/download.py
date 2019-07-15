@@ -26,12 +26,12 @@ import tarfile
 import tempfile
 import unicodedata
 
+import pandas
+import tensorflow as tf
 from absl import app as absl_app
 from absl import flags as absl_flags
-import pandas
 from six.moves import urllib
 from sox import Transformer
-import tensorflow as tf
 
 LIBRI_SPEECH_URLS = {
     "train-clean-100":

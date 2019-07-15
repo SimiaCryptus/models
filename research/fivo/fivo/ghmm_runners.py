@@ -23,9 +23,8 @@ import os
 
 import numpy as np
 import tensorflow as tf
-
-from fivo import smc
 from fivo import bounds
+from fivo import smc
 from fivo.data import datasets
 from fivo.models import ghmm
 

@@ -31,19 +31,18 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-import collections
 import json
 import multiprocessing
 import os
 
+import collections
+import numpy as np
+import six
+import utils as panopticapi_utils
+from PIL import Image
 from absl import app
 from absl import flags
 from absl import logging
-import numpy as np
-from PIL import Image
-import utils as panopticapi_utils
-import six
-
 from deeplab.evaluation import panoptic_quality
 from deeplab.evaluation import parsing_covering
 

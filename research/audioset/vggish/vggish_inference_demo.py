@@ -47,14 +47,13 @@ Usage:
 from __future__ import print_function
 
 import numpy as np
-from scipy.io import wavfile
 import six
 import tensorflow as tf
-
 import vggish_input
 import vggish_params
 import vggish_postprocess
 import vggish_slim
+from scipy.io import wavfile
 
 flags = tf.app.flags
 

@@ -13,9 +13,8 @@
 # limitations under the License.
 # ==============================================================================
 
-import tensorflow as tf
-
 import layers
+import tensorflow as tf
 
 
 class LayersTest(tf.test.TestCase):

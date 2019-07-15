@@ -19,16 +19,17 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-import collections
 import copy
 import json
 import math
+
+import collections
 import six
-
-from absl import logging
 import tensorflow as tf
-
+from absl import logging
 from official.bert import tokenization
+
+
 # pylint: enable=g-bad-import-order
 
 

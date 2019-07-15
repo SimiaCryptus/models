@@ -24,9 +24,9 @@ import time
 
 import coords
 import go
-from mcts import MCTSNode
 import numpy as np
 import sgf_wrapper
+from mcts import MCTSNode
 
 
 def time_recommendation(move_num, seconds_per_move=5, time_limit=15*60,

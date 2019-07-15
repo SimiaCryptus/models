@@ -21,10 +21,9 @@ import os
 import tempfile
 
 import tensorflow as tf
-
-from google.protobuf import text_format
 from dragnn.protos import spec_pb2
 from dragnn.python import graph_builder
+from google.protobuf import text_format
 
 # The saved model tags to export.  The same set of tags must be specified when
 # loading the saved model.

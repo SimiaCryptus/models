@@ -15,8 +15,8 @@
 """Tests for object_detection.utils.label_map_util."""
 
 import os
-import tensorflow as tf
 
+import tensorflow as tf
 from google.protobuf import text_format
 from object_detection.protos import string_int_label_map_pb2
 from object_detection.utils import label_map_util

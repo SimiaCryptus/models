@@ -24,13 +24,12 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-import collections
 import math
 
-import tensorflow as tf
-
+import collections
 import input as seq2species_input
 import seq2label_utils
+import tensorflow as tf
 
 
 class ConvolutionalNet(object):

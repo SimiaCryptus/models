@@ -16,12 +16,10 @@
 """Tests for dataset_builder."""
 
 import os
+
 import numpy as np
 import tensorflow as tf
-
 from google.protobuf import text_format
-from tensorflow.core.example import example_pb2
-from tensorflow.core.example import feature_pb2
 from lstm_object_detection.inputs import seq_dataset_builder
 from lstm_object_detection.protos import pipeline_pb2 as internal_pipeline_pb2
 from object_detection.builders import preprocessor_builder
@@ -29,6 +27,8 @@ from object_detection.core import standard_fields as fields
 from object_detection.protos import input_reader_pb2
 from object_detection.protos import pipeline_pb2
 from object_detection.protos import preprocessor_pb2
+from tensorflow.core.example import example_pb2
+from tensorflow.core.example import feature_pb2
 
 
 class DatasetBuilderTest(tf.test.TestCase):

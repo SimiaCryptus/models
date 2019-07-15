@@ -20,11 +20,12 @@ from __future__ import print_function
 
 from abc import ABCMeta
 from abc import abstractmethod
+
 import tensorflow as tf
 import tensorflow.contrib.slim as slim
 from tensorflow.contrib.slim.python.slim.nets import inception
-from tensorflow.contrib.slim.python.slim.nets import resnet_v2 as resnet_v2
 from tensorflow.contrib.slim.python.slim.nets import resnet_utils as resnet_utils
+from tensorflow.contrib.slim.python.slim.nets import resnet_v2 as resnet_v2
 
 
 def get_embedder(

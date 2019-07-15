@@ -35,6 +35,7 @@ metrics).
 """
 
 import itertools
+
 import tensorflow as tf
 from object_detection.inference import detection_inference
 

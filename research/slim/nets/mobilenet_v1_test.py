@@ -20,7 +20,6 @@ from __future__ import print_function
 
 import numpy as np
 import tensorflow as tf
-
 from nets import mobilenet_v1
 
 slim = tf.contrib.slim

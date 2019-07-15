@@ -15,13 +15,13 @@
 
 """Tests for FSNS datasets module."""
 
-import collections
 import os
-import tensorflow as tf
-from tensorflow.contrib import slim
 
+import collections
 import fsns
+import tensorflow as tf
 import unittest_utils
+from tensorflow.contrib import slim
 
 FLAGS = tf.flags.FLAGS
 

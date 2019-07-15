@@ -16,8 +16,8 @@
 """Defines many boolean functions indicating when to step and reset.
 """
 
-import tensorflow as tf
 import gin.tf
+import tensorflow as tf
 
 
 @gin.configurable

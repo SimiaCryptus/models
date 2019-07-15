@@ -19,13 +19,12 @@ from __future__ import print_function
 
 import copy
 
-import tensorflow as tf  # pylint: disable=g-bad-import-order
-
 import coords
 import go
-from mcts import MCTSNode
 import numpy as np
+import tensorflow as tf  # pylint: disable=g-bad-import-order
 import utils_test
+from mcts import MCTSNode
 
 tf.logging.set_verbosity(tf.logging.ERROR)
 

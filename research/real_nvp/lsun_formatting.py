@@ -32,13 +32,12 @@ python lsun_formatting.py \
 from __future__ import print_function
 
 import os
-import os.path
 
 import numpy
+import os.path
 import skimage.transform
-from PIL import Image
 import tensorflow as tf
-
+from PIL import Image
 
 tf.flags.DEFINE_string("file_out", "",
                        "Filename of the output .tfrecords file.")

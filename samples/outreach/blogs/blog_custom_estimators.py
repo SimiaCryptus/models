@@ -16,11 +16,10 @@
 # This is the complete code for the following blogpost:
 # https://developers.googleblog.com/2017/12/creating-custom-estimators-in-tensorflow.html
 
-import tensorflow as tf
 import os
-import sys
 
 import six.moves.urllib.request as request
+import tensorflow as tf
 
 tf.logging.set_verbosity(tf.logging.INFO)
 

@@ -31,9 +31,9 @@ import argparse
 import os
 import sys
 
-from tensorflow.python.platform import app
 from delf.python.detect_to_retrieve import boxes_and_features_extraction
 from delf.python.detect_to_retrieve import dataset
+from tensorflow.python.platform import app
 
 cmd_args = None
 

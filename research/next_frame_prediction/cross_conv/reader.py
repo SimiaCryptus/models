@@ -15,8 +15,8 @@
 
 """Read image sequence."""
 
-from six.moves import xrange
 import tensorflow as tf
+from six.moves import xrange
 
 
 def SequenceToImageAndDiff(images):

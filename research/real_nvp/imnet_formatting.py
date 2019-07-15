@@ -37,13 +37,12 @@ done
 from __future__ import print_function
 
 import os
-import os.path
 
+import os.path
 import scipy.io
 import scipy.io.wavfile
 import scipy.ndimage
 import tensorflow as tf
-
 
 tf.flags.DEFINE_string("file_out", "",
                        "Filename of the output .tfrecords file.")

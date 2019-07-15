@@ -16,15 +16,14 @@
 """Tests for beam_reader_ops."""
 
 
-import os.path
 import time
+
+import os.path
 import tensorflow as tf
-
-from tensorflow.python.platform import tf_logging as logging
-
 from syntaxnet import structured_graph_builder
 from syntaxnet import test_flags
 from syntaxnet.ops import gen_parser_ops
+from tensorflow.python.platform import tf_logging as logging
 
 
 class ParsingReaderOpsTest(tf.test.TestCase):

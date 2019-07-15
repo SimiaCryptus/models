@@ -19,25 +19,24 @@ Main point of entry for running models.  Specifies most of
 the parameters used by different algorithms.
 """
 
-import tensorflow as tf
-import numpy as np
-import random
 import os
-import pickle
+import random
 
-from six.moves import xrange
-import controller
-import model
-import policy
 import baseline
-import objective
-import full_episode_objective
-import trust_region
-import optimizers
-import replay_buffer
-import expert_paths
-import gym_wrapper
+import controller
 import env_spec
+import expert_paths
+import full_episode_objective
+import gym_wrapper
+import model
+import numpy as np
+import objective
+import optimizers
+import policy
+import replay_buffer
+import tensorflow as tf
+import trust_region
+from six.moves import xrange
 
 app = tf.app
 flags = tf.flags

@@ -33,7 +33,6 @@ from __future__ import print_function
 
 import tensorflow as tf
 
-
 arg_scope = tf.contrib.framework.arg_scope
 slim = tf.contrib.slim
 

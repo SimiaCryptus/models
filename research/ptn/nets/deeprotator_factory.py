@@ -19,7 +19,6 @@ from __future__ import division
 from __future__ import print_function
 
 import tensorflow as tf
-
 from nets import ptn_encoder
 from nets import ptn_im_decoder
 from nets import ptn_rotator

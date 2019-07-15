@@ -18,13 +18,12 @@
 A simple usage example:
 python eval.py
 """
-import tensorflow as tf
-from tensorflow.contrib import slim
-from tensorflow import app
-from tensorflow.python.platform import flags
-
-import data_provider
 import common_flags
+import data_provider
+import tensorflow as tf
+from tensorflow import app
+from tensorflow.contrib import slim
+from tensorflow.python.platform import flags
 
 FLAGS = flags.FLAGS
 common_flags.define()

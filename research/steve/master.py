@@ -1,5 +1,13 @@
-from builtins import str
+import multiprocessing
+import os
+import sys
 from builtins import range
+from builtins import str
+
+from config import config, log_config
+
+import util
+
 # Copyright 2018 The TensorFlow Authors All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,12 +22,6 @@ from builtins import range
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ==============================================================================
-
-import multiprocessing
-import os, sys, time
-
-from config import config, log_config
-import util
 
 AGENT_COUNT = config["agent_config"]["count"]
 EVALUATOR_COUNT = config["evaluator_config"]["count"]

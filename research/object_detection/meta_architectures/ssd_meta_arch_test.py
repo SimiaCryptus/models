@@ -15,11 +15,9 @@
 
 """Tests for object_detection.meta_architectures.ssd_meta_arch."""
 
-from absl.testing import parameterized
-
 import numpy as np
 import tensorflow as tf
-
+from absl.testing import parameterized
 from object_detection.meta_architectures import ssd_meta_arch
 from object_detection.meta_architectures import ssd_meta_arch_test_lib
 from object_detection.protos import model_pb2

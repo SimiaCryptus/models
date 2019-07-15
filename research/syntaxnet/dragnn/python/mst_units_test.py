@@ -17,12 +17,10 @@
 import math
 
 import tensorflow as tf
-
-from google.protobuf import text_format
-
 from dragnn.protos import spec_pb2
 from dragnn.python import mst_units
 from dragnn.python import network_units
+from google.protobuf import text_format
 
 _MASTER_SPEC = r"""
   component {

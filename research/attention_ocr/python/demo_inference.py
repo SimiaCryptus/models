@@ -15,16 +15,14 @@ python demo_inference.py --batch_size=32 \
   --checkpoint=model.ckpt-399731\
   --image_path_pattern=./datasets/data/fsns/temp/fsns_train_%02d.png
 """
-import numpy as np
 import PIL.Image
-
+import common_flags
+import data_provider
+import datasets
+import numpy as np
 import tensorflow as tf
 from tensorflow.python.platform import flags
 from tensorflow.python.training import monitored_session
-
-import common_flags
-import datasets
-import data_provider
 
 FLAGS = flags.FLAGS
 common_flags.define()

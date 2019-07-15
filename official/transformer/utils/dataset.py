@@ -55,7 +55,6 @@ import math
 import os
 
 import tensorflow as tf
-
 from official.utils.misc import model_helpers
 
 # Buffer size for reading records from a TFRecord file. Each training file is

@@ -18,22 +18,11 @@
 
 
 import os
+
 import os.path
-import random
-import time
+import tensorflow as tf
 from absl import app
 from absl import flags
-import tensorflow as tf
-
-from tensorflow.python.platform import gfile
-from tensorflow.python.platform import tf_logging as logging
-
-from google.protobuf import text_format
-
-from syntaxnet.ops import gen_parser_ops
-from syntaxnet import task_spec_pb2
-from syntaxnet import sentence_pb2
-
 from dragnn.protos import spec_pb2
 from dragnn.python import evaluation
 from dragnn.python import graph_builder
@@ -41,6 +30,8 @@ from dragnn.python import lexicon
 from dragnn.python import sentence_io
 from dragnn.python import spec_builder
 from dragnn.python import trainer_lib
+from tensorflow.python.platform import gfile
+from tensorflow.python.platform import tf_logging as logging
 
 FLAGS = flags.FLAGS
 

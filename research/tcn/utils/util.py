@@ -19,12 +19,15 @@ from __future__ import division
 from __future__ import print_function
 
 import os
+import yaml
+
 import numpy as np
 import six
-from utils.luatables import T
 import tensorflow as tf
-import yaml
+from utils.luatables import T
 from yaml.constructor import ConstructorError
+
+
 # pylint: disable=invalid-name
 
 

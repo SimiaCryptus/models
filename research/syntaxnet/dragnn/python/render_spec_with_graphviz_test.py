@@ -19,10 +19,10 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-from tensorflow.python.platform import googletest
 from dragnn.protos import spec_pb2
 from dragnn.python import render_spec_with_graphviz
 from dragnn.python import spec_builder
+from tensorflow.python.platform import googletest
 
 
 def _make_basic_master_spec():

@@ -19,14 +19,10 @@ from __future__ import division
 from __future__ import print_function
 
 import collections
-import numpy as np
 import sonnet as snt
 import tensorflow as tf
-
-from learning_unsupervised_learning import optimizers
 from learning_unsupervised_learning import utils
-from learning_unsupervised_learning import summary_utils
-from learning_unsupervised_learning import variable_replace
+
 
 class MultiTrialMetaObjective(snt.AbstractModule):
   def __init__(self, samples_per_class, averages, **kwargs):

@@ -17,14 +17,13 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-import tensorflow as tf  # pylint: disable=g-bad-import-order
-
 import coords
 import go
-from go import Position, PlayerMove, LibertyTracker, WHITE, BLACK
 import numpy as np
 import sgf_wrapper
+import tensorflow as tf  # pylint: disable=g-bad-import-order
 import utils_test
+from go import Position, PlayerMove, LibertyTracker, WHITE, BLACK
 
 EMPTY_ROW = '.' * utils_test.BOARD_SIZE + '\n'
 TEST_BOARD = utils_test.load_board('''

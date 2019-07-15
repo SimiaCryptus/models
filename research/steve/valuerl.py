@@ -1,5 +1,15 @@
 from __future__ import division
+
 from builtins import zip
+
+import nn
+import numpy as np
+import tensorflow as tf
+from learner import CoreModel
+
+import util
+
+
 # Copyright 2018 The TensorFlow Authors All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,12 +24,6 @@ from builtins import zip
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ==============================================================================
-
-import tensorflow as tf
-import numpy as np
-import nn
-import util
-from learner import CoreModel
 
 
 class ValueRL(CoreModel):

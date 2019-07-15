@@ -16,9 +16,9 @@
 """Interface for different embedders for modalities."""
 
 import abc
+
 import numpy as np
 import tensorflow as tf
-import preprocessing
 from tensorflow.contrib.slim.nets import resnet_v2
 
 slim = tf.contrib.slim

@@ -24,13 +24,11 @@ from __future__ import print_function
 
 import os
 
+import tensorflow as tf
 # pylint: disable=g-bad-import-order
 from absl import app as absl_app
 from absl import flags
 from absl import logging
-import tensorflow as tf
-# pylint: enable=g-bad-import-order
-
 from official.datasets import movielens
 from official.recommendation import constants as rconst
 from official.recommendation import ncf_common
@@ -40,6 +38,8 @@ from official.utils.logs import mlperf_helper
 from official.utils.misc import distribution_utils
 from official.utils.misc import keras_utils
 from official.utils.misc import model_helpers
+
+# pylint: enable=g-bad-import-order
 
 
 FLAGS = flags.FLAGS

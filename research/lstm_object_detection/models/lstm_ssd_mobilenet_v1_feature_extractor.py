@@ -16,15 +16,15 @@
 """LSTMSSDFeatureExtractor for MobilenetV1 features."""
 
 import tensorflow as tf
-from tensorflow.python.framework import ops as tf_ops
 from lstm_object_detection.lstm import lstm_cells
 from lstm_object_detection.lstm import rnn_decoder
 from lstm_object_detection.meta_architectures import lstm_ssd_meta_arch
+from nets import mobilenet_v1
 from object_detection.models import feature_map_generators
 from object_detection.utils import context_manager
 from object_detection.utils import ops
 from object_detection.utils import shape_utils
-from nets import mobilenet_v1
+from tensorflow.python.framework import ops as tf_ops
 
 slim = tf.contrib.slim
 

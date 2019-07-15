@@ -36,14 +36,14 @@ from __future__ import division
 from __future__ import print_function
 
 import argparse
-import os.path
 import re
 import sys
 import tarfile
 
 import numpy as np
-from six.moves import urllib
+import os.path
 import tensorflow as tf
+from six.moves import urllib
 
 FLAGS = None
 

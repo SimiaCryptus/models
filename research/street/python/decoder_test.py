@@ -15,8 +15,8 @@
 """Tests for decoder."""
 import os
 
-import tensorflow as tf
 import decoder
+import tensorflow as tf
 
 
 def _testdata(filename):

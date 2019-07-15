@@ -18,9 +18,10 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-# Dependency imports
-
 import tensorflow as tf
+
+
+# Dependency imports
 
 
 def preprocess_classification(image, labels, is_training=False):

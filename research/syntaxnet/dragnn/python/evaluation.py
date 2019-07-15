@@ -17,7 +17,6 @@
 from __future__ import division
 
 import tensorflow as tf
-
 from syntaxnet import sentence_pb2
 from syntaxnet.util import check
 

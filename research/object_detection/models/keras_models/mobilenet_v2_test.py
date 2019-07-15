@@ -15,11 +15,10 @@
 
 """Tests for mobilenet_v2."""
 import itertools
+
 import numpy as np
 import tensorflow as tf
-
 from google.protobuf import text_format
-
 from object_detection.builders import hyperparams_builder
 from object_detection.models.keras_models import mobilenet_v2
 from object_detection.models.keras_models import model_utils

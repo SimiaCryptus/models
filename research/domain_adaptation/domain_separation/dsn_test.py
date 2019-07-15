@@ -14,10 +14,9 @@
 # ==============================================================================
 """Tests for DSN model assembly functions."""
 
+import dsn
 import numpy as np
 import tensorflow as tf
-
-import dsn
 
 
 class HelperFunctionsTest(tf.test.TestCase):

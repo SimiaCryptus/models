@@ -19,10 +19,10 @@ from __future__ import print_function
 
 import time
 
-# Dependency imports
-
 import numpy as np
 import tensorflow as tf
+
+# Dependency imports
 
 flags = tf.app.flags
 FLAGS = flags.FLAGS

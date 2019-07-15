@@ -24,16 +24,15 @@ import os
 import time
 
 import numpy as np
+import tensorflow as tf
 from PIL import Image
 from PIL import ImageFile
-import tensorflow as tf
-
-from google.protobuf import text_format
-from delf import delf_config_pb2
 from delf import box_io
-from delf import feature_io
+from delf import delf_config_pb2
 from delf import detector
 from delf import extractor
+from delf import feature_io
+from google.protobuf import text_format
 
 # Extension of feature files.
 _BOX_EXTENSION = '.boxes'

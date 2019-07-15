@@ -23,10 +23,7 @@ import matplotlib.gridspec as gridspec
 import matplotlib.pyplot as plt
 import numpy as np
 import scipy
-
 import tensorflow as tf
-
-import models
 
 
 def summarize_ess(weights, only_last_timestep=False):

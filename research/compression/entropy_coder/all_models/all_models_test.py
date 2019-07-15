@@ -18,7 +18,6 @@
 import tensorflow as tf
 
 # pylint: disable=unused-import
-import all_models
 # pylint: enable=unused-import
 from entropy_coder.model import model_factory
 

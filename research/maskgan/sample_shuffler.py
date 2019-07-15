@@ -32,9 +32,9 @@ from __future__ import division
 from __future__ import print_function
 
 import os
+
 # Dependency imports
 import numpy as np
-
 import tensorflow as tf
 
 tf.app.flags.DEFINE_string('input_ml_path', '/tmp', 'Model output directory.')

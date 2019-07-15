@@ -19,11 +19,10 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-from absl import flags
-from absl import logging
-
 import numpy as np
 import tensorflow as tf
+from absl import flags
+from absl import logging
 from bandits.core.bayesian_nn import BayesianNN
 
 FLAGS = flags.FLAGS

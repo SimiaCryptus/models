@@ -18,10 +18,9 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-from absl.testing import parameterized
 import numpy as np
 import tensorflow as tf
-
+from absl.testing import parameterized
 from morph_net.framework import grouping_regularizers
 from morph_net.testing import op_regularizer_stub
 

@@ -30,10 +30,9 @@ import time
 
 import numpy as np
 import tensorflow as tf
+from official.resnet import imagenet_preprocessing  # pylint: disable=g-bad-import-order
 from tensorflow.contrib.saved_model.python.saved_model import reader
 from tensorflow.python.compiler.tensorrt import trt_convert as trt
-
-from official.resnet import imagenet_preprocessing  # pylint: disable=g-bad-import-order
 
 _GPU_MEM_FRACTION = 0.50
 _WARMUP_NUM_LOOPS = 5

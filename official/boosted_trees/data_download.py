@@ -33,12 +33,11 @@ import tempfile
 # pylint: disable=g-bad-import-order
 import numpy as np
 import pandas as pd
-from six.moves import urllib
+import tensorflow as tf
 from absl import app as absl_app
 from absl import flags
-import tensorflow as tf
-
 from official.utils.flags import core as flags_core
+from six.moves import urllib
 
 URL_ROOT = "https://archive.ics.uci.edu/ml/machine-learning-databases/00280"
 INPUT_FILE = "HIGGS.csv.gz"

@@ -20,8 +20,8 @@ from __future__ import print_function
 
 import itertools
 
-from nltk.metrics import distance
 import numpy as np
+from nltk.metrics import distance
 
 
 class DeepSpeechDecoder(object):

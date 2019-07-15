@@ -23,8 +23,8 @@ from __future__ import division
 from __future__ import print_function
 
 import os
-import tensorflow as tf
 
+import tensorflow as tf
 from datasets import dataset_utils
 
 slim = tf.contrib.slim

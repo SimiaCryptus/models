@@ -26,13 +26,11 @@ from __future__ import print_function
 
 import sys
 
-
+import data_provider
+import tensorflow as tf
+import train
 from absl import flags
 from absl import logging
-import tensorflow as tf
-
-import data_provider
-import train
 
 tfgan = tf.contrib.gan
 

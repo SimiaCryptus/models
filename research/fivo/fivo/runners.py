@@ -20,16 +20,13 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-
 import os
 import time
 
 import numpy as np
 import tensorflow as tf
-
 from fivo import bounds
 from fivo import smc
-
 from fivo.data import datasets
 from fivo.models import base
 from fivo.models import srnn

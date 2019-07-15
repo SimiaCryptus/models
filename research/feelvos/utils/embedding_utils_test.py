@@ -16,6 +16,7 @@
 """Tests for embedding utils."""
 
 import unittest
+
 import numpy as np
 import tensorflow as tf
 from feelvos.utils import embedding_utils

@@ -23,9 +23,7 @@ from __future__ import division
 from __future__ import print_function
 
 import tensorflow as tf
-
 from morph_net.framework import generic_regularizers
-
 
 _CONV2D_OPS = ('Conv2D', 'Conv2DBackpropInput', 'DepthwiseConv2dNative')
 _SUPPORTED_OPS = _CONV2D_OPS + ('MatMul',)

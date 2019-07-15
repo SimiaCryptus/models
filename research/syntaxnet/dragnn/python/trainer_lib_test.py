@@ -15,10 +15,9 @@
 """Tests for dragnn.python.trainer_lib."""
 
 
+from dragnn.python import trainer_lib
 from tensorflow.python.framework import test_util
 from tensorflow.python.platform import googletest
-
-from dragnn.python import trainer_lib
 
 
 class TrainerLibTest(test_util.TensorFlowTestCase):

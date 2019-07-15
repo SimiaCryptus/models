@@ -15,19 +15,14 @@
 # ==============================================================================
 from __future__ import print_function
 
-import h5py
+import matplotlib
 import numpy as np
-import os
-import tensorflow as tf         # used for flags here
-
-from utils import write_datasets
+import tensorflow as tf  # used for flags here
 from synthetic_data_utils import add_alignment_projections, generate_data
 from synthetic_data_utils import generate_rnn, get_train_n_valid_inds
 from synthetic_data_utils import nparray_and_transpose
 from synthetic_data_utils import spikify_data, gaussify_data, split_list_by_inds
-import matplotlib
-import matplotlib.pyplot as plt
-import scipy.signal
+from utils import write_datasets
 
 matplotlib.rcParams['image.interpolation'] = 'nearest'
 DATA_DIR = "rnn_synth_data_v1.0"

@@ -19,7 +19,6 @@ from __future__ import division
 from __future__ import print_function
 
 import tensorflow as tf
-
 from nets import perspective_projector
 from nets import ptn_encoder
 from nets import ptn_vox_decoder

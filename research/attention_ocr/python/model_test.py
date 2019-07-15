@@ -15,14 +15,14 @@
 
 """Tests for the model."""
 
-import numpy as np
-from six.moves import xrange
 import string
-import tensorflow as tf
-from tensorflow.contrib import slim
 
-import model
 import data_provider
+import model
+import numpy as np
+import tensorflow as tf
+from six.moves import xrange
+from tensorflow.contrib import slim
 
 
 def create_fake_charset(num_char_classes):

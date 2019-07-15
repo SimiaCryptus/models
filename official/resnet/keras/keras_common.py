@@ -21,11 +21,9 @@ import multiprocessing
 import os
 
 import numpy as np
-
+import tensorflow as tf
 # pylint: disable=g-bad-import-order
 from absl import flags
-import tensorflow as tf
-
 from official.utils.flags import core as flags_core
 from official.utils.misc import keras_utils
 # pylint: disable=ungrouped-imports

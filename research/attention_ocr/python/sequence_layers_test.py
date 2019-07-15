@@ -19,12 +19,11 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
+import model
 import numpy as np
+import sequence_layers
 import tensorflow as tf
 from tensorflow.contrib import slim
-
-import model
-import sequence_layers
 
 
 def fake_net(batch_size, num_features, feature_size):

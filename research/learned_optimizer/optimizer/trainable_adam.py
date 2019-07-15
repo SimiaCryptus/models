@@ -21,7 +21,6 @@ from __future__ import print_function
 
 import numpy as np
 import tensorflow as tf
-
 from learned_optimizer.optimizer import trainable_optimizer as opt
 from learned_optimizer.optimizer import utils
 

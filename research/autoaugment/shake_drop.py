@@ -20,6 +20,7 @@ from __future__ import division
 from __future__ import print_function
 
 import math
+
 import custom_ops as ops
 import tensorflow as tf
 

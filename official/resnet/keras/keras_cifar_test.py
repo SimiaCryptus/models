@@ -19,11 +19,10 @@ from __future__ import division
 from __future__ import print_function
 
 from tempfile import mkdtemp
-import tensorflow as tf
 
+import tensorflow as tf
 from official.resnet import cifar10_main
 from official.resnet.keras import keras_cifar_main
-from official.resnet.keras import keras_common
 from official.utils.misc import keras_utils
 from official.utils.testing import integration
 # pylint: disable=ungrouped-imports

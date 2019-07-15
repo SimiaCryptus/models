@@ -18,17 +18,15 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
+import tensorflow as tf
 # pylint: disable=g-bad-import-order
 from absl import flags
-import tensorflow as tf
-
-# TODO(tianlin) Import internal library. Remove this when some functions for
-# different TF versions are fixed.
-from tensorflow.python import tf2 as tf2_internal
-
 from official.transformer.model import model_params
 from official.utils.flags import core as flags_core
 from official.utils.misc import keras_utils
+# TODO(tianlin) Import internal library. Remove this when some functions for
+# different TF versions are fixed.
+from tensorflow.python import tf2 as tf2_internal
 
 FLAGS = flags.FLAGS
 

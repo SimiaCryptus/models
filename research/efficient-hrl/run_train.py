@@ -22,11 +22,11 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-import tensorflow as tf
-
 import gin.tf
+import tensorflow as tf
 # pylint: enable=unused-import
 import train
+
 # pylint: disable=unused-import
 
 flags = tf.app.flags

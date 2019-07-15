@@ -49,7 +49,6 @@ from random import shuffle
 
 import numpy as np
 import tensorflow as tf
-
 import vggish_input
 import vggish_params
 import vggish_slim

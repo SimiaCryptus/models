@@ -82,9 +82,10 @@ from __future__ import division
 from __future__ import print_function
 
 import glob
-import os.path
 import sys
 import xml.etree.ElementTree as ET
+
+import os.path
 
 
 class BoundingBox(object):

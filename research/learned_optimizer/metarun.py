@@ -19,9 +19,8 @@ from __future__ import print_function
 
 import os
 
-import tensorflow as tf
-
 import metaopt
+import tensorflow as tf
 from learned_optimizer.optimizer import coordinatewise_rnn
 from learned_optimizer.optimizer import global_learning_rate
 from learned_optimizer.optimizer import hierarchical_rnn

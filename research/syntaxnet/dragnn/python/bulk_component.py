@@ -16,12 +16,11 @@
 
 
 import tensorflow as tf
-from tensorflow.python.platform import tf_logging as logging
-
 from dragnn.python import component
 from dragnn.python import dragnn_ops
 from dragnn.python import network_units
 from syntaxnet.util import check
+from tensorflow.python.platform import tf_logging as logging
 
 
 def fetch_linked_embedding(comp, network_states, feature_spec):

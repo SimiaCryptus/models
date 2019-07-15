@@ -18,7 +18,6 @@
 import math
 
 import tensorflow as tf
-
 from google.protobuf import text_format
 from object_detection.anchor_generators import flexible_grid_anchor_generator
 from object_detection.anchor_generators import grid_anchor_generator

@@ -22,7 +22,6 @@ collect common subroutines that prove useful.
 import abc
 
 import tensorflow as tf
-
 from dragnn.python import network_units as dragnn
 from syntaxnet.util import check
 

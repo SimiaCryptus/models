@@ -20,10 +20,9 @@ from __future__ import division
 from __future__ import print_function
 
 import numpy as np
-
+from bandits.algorithms.neural_bandit_model import NeuralBanditModel
 from bandits.core.bandit_algorithm import BanditAlgorithm
 from bandits.core.contextual_dataset import ContextualDataset
-from bandits.algorithms.neural_bandit_model import NeuralBanditModel
 
 
 class BootstrappedBNNSampling(BanditAlgorithm):

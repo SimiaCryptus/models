@@ -23,13 +23,13 @@ from __future__ import division
 from __future__ import print_function
 
 import math
-import numpy as np
 import os
-import re
-import tensorflow as tf
-import tensorflow.contrib.slim as slim
 import time
 import traceback
+
+import numpy as np
+import tensorflow as tf
+import tensorflow.contrib.slim as slim
 
 
 class TrainingHook(tf.train.SessionRunHook):

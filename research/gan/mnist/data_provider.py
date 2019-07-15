@@ -18,10 +18,7 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-
-
 import tensorflow as tf
-
 from slim.datasets import dataset_factory as datasets
 
 slim = tf.contrib.slim

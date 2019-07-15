@@ -15,7 +15,6 @@
 """An optimizer that switches between several methods."""
 import functools
 
-
 import tensorflow as tf
 from tensorflow.python.training import optimizer
 

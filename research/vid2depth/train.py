@@ -35,12 +35,14 @@ import math
 import os
 import random
 import time
-from absl import app
-from absl import flags
-from absl import logging
+
 import model
 import numpy as np
 import tensorflow as tf
+from absl import app
+from absl import flags
+from absl import logging
+
 import util
 
 gfile = tf.gfile

@@ -16,10 +16,9 @@
 """Training for Domain Separation Networks (DSNs)."""
 from __future__ import division
 
-import tensorflow as tf
-
-from domain_adaptation.datasets import dataset_factory
 import dsn
+import tensorflow as tf
+from domain_adaptation.datasets import dataset_factory
 
 slim = tf.contrib.slim
 FLAGS = tf.app.flags.FLAGS

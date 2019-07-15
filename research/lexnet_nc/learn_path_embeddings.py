@@ -23,8 +23,8 @@ import os
 
 import lexnet_common
 import path_model
-from sklearn import metrics
 import tensorflow as tf
+from sklearn import metrics
 
 tf.flags.DEFINE_string(
     'dataset_dir', 'datasets',

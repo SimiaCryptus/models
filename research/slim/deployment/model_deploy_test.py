@@ -20,7 +20,6 @@ from __future__ import print_function
 
 import numpy as np
 import tensorflow as tf
-
 from deployment import model_deploy
 
 slim = tf.contrib.slim

@@ -14,25 +14,13 @@
 # ==============================================================================
 
 
+import re
 
-import collections
-import functools
-import threading
-import tensorflow as tf
 import matplotlib
 import numpy as np
-import time
-import re
-import math
+import tensorflow as tf
+
 matplotlib.use("Agg")
-
-import matplotlib.pyplot as plt
-import scipy.signal
-
-from tensorflow.python.util import tf_should_use
-from tensorflow.contrib.summary import summary_ops
-from tensorflow.python.ops import summary_op_util
-from tensorflow.contrib.summary import gen_summary_ops
 
 _DEBUG_DISABLE_SUMMARIES=False
 

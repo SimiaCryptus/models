@@ -19,9 +19,9 @@ from __future__ import division
 from __future__ import print_function
 
 import numpy as np
-from sklearn.metrics.pairwise import euclidean_distances
-from estimators import svtcn_loss
 import tensorflow as tf
+from estimators import svtcn_loss
+from sklearn.metrics.pairwise import euclidean_distances
 
 
 class SVTCNLoss(tf.test.TestCase):

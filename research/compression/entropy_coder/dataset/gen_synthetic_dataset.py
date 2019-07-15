@@ -17,12 +17,9 @@
 
 import os
 
-import numpy as np
-from six.moves import xrange
-import tensorflow as tf
-
 import synthetic_model
-
+import tensorflow as tf
+from six.moves import xrange
 
 FLAGS = tf.app.flags.FLAGS
 

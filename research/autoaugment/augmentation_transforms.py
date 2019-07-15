@@ -20,9 +20,11 @@ from __future__ import division
 from __future__ import print_function
 
 import random
+
 import numpy as np
 # pylint:disable=g-multiple-import
 from PIL import ImageOps, ImageEnhance, ImageFilter, Image
+
 # pylint:enable=g-multiple-import
 
 

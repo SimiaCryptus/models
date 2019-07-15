@@ -17,10 +17,9 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-import tensorflow as tf  # pylint: disable=g-bad-import-order
-
 import coords
 import numpy
+import tensorflow as tf  # pylint: disable=g-bad-import-order
 import utils_test
 
 tf.logging.set_verbosity(tf.logging.ERROR)

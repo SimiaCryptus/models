@@ -27,14 +27,13 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-import collections
 import logging
-import tensorflow as tf
 
+import collections
+import tensorflow as tf
 from morph_net.framework import concat_and_slice_regularizers
 from morph_net.framework import generic_regularizers
 from morph_net.framework import grouping_regularizers
-
 
 # When an op has two (or more) inputs, that haveregularizers, the latter need to
 # be grouped. _GROUPING_OPS is a whitelist of ops that are allowed to group, as

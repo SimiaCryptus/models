@@ -20,8 +20,9 @@ from __future__ import division
 from __future__ import print_function
 
 import json
-from os.path import join
+
 import tensorflow as tf
+from os.path import join
 
 
 class Config(object):

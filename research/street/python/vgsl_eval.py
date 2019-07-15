@@ -13,10 +13,9 @@
 # limitations under the License.
 # ==============================================================================
 """Model eval separate from training."""
+import vgsl_model
 from tensorflow import app
 from tensorflow.python.platform import flags
-
-import vgsl_model
 
 flags.DEFINE_string('eval_dir', '/tmp/mdir/eval',
                     'Directory where to write event logs.')

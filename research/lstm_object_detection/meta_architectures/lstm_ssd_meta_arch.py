@@ -24,8 +24,8 @@ for details.
 """
 import abc
 import re
-import tensorflow as tf
 
+import tensorflow as tf
 from object_detection.core import box_list_ops
 from object_detection.core import matcher
 from object_detection.core import standard_fields as fields

@@ -18,12 +18,10 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-
-from absl import flags
-import tensorflow as tf
-
 import data_provider
 import network
+import tensorflow as tf
+from absl import flags
 
 # FLAGS for data.
 flags.DEFINE_multi_string(

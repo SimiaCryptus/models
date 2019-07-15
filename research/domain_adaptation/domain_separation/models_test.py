@@ -19,6 +19,10 @@ import tensorflow as tf
 
 #from models.domain_adaptation.domain_separation
 import models
+# from models.domain_adaptation.domain_separation
+import models
+import numpy as np
+import tensorflow as tf
 
 
 class SharedEncodersTest(tf.test.TestCase):

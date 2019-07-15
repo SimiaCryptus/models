@@ -16,10 +16,10 @@
 """Utilities for artificially damaging segmentation masks."""
 
 import numpy as np
+import tensorflow as tf
 from scipy.ndimage import interpolation
 from skimage import morphology
 from skimage import transform
-import tensorflow as tf
 
 
 def damage_masks(labels, shift=True, scale=True, rotate=True, dilate=True):

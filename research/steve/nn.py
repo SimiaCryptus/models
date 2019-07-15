@@ -1,5 +1,10 @@
-from builtins import range
 from builtins import object
+from builtins import range
+
+import numpy as np
+import tensorflow as tf
+
+
 # Copyright 2018 The TensorFlow Authors All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,10 +19,6 @@ from builtins import object
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ==============================================================================
-
-import tensorflow as tf
-import numpy as np
-from itertools import product
 
 class FeedForwardNet(object):
     """Custom feed-forward network layer."""

@@ -31,9 +31,7 @@ from abc import abstractmethod
 from abc import abstractproperty
 
 import tensorflow as tf
-
 from object_detection.utils import shape_utils
-
 
 # Box coder types.
 FASTER_RCNN = 'faster_rcnn'

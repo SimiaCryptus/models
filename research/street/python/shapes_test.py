@@ -15,8 +15,8 @@
 """Tests for shapes."""
 
 import numpy as np
-import tensorflow as tf
 import shapes
+import tensorflow as tf
 
 
 def _rand(*size):

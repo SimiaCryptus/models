@@ -25,12 +25,12 @@ from __future__ import division
 from __future__ import print_function
 
 import os
+
 import tensorflow as tf
+
 slim = tf.contrib.slim
 import gin.tf
 # pylint: disable=unused-import
-import agent
-import train
 from utils import utils as uvf_utils
 from utils import eval_utils
 from environments import create_maze_env

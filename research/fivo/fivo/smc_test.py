@@ -22,7 +22,6 @@ from __future__ import print_function
 import numpy as np
 import scipy
 import tensorflow as tf
-
 from fivo import smc
 
 lse = scipy.special.logsumexp

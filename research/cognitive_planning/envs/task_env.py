@@ -25,8 +25,9 @@ from __future__ import print_function
 
 import abc
 import enum
-import gym
+
 import gin
+import gym
 
 
 @gin.config.constants_from_enum

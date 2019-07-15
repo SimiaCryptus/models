@@ -21,10 +21,10 @@ from __future__ import print_function
 
 import StringIO
 import matplotlib
+
 matplotlib.use('Agg')
 from matplotlib import pylab as p
 # axes3d is being used implictly for visualization.
-from mpl_toolkits.mplot3d import axes3d as p3  # pylint:disable=unused-import
 import numpy as np
 from PIL import Image
 from skimage import measure

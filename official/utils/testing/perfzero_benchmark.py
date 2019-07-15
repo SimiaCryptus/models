@@ -19,9 +19,9 @@ from __future__ import print_function
 
 import os
 
+import tensorflow as tf  # pylint: disable=g-bad-import-order
 from absl import flags
 from absl.testing import flagsaver
-import tensorflow as tf  # pylint: disable=g-bad-import-order
 
 FLAGS = flags.FLAGS
 

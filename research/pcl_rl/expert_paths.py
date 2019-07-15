@@ -18,12 +18,12 @@
 For producing or loading expert trajectories in environment.
 """
 
-import tensorflow as tf
-import random
-import os
-import numpy as np
-from six.moves import xrange
 import pickle
+import random
+
+import numpy as np
+import tensorflow as tf
+from six.moves import xrange
 
 gfile = tf.gfile
 

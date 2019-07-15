@@ -14,19 +14,19 @@ limitations under the License.
 ==============================================================================*/
 
 import com.google.common.io.ByteStreams;
+import org.tensorflow.Graph;
+import org.tensorflow.Session;
+import org.tensorflow.Tensor;
+import org.tensorflow.Tensors;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
-import org.tensorflow.Graph;
-import org.tensorflow.Session;
-import org.tensorflow.Tensor;
-import org.tensorflow.Tensors;
 
 /**
  * Simplified version of
@@ -40,21 +40,21 @@ public class LabelImage {
     }
     final List<String> labels = loadLabels();
     try (Graph graph = new Graph();
-        Session session = new Session(graph)) {
+         Session session = new Session(graph)) {
       graph.importGraphDef(loadGraphDef());
 
       float[] probabilities = null;
       for (String filename : args) {
         byte[] bytes = Files.readAllBytes(Paths.get(filename));
         try (Tensor<String> input = Tensors.create(bytes);
-            Tensor<Float> output =
-                session
-                    .runner()
-                    .feed("encoded_image_bytes", input)
-                    .fetch("probabilities")
-                    .run()
-                    .get(0)
-                    .expect(Float.class)) {
+             Tensor<Float> output =
+                 session
+                     .runner()
+                     .feed("encoded_image_bytes", input)
+                     .fetch("probabilities")
+                     .run()
+                     .get(0)
+                     .expect(Float.class)) {
           if (probabilities == null) {
             probabilities = new float[(int) output.shape()[0]];
           }

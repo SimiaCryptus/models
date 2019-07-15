@@ -20,10 +20,11 @@ from __future__ import division
 from __future__ import print_function
 
 import functools
+
 import data_providers
 import model as model_module
-from estimators import base_estimator
 import tensorflow as tf
+from estimators import base_estimator
 
 
 class MVTCNEstimator(base_estimator.BaseEstimator):

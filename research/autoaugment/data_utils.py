@@ -20,9 +20,10 @@ from __future__ import division
 from __future__ import print_function
 
 import copy
-import cPickle
 import os
+
 import augmentation_transforms
+import cPickle
 import numpy as np
 import policies as found_policies
 import tensorflow as tf

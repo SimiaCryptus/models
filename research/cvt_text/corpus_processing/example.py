@@ -21,7 +21,6 @@ from __future__ import print_function
 
 from base import embeddings
 
-
 CONTRACTION_WORDS = set(w + 'n' for w in
                         ['do', 'does', 'did', 'is', 'are', 'was', 'were', 'has',
                          'have', 'had', 'could', 'would', 'should', 'ca', 'wo',

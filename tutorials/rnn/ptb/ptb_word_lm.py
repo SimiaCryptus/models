@@ -62,12 +62,11 @@ from __future__ import print_function
 import time
 
 import numpy as np
-import tensorflow as tf
-
 import reader
-import util
-
+import tensorflow as tf
 from tensorflow.python.client import device_lib
+
+import util
 
 flags = tf.flags
 logging = tf.logging

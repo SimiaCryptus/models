@@ -16,17 +16,16 @@
 """LSTDInterleavedFeatureExtractor which interleaves multiple MobileNet V2."""
 
 import tensorflow as tf
-
-from tensorflow.python.framework import ops as tf_ops
 from lstm_object_detection.lstm import lstm_cells
 from lstm_object_detection.lstm import rnn_decoder
 from lstm_object_detection.meta_architectures import lstm_ssd_meta_arch
 from lstm_object_detection.models import mobilenet_defs
+from nets.mobilenet import mobilenet
+from nets.mobilenet import mobilenet_v2
 from object_detection.models import feature_map_generators
 from object_detection.utils import ops
 from object_detection.utils import shape_utils
-from nets.mobilenet import mobilenet
-from nets.mobilenet import mobilenet_v2
+from tensorflow.python.framework import ops as tf_ops
 
 slim = tf.contrib.slim
 

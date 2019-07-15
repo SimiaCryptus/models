@@ -22,11 +22,10 @@ import functools
 import json
 import os
 
+import tensorflow as tf
 from absl import app
 from absl import flags
 from absl import logging
-import tensorflow as tf
-
 # Import BERT model libraries.
 from official.bert import bert_models
 from official.bert import input_pipeline

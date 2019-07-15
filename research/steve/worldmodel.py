@@ -13,11 +13,11 @@
 # limitations under the License.
 # ==============================================================================
 
-import tensorflow as tf
-import numpy as np
 import nn
-
+import numpy as np
+import tensorflow as tf
 from learner import CoreModel
+
 
 class DeterministicWorldModel(CoreModel):
   """

@@ -13,8 +13,8 @@
 # limitations under the License.
 # ==============================================================================
 """Tests for errorcounter."""
-import tensorflow as tf
 import errorcounter as ec
+import tensorflow as tf
 
 
 class ErrorcounterTest(tf.test.TestCase):

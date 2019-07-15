@@ -4,10 +4,9 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-import tensorflow as tf
-
-from google3.testing.pybase import googletest
 import data_provider
+import tensorflow as tf
+from google3.testing.pybase import googletest
 
 mock = tf.test.mock
 

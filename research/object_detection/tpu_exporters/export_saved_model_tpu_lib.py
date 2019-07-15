@@ -18,16 +18,15 @@ from __future__ import division
 from __future__ import print_function
 
 import tensorflow as tf
-
 from google.protobuf import text_format
-# pylint: disable=g-direct-tensorflow-import
-from tensorflow.python.saved_model import loader
-from tensorflow.python.saved_model import signature_constants
-from tensorflow.python.saved_model import tag_constants
 # pylint: enable=g-direct-tensorflow-import
 from object_detection.protos import pipeline_pb2
 from object_detection.tpu_exporters import faster_rcnn
 from object_detection.tpu_exporters import ssd
+# pylint: disable=g-direct-tensorflow-import
+from tensorflow.python.saved_model import loader
+from tensorflow.python.saved_model import signature_constants
+from tensorflow.python.saved_model import tag_constants
 
 model_map = {
     'faster_rcnn': faster_rcnn,

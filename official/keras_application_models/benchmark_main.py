@@ -19,16 +19,16 @@ from __future__ import print_function
 
 # pylint: disable=g-bad-import-order
 import numpy as np
+import tensorflow as tf
 from absl import app as absl_app
 from absl import flags
-import tensorflow as tf
-# pylint: enable=g-bad-import-order
-
 from official.keras_application_models import dataset
 from official.keras_application_models import model_callbacks
 from official.utils.flags import core as flags_core
 from official.utils.logs import logger
 from official.utils.misc import distribution_utils
+
+# pylint: enable=g-bad-import-order
 
 # Define a dictionary that maps model names to their model classes inside Keras
 MODELS = {

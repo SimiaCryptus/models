@@ -1,7 +1,14 @@
 from __future__ import division
 from __future__ import print_function
+
 from builtins import range
+
+import matplotlib.pyplot as plt
+import numpy as np
+import scipy
+import seaborn as sns
 from past.utils import old_div
+
 # Copyright 2018 The TensorFlow Authors All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,11 +23,6 @@ from past.utils import old_div
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ==============================================================================
-
-import numpy as np
-import scipy
-import matplotlib.pyplot as plt
-import seaborn as sns
 
 ### Hyperparameters
 

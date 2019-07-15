@@ -25,7 +25,6 @@ import sys
 import tempfile
 
 from absl import flags
-
 from official.utils.flags import core as flags_core
 
 

@@ -16,10 +16,14 @@
 r"""Generaly Utilities.
 """
 
-import numpy as np, cPickle, os, time
-from six.moves import xrange
-import src.file_utils as fu
 import logging
+
+import cPickle
+import numpy as np
+import src.file_utils as fu
+import time
+from six.moves import xrange
+
 
 class Timer():
   def __init__(self):

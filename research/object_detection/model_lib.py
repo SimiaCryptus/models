@@ -23,8 +23,6 @@ import functools
 import os
 
 import tensorflow as tf
-
-from tensorflow.python.util import function_utils
 from object_detection import eval_util
 from object_detection import exporter as exporter_lib
 from object_detection import inputs
@@ -38,6 +36,7 @@ from object_detection.utils import ops
 from object_detection.utils import shape_utils
 from object_detection.utils import variables_helper
 from object_detection.utils import visualization_utils as vis_utils
+from tensorflow.python.util import function_utils
 
 # A map of names to methods that help build the model.
 MODEL_BUILD_UTIL_MAP = {

@@ -24,10 +24,11 @@ Examples of contextual variables include
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
+
+import gin.tf
 import numpy as np
 import tensorflow as tf
 from tf_agents import specs
-import gin.tf
 from utils import utils as uvf_utils
 
 

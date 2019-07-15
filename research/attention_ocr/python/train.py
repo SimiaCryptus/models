@@ -18,16 +18,16 @@
 A simple usage example:
 python train.py
 """
-import collections
 import logging
-import tensorflow as tf
-from tensorflow.contrib import slim
-from tensorflow import app
-from tensorflow.python.platform import flags
-from tensorflow.contrib.tfprof import model_analyzer
 
-import data_provider
+import collections
 import common_flags
+import data_provider
+import tensorflow as tf
+from tensorflow import app
+from tensorflow.contrib import slim
+from tensorflow.contrib.tfprof import model_analyzer
+from tensorflow.python.platform import flags
 
 FLAGS = flags.FLAGS
 common_flags.define()

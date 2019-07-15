@@ -21,8 +21,8 @@ import os
 import re
 import tarfile
 
-from six.moves import urllib
 import tensorflow as tf
+from six.moves import urllib
 
 # Special vocabulary symbols - we always put them at the start.
 _PAD = b"_PAD"

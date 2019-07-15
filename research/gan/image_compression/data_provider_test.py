@@ -20,13 +20,11 @@ from __future__ import print_function
 
 import os
 
+import data_provider
+import numpy as np
+import tensorflow as tf
 from absl import flags
 from absl.testing import parameterized
-import numpy as np
-
-import tensorflow as tf
-
-import data_provider
 
 
 class DataProviderTest(tf.test.TestCase, parameterized.TestCase):

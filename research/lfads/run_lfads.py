@@ -17,13 +17,14 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-from lfads import LFADS
-import numpy as np
 import os
-import tensorflow as tf
 import re
-import utils
 import sys
+
+import tensorflow as tf
+import utils
+from lfads import LFADS
+
 MAX_INT = sys.maxsize
 
 # Lots of hyperparameters, but most are pretty insensitive.  The

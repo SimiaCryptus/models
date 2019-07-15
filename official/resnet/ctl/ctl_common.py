@@ -20,7 +20,6 @@ from __future__ import print_function
 
 from absl import flags
 
-
 FLAGS = flags.FLAGS
 
 

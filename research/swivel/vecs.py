@@ -13,9 +13,9 @@
 # limitations under the License.
 
 import mmap
-import numpy as np
 import os
 
+import numpy as np
 from six import string_types
 
 

@@ -21,11 +21,9 @@ from __future__ import print_function
 
 import os
 
-
-import tensorflow as tf
-
-from tensorflow.python.platform import gfile
 import export_inference_graph
+import tensorflow as tf
+from tensorflow.python.platform import gfile
 
 
 class ExportInferenceGraphTest(tf.test.TestCase):

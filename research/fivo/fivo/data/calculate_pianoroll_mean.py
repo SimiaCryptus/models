@@ -25,11 +25,9 @@ from __future__ import division
 from __future__ import print_function
 
 import pickle
+
 import numpy as np
-
 import tensorflow as tf
-
-
 from datasets import sparse_pianoroll_to_dense
 
 tf.app.flags.DEFINE_string('in_file', None,

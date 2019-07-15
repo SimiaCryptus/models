@@ -6,10 +6,9 @@ from __future__ import print_function
 
 import numpy as np
 import tensorflow as tf
-
 from data.util import OOV_CHAR
-from data.util import pad_sentence
 from data.util import START_CHAR
+from data.util import pad_sentence
 
 NUM_CLASS = 2
 

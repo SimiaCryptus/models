@@ -26,7 +26,6 @@ from __future__ import division
 from __future__ import print_function
 
 import tensorflow as tf
-
 from nets import resnet_v1
 
 slim = tf.contrib.slim

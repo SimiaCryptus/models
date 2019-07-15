@@ -13,8 +13,8 @@
 # limitations under the License.
 # ==============================================================================
 
-from six.moves import xrange
 import tensorflow as tf
+from six.moves import xrange
 
 
 def transformer(U, theta, out_size, name='SpatialTransformer', **kwargs):

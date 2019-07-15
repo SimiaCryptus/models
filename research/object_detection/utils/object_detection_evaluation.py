@@ -27,14 +27,14 @@ It supports the following operations:
 Note: This module operates on numpy boxes and box lists.
 """
 
-from abc import ABCMeta
-from abc import abstractmethod
-import collections
 import logging
 import unicodedata
+from abc import ABCMeta
+from abc import abstractmethod
+
+import collections
 import numpy as np
 import tensorflow as tf
-
 from object_detection.core import standard_fields
 from object_detection.utils import label_map_util
 from object_detection.utils import metrics

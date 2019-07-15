@@ -27,8 +27,9 @@ from __future__ import print_function
 import math
 import os
 import re
-import numpy as np
 import unicodedata as ud
+
+import numpy as np
 import tensorflow as tf
 
 bad_number = -200000.0  #number that is added to a corrupted table entry in a number column

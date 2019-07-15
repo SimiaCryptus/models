@@ -25,9 +25,8 @@ import registry_test_impl.
 
 import traceback
 
-from tensorflow.python.platform import googletest
-
 from syntaxnet.util import registry_test_base
+from tensorflow.python.platform import googletest
 
 PATH = 'syntaxnet.util.'
 

@@ -19,14 +19,13 @@ See model.py for more details and usage.
 """
 import six
 import tensorflow as tf
-
+from deployment import model_deploy
 from feelvos import common
 from feelvos import model
 from feelvos.datasets import video_dataset
 from feelvos.utils import embedding_utils
 from feelvos.utils import train_utils
 from feelvos.utils import video_input_generator
-from deployment import model_deploy
 
 slim = tf.contrib.slim
 prefetch_queue = slim.prefetch_queue

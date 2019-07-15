@@ -21,9 +21,8 @@ from __future__ import print_function
 
 import os
 
-import tensorflow as tf
-
 import cifar10_input
+import tensorflow as tf
 
 
 class CIFAR10InputTest(tf.test.TestCase):

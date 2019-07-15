@@ -21,9 +21,10 @@ from __future__ import print_function
 
 import locale
 import os
-from absl import logging
+
 import numpy as np
 import tensorflow as tf
+from absl import logging
 
 
 def get_seq_middle(seq_length):

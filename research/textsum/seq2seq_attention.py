@@ -24,11 +24,11 @@ Beyond."
 import sys
 import time
 
-import tensorflow as tf
 import batch_reader
 import data
 import seq2seq_attention_decode
 import seq2seq_attention_model
+import tensorflow as tf
 
 FLAGS = tf.app.flags.FLAGS
 tf.app.flags.DEFINE_string('data_path',

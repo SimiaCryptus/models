@@ -16,21 +16,15 @@
 """Code for setting up summaries for CMP.
 """
 
-import sys, os, numpy as np
+import numpy as np
+import os
+
 import matplotlib.pyplot as plt
-
-
-import tensorflow as tf
-
-from tensorflow.contrib import slim
-from tensorflow.contrib.slim import arg_scope
-
-import logging
-from tensorflow.python.platform import app
-from tensorflow.python.platform import flags
-from src import utils 
 import src.file_utils as fu
-import tfcode.nav_utils as nu 
+import tensorflow as tf
+import tfcode.nav_utils as nu
+from src import utils
+
 
 def _vis_readout_maps(outputs, global_step, output_dir, metric_summary, N):
   # outputs is [gt_map, pred_map]:

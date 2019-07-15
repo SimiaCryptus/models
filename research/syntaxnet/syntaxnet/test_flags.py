@@ -14,8 +14,8 @@
 # ==============================================================================
 """Accessors for test flags, with fallback for missing flags."""
 
-from absl import flags
 import tensorflow as tf
+from absl import flags
 
 FLAGS = flags.FLAGS
 

@@ -24,7 +24,6 @@ from __future__ import division
 from __future__ import print_function
 
 import tensorflow as tf
-
 from deeplab.evaluation import panoptic_quality
 from deeplab.evaluation import parsing_covering
 

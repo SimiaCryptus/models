@@ -15,10 +15,10 @@
 
 """Tests for the metrics module."""
 import contextlib
-import numpy as np
-import tensorflow as tf
 
 import metrics
+import numpy as np
+import tensorflow as tf
 
 
 class AccuracyTest(tf.test.TestCase):

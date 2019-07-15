@@ -20,10 +20,10 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-from tensorflow.python.platform import googletest
 from dragnn.protos import spec_pb2
 from dragnn.protos import trace_pb2
 from dragnn.python import visualization
+from tensorflow.python.platform import googletest
 
 
 def _get_trace_proto_string():

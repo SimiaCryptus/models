@@ -20,14 +20,13 @@ from __future__ import print_function
 import itertools
 import tempfile
 
-import tensorflow as tf  # pylint: disable=g-bad-import-order
-
 import coords
 import features
 import go
 import model_params
 import numpy as np
 import preprocessing
+import tensorflow as tf  # pylint: disable=g-bad-import-order
 import utils_test
 
 tf.logging.set_verbosity(tf.logging.ERROR)

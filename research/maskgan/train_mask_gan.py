@@ -39,32 +39,28 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-import collections
-
-from functools import partial
 import os
 import time
-# Dependency imports
+from functools import partial
 
+import collections
 import numpy as np
-from six.moves import xrange
-import tensorflow as tf
-
 import pretrain_mask_gan
+import tensorflow as tf
 from data import imdb_loader
 from data import ptb_loader
 from model_utils import helper
 from model_utils import model_construction
 from model_utils import model_losses
 from model_utils import model_optimization
-
 # Data.
 from model_utils import model_utils
-
 from model_utils import n_gram
 from models import evaluation_utils
-
 from models import rollout
+from six.moves import xrange
+
+# Dependency imports
 
 np.set_printoptions(precision=3)
 np.set_printoptions(suppress=True)

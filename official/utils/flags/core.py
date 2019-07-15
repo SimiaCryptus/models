@@ -23,17 +23,16 @@ from __future__ import print_function
 
 import functools
 import sys
-from six.moves import shlex_quote
 
 from absl import app as absl_app
 from absl import flags
-
 from official.utils.flags import _base
 from official.utils.flags import _benchmark
 from official.utils.flags import _conventions
 from official.utils.flags import _device
 from official.utils.flags import _misc
 from official.utils.flags import _performance
+from six.moves import shlex_quote
 
 
 def set_defaults(**kwargs):

@@ -32,19 +32,16 @@ $ ./bazel-bin/third_party/tensorflow_models/domain_adaptation/pixel_domain_adapt
 $ bash learning/brain/tensorboard/tensorboard.sh \
     --port 2222 --logdir=/tmp/pixelda/
 """
-from functools import partial
 import math
 
-# Dependency imports
-
 import tensorflow as tf
-
 from domain_adaptation.datasets import dataset_factory
-from domain_adaptation.pixel_domain_adaptation import pixelda_model
-from domain_adaptation.pixel_domain_adaptation import pixelda_preprocess
-from domain_adaptation.pixel_domain_adaptation import pixelda_utils
 from domain_adaptation.pixel_domain_adaptation import pixelda_losses
+from domain_adaptation.pixel_domain_adaptation import pixelda_model
+from domain_adaptation.pixel_domain_adaptation import pixelda_utils
 from domain_adaptation.pixel_domain_adaptation.hparams import create_hparams
+
+# Dependency imports
 
 slim = tf.contrib.slim
 

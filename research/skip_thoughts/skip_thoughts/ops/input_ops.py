@@ -19,8 +19,6 @@ from __future__ import division
 from __future__ import print_function
 
 import collections
-
-
 import tensorflow as tf
 
 # A SentenceBatch is a pair of Tensors:

@@ -20,10 +20,9 @@ from __future__ import division
 from __future__ import print_function
 
 import numpy as np
-from scipy.stats import invgamma
-
 from bandits.core.bandit_algorithm import BanditAlgorithm
 from bandits.core.contextual_dataset import ContextualDataset
+from scipy.stats import invgamma
 
 
 class LinearFullPosteriorSampling(BanditAlgorithm):

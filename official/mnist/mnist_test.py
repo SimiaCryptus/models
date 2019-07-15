@@ -20,7 +20,6 @@ from __future__ import print_function
 import time
 
 import tensorflow as tf  # pylint: disable=g-bad-import-order
-
 from official.mnist import mnist
 
 BATCH_SIZE = 100

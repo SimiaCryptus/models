@@ -1,7 +1,23 @@
 from __future__ import print_function
-from builtins import zip
-from builtins import range
+
+import multiprocessing
+import os
+import portalocker
+import time
+import traceback
 from builtins import object
+from builtins import range
+from builtins import zip
+
+import envwrap
+import numpy as np
+import tensorflow as tf
+import valuerl
+from config import config
+
+import util
+
+
 # Copyright 2018 The TensorFlow Authors All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,15 +32,6 @@ from builtins import object
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ==============================================================================
-
-import numpy as np
-import tensorflow as tf
-import time, os, traceback, multiprocessing, portalocker
-
-import envwrap
-import valuerl
-import util
-from config import config
 
 
 def run_env(pipe):

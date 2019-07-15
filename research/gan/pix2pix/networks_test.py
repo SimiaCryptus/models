@@ -18,8 +18,8 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-import tensorflow as tf
 import networks
+import tensorflow as tf
 
 
 class Pix2PixTest(tf.test.TestCase):

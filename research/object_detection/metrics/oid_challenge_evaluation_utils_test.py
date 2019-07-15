@@ -20,11 +20,10 @@ from __future__ import print_function
 
 import numpy as np
 import pandas as pd
-from pycocotools import mask
 import tensorflow as tf
-
 from object_detection.core import standard_fields
 from object_detection.metrics import oid_challenge_evaluation_utils as utils
+from pycocotools import mask
 
 
 class OidUtilTest(tf.test.TestCase):

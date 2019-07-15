@@ -20,14 +20,12 @@ from __future__ import print_function
 
 import os
 
-from absl.testing import parameterized
 import tensorflow as tf
-
+from absl.testing import parameterized
+from morph_net.op_regularizers import gamma_mapper
 from tensorflow.contrib.slim.nets import resnet_v1
 from tensorflow.contrib.slim.nets import resnet_v2
 from tensorflow.python.platform import flags
-from morph_net.op_regularizers import gamma_mapper
-
 
 FLAGS = flags.FLAGS
 

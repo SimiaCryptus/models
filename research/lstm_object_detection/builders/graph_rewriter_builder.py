@@ -21,6 +21,7 @@ customization of freeze_bn_delay.
 """
 
 import re
+
 import tensorflow as tf
 from tensorflow.contrib.quantize.python import common
 from tensorflow.contrib.quantize.python import input_to_ops

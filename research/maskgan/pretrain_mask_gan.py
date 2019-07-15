@@ -19,18 +19,15 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-# Dependency imports
-
 import numpy as np
-
 import tensorflow as tf
-
 from data import imdb_loader
 from data import ptb_loader
-
 # Data.
 from model_utils import model_utils
 from models import evaluation_utils
+
+# Dependency imports
 
 tf.app.flags.DEFINE_integer(
     'gen_pretrain_steps', None,

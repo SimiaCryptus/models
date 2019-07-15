@@ -19,13 +19,12 @@ from __future__ import division
 from __future__ import print_function
 
 import abc
+
 import numpy as np
-
 import tensorflow as tf
-
-from tensorflow.contrib.slim.nets import resnet_v1
 from morph_net.network_regularizers import bilinear_cost_utils
 from morph_net.network_regularizers import flop_regularizer
+from tensorflow.contrib.slim.nets import resnet_v1
 
 arg_scope = tf.contrib.framework.arg_scope
 layers = tf.contrib.layers

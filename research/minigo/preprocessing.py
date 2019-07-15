@@ -20,12 +20,11 @@ from __future__ import print_function
 import functools
 import random
 
-import tensorflow as tf  # pylint: disable=g-bad-import-order
-
 import coords
 import features as features_lib
 import numpy as np
 import sgf_wrapper
+import tensorflow as tf  # pylint: disable=g-bad-import-order
 
 TF_RECORD_CONFIG = tf.python_io.TFRecordOptions(
     tf.python_io.TFRecordCompressionType.ZLIB)

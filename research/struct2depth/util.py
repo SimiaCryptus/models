@@ -23,8 +23,10 @@ from __future__ import print_function
 import locale
 import os
 import re
-from absl import logging
+
 import matplotlib
+from absl import logging
+
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import numpy as np

@@ -28,9 +28,9 @@ import custom_ops as ops
 import data_utils
 import helper_utils
 import numpy as np
+import tensorflow as tf
 from shake_drop import build_shake_drop_model
 from shake_shake import build_shake_shake_model
-import tensorflow as tf
 from wrn import build_wrn_model
 
 tf.flags.DEFINE_string('model_name', 'wrn',

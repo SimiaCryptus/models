@@ -21,7 +21,6 @@ from __future__ import print_function
 
 import numpy as np
 import tensorflow as tf
-
 from corpus_processing import minibatching
 from model import model_helpers
 from model import task_module

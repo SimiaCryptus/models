@@ -19,12 +19,9 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-# Dependency imports
-
 import tensorflow as tf
 from models import bidirectional
 from models import bidirectional_vd
-
 from models import bidirectional_zaremba
 from models import cnn
 from models import critic_vd
@@ -37,6 +34,8 @@ from models import seq2seq
 from models import seq2seq_nas
 from models import seq2seq_vd
 from models import seq2seq_zaremba
+
+# Dependency imports
 
 FLAGS = tf.app.flags.FLAGS
 

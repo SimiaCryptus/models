@@ -18,8 +18,6 @@
 from __future__ import division
 from __future__ import unicode_literals
 
-import math
-
 import numpy as np
 import six
 import tensorflow as tf

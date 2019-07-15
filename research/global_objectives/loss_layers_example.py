@@ -23,9 +23,9 @@ from __future__ import print_function
 
 # Dependency imports
 import numpy as np
-from sklearn.metrics import precision_score
 import tensorflow as tf
 from global_objectives import loss_layers
+from sklearn.metrics import precision_score
 
 # When optimizing using global_objectives, if set to True then the saddle point
 # optimization steps are performed internally by the Tensorflow optimizer,

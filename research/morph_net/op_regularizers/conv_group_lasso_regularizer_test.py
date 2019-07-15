@@ -18,10 +18,9 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-from absl.testing import parameterized
 import numpy as np
 import tensorflow as tf
-
+from absl.testing import parameterized
 from morph_net.op_regularizers import conv_group_lasso_regularizer
 
 layers = tf.contrib.layers

@@ -13,14 +13,15 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ==============================================================================*/
 
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.List;
-import java.util.Random;
 import org.tensorflow.Graph;
 import org.tensorflow.Session;
 import org.tensorflow.Tensor;
 import org.tensorflow.Tensors;
+
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.List;
+import java.util.Random;
 
 /**
  * Training a trivial linear model.
@@ -37,9 +38,9 @@ public class Train {
     final boolean checkpointExists = Files.exists(Paths.get(checkpointDir));
 
     try (Graph graph = new Graph();
-        Session sess = new Session(graph);
-        Tensor<String> checkpointPrefix =
-            Tensors.create(Paths.get(checkpointDir, "ckpt").toString())) {
+         Session sess = new Session(graph);
+         Tensor<String> checkpointPrefix =
+             Tensors.create(Paths.get(checkpointDir, "ckpt").toString())) {
       graph.importGraphDef(graphDef);
 
       // Initialize or restore.
@@ -62,13 +63,13 @@ public class Train {
         for (int n = 0; n < NUM_EXAMPLES; n++) {
           float in = r.nextFloat();
           try (Tensor<Float> input = Tensors.create(in);
-              Tensor<Float> target = Tensors.create(3 * in + 2)) {
+               Tensor<Float> target = Tensors.create(3 * in + 2)) {
             // Again the tensor names are from the program that created the graph.
             // https://github.com/tensorflow/models/blob/master/samples/languages/java/training/model/create_graph.py
             sess.runner().feed("input", input).feed("target", target).addTarget("train").run();
           }
         }
-        System.out.printf("After %5d examples: ", i*NUM_EXAMPLES);
+        System.out.printf("After %5d examples: ", i * NUM_EXAMPLES);
         printVariables(sess);
       }
 
@@ -79,8 +80,8 @@ public class Train {
 
       // Example of "inference" in the same graph:
       try (Tensor<Float> input = Tensors.create(1.0f);
-          Tensor<Float> output =
-              sess.runner().feed("input", input).fetch("output").run().get(0).expect(Float.class)) {
+           Tensor<Float> output =
+               sess.runner().feed("input", input).fetch("output").run().get(0).expect(Float.class)) {
         System.out.printf(
             "For input %f, produced %f (ideally would produce 3*%f + 2)\n",
             input.floatValue(), output.floatValue(), input.floatValue());

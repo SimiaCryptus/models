@@ -40,11 +40,10 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
+import pandas as pd
 from absl import app
 from absl import flags
-import pandas as pd
 from google.protobuf import text_format
-
 from object_detection.metrics import io_utils
 from object_detection.metrics import oid_challenge_evaluation_utils as utils
 from object_detection.protos import string_int_label_map_pb2

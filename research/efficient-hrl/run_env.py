@@ -15,10 +15,8 @@
 
 """Random policy on an environment."""
 
-import tensorflow as tf
 import numpy as np
-import random
-
+import tensorflow as tf
 from environments import create_maze_env
 
 app = tf.app

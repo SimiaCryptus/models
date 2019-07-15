@@ -18,4 +18,3 @@
 
 from syntaxnet.ops.gen_parser_ops import *
 
-import syntaxnet.load_parser_ops

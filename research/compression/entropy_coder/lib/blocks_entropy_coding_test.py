@@ -20,10 +20,8 @@ from __future__ import unicode_literals
 
 import math
 
-import numpy as np
-import tensorflow as tf
-
 import blocks_entropy_coding
+import tensorflow as tf
 
 
 class BlocksEntropyCodingTest(tf.test.TestCase):

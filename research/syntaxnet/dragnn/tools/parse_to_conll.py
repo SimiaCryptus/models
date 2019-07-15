@@ -17,24 +17,19 @@ r"""Runs a both a segmentation and parsing model on a CoNLL dataset.
 
 import re
 import time
-from absl import flags
-import tensorflow as tf
 
+import tensorflow as tf
+from absl import flags
+from dragnn.python import evaluation
+from dragnn.python import sentence_io
+from syntaxnet import sentence_pb2
+from syntaxnet.ops import gen_parser_ops
+from syntaxnet.util import check
 from tensorflow.python.client import timeline
 from tensorflow.python.platform import gfile
 
 # The following line is necessary to load custom ops into the library.
-from dragnn.python import dragnn_ops
-
-from dragnn.python import evaluation
-from dragnn.python import sentence_io
-from syntaxnet import sentence_pb2
-
 # The following line is necessary to load custom ops into the library.
-from syntaxnet import syntaxnet_ops
-
-from syntaxnet.ops import gen_parser_ops
-from syntaxnet.util import check
 
 FLAGS = flags.FLAGS
 

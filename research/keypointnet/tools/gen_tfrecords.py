@@ -24,9 +24,8 @@ from __future__ import division
 from __future__ import print_function
 
 import numpy as np
-import os
-from scipy import misc
 import tensorflow as tf
+from scipy import misc
 
 FLAGS = tf.app.flags.FLAGS
 tf.app.flags.DEFINE_string("input", "", "Input folder containing images")

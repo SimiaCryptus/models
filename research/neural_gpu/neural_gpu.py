@@ -16,12 +16,11 @@
 
 import time
 
-import numpy as np
-from six.moves import xrange
-import tensorflow as tf
-
-from tensorflow.python.framework import function
 import data_utils as data
+import numpy as np
+import tensorflow as tf
+from six.moves import xrange
+from tensorflow.python.framework import function
 
 do_jit = False  # Gives more speed but experimental for now.
 jit_scope = tf.contrib.compiler.jit.experimental_jit_scope

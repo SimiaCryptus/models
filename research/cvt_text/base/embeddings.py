@@ -21,13 +21,12 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-import collections
 import re
+
+import collections
 import numpy as np
 import tensorflow as tf
-
 from base import utils
-
 
 _CHARS = [
     # punctuation

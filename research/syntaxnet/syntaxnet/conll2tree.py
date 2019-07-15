@@ -14,19 +14,16 @@
 # ==============================================================================
 """A program to generate ASCII trees from conll files."""
 
-import collections
 import re
 
+import asciitree
+import collections
+import tensorflow as tf
 from absl import app
 from absl import flags
-import asciitree
-import tensorflow as tf
-
-import syntaxnet.load_parser_ops
-
-from tensorflow.python.platform import tf_logging as logging
 from syntaxnet import sentence_pb2
 from syntaxnet.ops import gen_parser_ops
+from tensorflow.python.platform import tf_logging as logging
 
 FLAGS = flags.FLAGS
 

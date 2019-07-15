@@ -13,11 +13,10 @@
 # limitations under the License.
 # ==============================================================================
 
+import gin.tf
+import tensorflow as tf
 from environments.ant_maze_env import AntMazeEnv
 from environments.point_maze_env import PointMazeEnv
-
-import tensorflow as tf
-import gin.tf
 from tf_agents.environments import gym_wrapper
 from tf_agents.environments import tf_py_environment
 

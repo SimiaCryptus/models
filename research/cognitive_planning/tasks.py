@@ -20,14 +20,15 @@ tasks. See go/navigation_tasks for a list.
 """
 
 import abc
-import collections
 import math
 import threading
+
+import collections
 import networkx as nx
 import numpy as np
 import tensorflow as tf
-#from pyglib import logging
-#import gin
+# from pyglib import logging
+# import gin
 from envs import task_env
 from envs import util as envs_util
 

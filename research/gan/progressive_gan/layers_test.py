@@ -16,11 +16,9 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-
+import layers
 import numpy as np
 import tensorflow as tf
-
-import layers
 
 mock = tf.test.mock
 

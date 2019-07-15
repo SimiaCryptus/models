@@ -48,8 +48,9 @@ References:
   through ADE20K dataset", In Proc. of CVPR, 2017.
 """
 
-import collections
 import os
+
+import collections
 import tensorflow as tf
 from deeplab import common
 from deeplab import input_preprocess

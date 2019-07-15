@@ -21,9 +21,9 @@ from __future__ import print_function
 
 import bisect
 import time
+
 import numpy as np
 import tensorflow as tf
-
 from base import utils
 from model import multitask_model
 from task_specific import task_definitions

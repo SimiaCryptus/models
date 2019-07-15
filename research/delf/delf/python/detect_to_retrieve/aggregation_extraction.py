@@ -24,12 +24,11 @@ import time
 
 import numpy as np
 import tensorflow as tf
-
-from google.protobuf import text_format
 from delf import aggregation_config_pb2
 from delf import datum_io
 from delf import feature_aggregation_extractor
 from delf import feature_io
+from google.protobuf import text_format
 
 # Aliases for aggregation types.
 _VLAD = aggregation_config_pb2.AggregationConfig.VLAD

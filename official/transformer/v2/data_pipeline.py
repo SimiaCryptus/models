@@ -55,7 +55,6 @@ import math
 import os
 
 import tensorflow as tf
-
 from official.transformer.v2 import misc
 from official.utils.misc import model_helpers
 

@@ -24,18 +24,17 @@ import sys
 import time
 
 import numpy as np
-from scipy import spatial
-from skimage import measure
-from skimage import transform
 import tensorflow as tf
-
-from google.protobuf import text_format
-from tensorflow.python.platform import app
 from delf import aggregation_config_pb2
 from delf import datum_io
 from delf import feature_aggregation_similarity
 from delf import feature_io
 from delf.python.detect_to_retrieve import dataset
+from google.protobuf import text_format
+from scipy import spatial
+from skimage import measure
+from skimage import transform
+from tensorflow.python.platform import app
 
 cmd_args = None
 

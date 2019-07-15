@@ -20,11 +20,9 @@ from __future__ import print_function
 import os
 
 import tensorflow as tf  # pylint: disable=g-bad-import-order
-
 from official.utils.testing import integration
 from official.wide_deep import census_dataset
 from official.wide_deep import census_main
-from official.wide_deep import wide_deep_run_loop
 
 tf.logging.set_verbosity(tf.logging.ERROR)
 

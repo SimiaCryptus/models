@@ -21,13 +21,12 @@ from __future__ import print_function
 import io
 import os
 
-from absl import flags
+import data_provider
+import network
 import numpy as np
 import scipy.misc
 import tensorflow as tf
-
-import network
-import data_provider
+from absl import flags
 
 # FLAGS for data.
 flags.DEFINE_multi_string(

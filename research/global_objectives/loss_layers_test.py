@@ -14,11 +14,10 @@
 # ==============================================================================
 """Tests for global objectives loss layers."""
 
-# Dependency imports
-from absl.testing import parameterized
 import numpy
 import tensorflow as tf
-
+# Dependency imports
+from absl.testing import parameterized
 from global_objectives import loss_layers
 from global_objectives import util
 

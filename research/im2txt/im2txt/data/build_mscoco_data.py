@@ -84,21 +84,19 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-from collections import Counter
-from collections import namedtuple
-from datetime import datetime
 import json
-import os.path
 import random
 import sys
 import threading
-
-
+from collections import Counter
+from collections import namedtuple
+from datetime import datetime
 
 import nltk.tokenize
 import numpy as np
-from six.moves import xrange
+import os.path
 import tensorflow as tf
+from six.moves import xrange
 
 tf.flags.DEFINE_string("train_image_dir", "/tmp/train2014/",
                        "Training image directory.")

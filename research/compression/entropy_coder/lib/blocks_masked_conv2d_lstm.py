@@ -15,11 +15,11 @@
 
 """Masked conv2d LSTM."""
 
-import block_base
 import block_util
-import blocks_masked_conv2d
 import blocks_lstm
+import blocks_masked_conv2d
 import blocks_std
+
 
 # pylint: disable=not-callable
 

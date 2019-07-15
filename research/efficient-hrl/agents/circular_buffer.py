@@ -25,10 +25,9 @@ elements, only adding new elements does.
 """
 
 import collections
+import gin.tf
 import numpy as np
 import tensorflow as tf
-
-import gin.tf
 
 
 @gin.configurable

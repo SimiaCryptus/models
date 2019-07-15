@@ -21,9 +21,8 @@ from __future__ import print_function
 
 import numpy as np
 import tensorflow as tf
-
-from fivo.test_utils import create_vrnn
 from fivo import bounds
+from fivo.test_utils import create_vrnn
 
 
 class BoundsTest(tf.test.TestCase):

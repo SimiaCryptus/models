@@ -31,12 +31,11 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-# Dependency imports
-
-import tensorflow as tf
-
 import graphs
+import tensorflow as tf
 import train_utils
+
+# Dependency imports
 
 flags = tf.app.flags
 FLAGS = flags.FLAGS

@@ -20,8 +20,8 @@ from __future__ import division
 from __future__ import print_function
 
 import cv2
-from scipy import ndimage
 import tensorflow as tf
+from scipy import ndimage
 from tensorflow.python.ops import control_flow_ops
 
 

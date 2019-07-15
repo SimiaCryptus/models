@@ -27,7 +27,6 @@ from __future__ import print_function
 import re
 
 import tensorflow as tf
-
 from inception.slim import slim
 
 FLAGS = tf.app.flags.FLAGS

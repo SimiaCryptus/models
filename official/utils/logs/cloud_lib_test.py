@@ -23,7 +23,6 @@ import unittest
 
 import mock
 import requests
-
 from official.utils.logs import cloud_lib
 
 

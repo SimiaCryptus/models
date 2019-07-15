@@ -17,9 +17,7 @@
 from __future__ import print_function
 
 import collections
-
 import tensorflow as tf
-
 from deeplab import common
 from deeplab.datasets import data_generator
 

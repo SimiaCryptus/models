@@ -5,10 +5,10 @@ from __future__ import division
 from __future__ import print_function
 
 import os
-import numpy as np
-import data_provider
-from google3.pyglib import resources
 
+import data_provider
+import numpy as np
+from google3.pyglib import resources
 
 provide_data = data_provider.provide_data
 

@@ -20,11 +20,9 @@ from __future__ import print_function
 
 import os
 
-
-from absl import flags
-import tensorflow as tf
-
 import data_provider
+import tensorflow as tf
+from absl import flags
 
 
 class DataProviderTest(tf.test.TestCase):

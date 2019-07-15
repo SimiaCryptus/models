@@ -13,9 +13,8 @@
 # limitations under the License.
 # ==============================================================================
 
-import tensorflow as tf
-
 import ops
+import tensorflow as tf
 
 
 class OpsTest(tf.test.TestCase):

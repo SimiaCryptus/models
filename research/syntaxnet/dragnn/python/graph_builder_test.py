@@ -16,25 +16,18 @@
 
 
 import collections
-import os.path
-
-
 import numpy as np
+import os.path
 import tensorflow as tf
-
-from google.protobuf import text_format
-
 from dragnn.protos import spec_pb2
 from dragnn.protos import trace_pb2
-from dragnn.python import dragnn_ops
 from dragnn.python import graph_builder
+from google.protobuf import text_format
 from syntaxnet import sentence_pb2
 from syntaxnet import test_flags
-
 from tensorflow.python.framework import test_util
 from tensorflow.python.platform import googletest
 from tensorflow.python.platform import tf_logging as logging
-
 
 _DUMMY_GOLD_SENTENCE = """
 token {

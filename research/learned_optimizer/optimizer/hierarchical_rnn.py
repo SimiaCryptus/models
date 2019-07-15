@@ -23,11 +23,10 @@ import math
 
 import numpy as np
 import tensorflow as tf
-
-from tensorflow.python.ops import state_ops
 from learned_optimizer.optimizer import rnn_cells
 from learned_optimizer.optimizer import trainable_optimizer as opt
 from learned_optimizer.optimizer import utils
+from tensorflow.python.ops import state_ops
 
 # Default was 0.1
 tf.app.flags.DEFINE_float("biasgrucell_scale", 0.5,

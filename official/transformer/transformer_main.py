@@ -25,13 +25,9 @@ from __future__ import print_function
 import os
 import tempfile
 
-# pylint: disable=g-bad-import-order
-from six.moves import xrange  # pylint: disable=redefined-builtin
+import tensorflow as tf
 from absl import app as absl_app
 from absl import flags
-import tensorflow as tf
-# pylint: enable=g-bad-import-order
-
 from official.transformer import compute_bleu
 from official.transformer import translate
 from official.transformer.model import model_params
@@ -47,6 +43,10 @@ from official.utils.logs import hooks_helper
 from official.utils.logs import logger
 from official.utils.misc import distribution_utils
 from official.utils.misc import model_helpers
+# pylint: disable=g-bad-import-order
+from six.moves import xrange  # pylint: disable=redefined-builtin
+
+# pylint: enable=g-bad-import-order
 
 PARAMS_MAP = {
     "tiny": model_params.TINY_PARAMS,

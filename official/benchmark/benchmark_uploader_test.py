@@ -23,10 +23,10 @@ import json
 import os
 import tempfile
 import unittest
-from mock import MagicMock
-from mock import patch
 
 import tensorflow as tf  # pylint: disable=g-bad-import-order
+from mock import MagicMock
+from mock import patch
 
 try:
   from google.cloud import bigquery

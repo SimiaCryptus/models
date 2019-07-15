@@ -21,7 +21,6 @@ import tempfile
 
 import six
 import tensorflow as tf
-
 from official.bert import tokenization
 
 

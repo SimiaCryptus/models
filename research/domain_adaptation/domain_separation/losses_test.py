@@ -15,10 +15,9 @@
 """Tests for DSN losses."""
 from functools import partial
 
+import losses
 import numpy as np
 import tensorflow as tf
-
-import losses
 import utils
 
 

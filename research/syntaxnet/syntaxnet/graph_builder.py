@@ -16,15 +16,11 @@
 """Builds parser models."""
 
 import tensorflow as tf
-
-import syntaxnet.load_parser_ops
-
+from syntaxnet.ops import gen_parser_ops
 from tensorflow.python.ops import control_flow_ops as cf
 from tensorflow.python.ops import state_ops
 from tensorflow.python.platform import tf_logging as logging
 from tensorflow.python.training import saver as tf_saver
-
-from syntaxnet.ops import gen_parser_ops
 
 
 def BatchedSparseToDense(sparse_indices, output_size):

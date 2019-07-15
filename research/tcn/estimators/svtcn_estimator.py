@@ -21,9 +21,9 @@ from __future__ import print_function
 
 import data_providers
 import model as model_module
+import tensorflow as tf
 from estimators import base_estimator
 from estimators import svtcn_loss
-import tensorflow as tf
 
 
 class SVTCNEstimator(base_estimator.BaseEstimator):

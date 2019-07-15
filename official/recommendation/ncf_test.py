@@ -19,21 +19,18 @@ from __future__ import division
 from __future__ import print_function
 
 import math
-import mock
 
+import mock
 import numpy as np
 import tensorflow as tf
-
-from absl.testing import flagsaver
 from official.recommendation import constants as rconst
 from official.recommendation import data_pipeline
-from official.recommendation import neumf_model
 from official.recommendation import ncf_common
 from official.recommendation import ncf_estimator_main
 from official.recommendation import ncf_keras_main
+from official.recommendation import neumf_model
 from official.utils.testing import integration
-from tensorflow.python.eager import context # pylint: disable=ungrouped-imports
-
+from tensorflow.python.eager import context  # pylint: disable=ungrouped-imports
 
 NUM_TRAIN_NEG = 4
 

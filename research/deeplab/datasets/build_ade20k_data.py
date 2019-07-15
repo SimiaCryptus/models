@@ -19,6 +19,7 @@ import math
 import os
 import random
 import sys
+
 import build_data
 import tensorflow as tf
 

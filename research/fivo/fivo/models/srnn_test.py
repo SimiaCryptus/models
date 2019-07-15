@@ -20,7 +20,6 @@ from __future__ import division
 from __future__ import print_function
 
 import tensorflow as tf
-
 from fivo.models import base
 from fivo.test_utils import create_srnn
 

@@ -18,13 +18,10 @@ from __future__ import print_function
 
 import os
 
-
+import tensorflow as tf
+import train
 from absl import flags
 from absl.testing import absltest
-import tensorflow as tf
-
-import train
-
 
 FLAGS = flags.FLAGS
 

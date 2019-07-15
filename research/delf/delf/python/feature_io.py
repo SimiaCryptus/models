@@ -23,9 +23,8 @@ from __future__ import print_function
 
 import numpy as np
 import tensorflow as tf
-
-from delf import feature_pb2
 from delf import datum_io
+from delf import feature_pb2
 
 
 def ArraysToDelfFeatures(locations,

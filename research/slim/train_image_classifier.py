@@ -19,7 +19,6 @@ from __future__ import division
 from __future__ import print_function
 
 import tensorflow as tf
-
 from datasets import dataset_factory
 from deployment import model_deploy
 from nets import nets_factory

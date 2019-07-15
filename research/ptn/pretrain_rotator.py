@@ -20,13 +20,11 @@ from __future__ import print_function
 
 import os
 
-import numpy as np
-from six.moves import xrange
-import tensorflow as tf
-
-from tensorflow import app
-
 import model_rotator as model
+import numpy as np
+import tensorflow as tf
+from six.moves import xrange
+from tensorflow import app
 
 flags = tf.app.flags
 slim = tf.contrib.slim

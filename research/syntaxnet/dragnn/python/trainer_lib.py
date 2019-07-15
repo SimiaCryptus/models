@@ -20,14 +20,11 @@ adding them as resources, as well as setting features sizes.
 
 import random
 
-
 import tensorflow as tf
-
+from syntaxnet.util import check
 from tensorflow.core.framework.summary_pb2 import Summary
 from tensorflow.python.framework import errors
 from tensorflow.python.platform import gfile
-
-from syntaxnet.util import check
 
 
 def calculate_component_accuracies(eval_res_values):

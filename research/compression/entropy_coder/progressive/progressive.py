@@ -17,12 +17,12 @@
 
 import json
 
-from six.moves import xrange
 import tensorflow as tf
-
 from entropy_coder.lib import blocks
 from entropy_coder.model import entropy_coder_model
 from entropy_coder.model import model_factory
+from six.moves import xrange
+
 
 # pylint: disable=not-callable
 

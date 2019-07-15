@@ -13,15 +13,15 @@
 # limitations under the License.
 # ==============================================================================
 
-import os
 import glob
-import numpy as np
 import logging
-import cPickle
-from datasets import nav_env
+import os
+
+import numpy as np
 from datasets import factory
-from src import utils 
+from datasets import nav_env
 from src import map_utils as mu
+from src import utils
 
 logging.basicConfig(level=logging.INFO)
 DATA_DIR = 'data/stanford_building_parser_dataset_raw/'

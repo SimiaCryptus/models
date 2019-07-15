@@ -25,12 +25,11 @@ import logging
 import os
 import random
 
-import numpy as np
-from six.moves import xrange
-import tensorflow as tf
-
 import data_utils
 import model
+import numpy as np
+import tensorflow as tf
+from six.moves import xrange
 
 FLAGS = tf.flags.FLAGS
 

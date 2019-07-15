@@ -25,10 +25,9 @@ Specifically, in this file we define the:
 """
 from functools import partial
 
-import tensorflow as tf
-
 import losses
 import models
+import tensorflow as tf
 import utils
 
 slim = tf.contrib.slim

@@ -22,10 +22,10 @@ import os
 import sys
 
 import coords
-from dualnet import DualNetRunner
 import go
 import gtp
 import gtp_extensions
+from dualnet import DualNetRunner
 from strategies import MCTSPlayerMixin, CGOSPlayerMixin
 
 

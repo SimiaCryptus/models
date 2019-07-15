@@ -18,9 +18,8 @@ from __future__ import print_function
 import os
 import time
 
-from absl import flags
 import tensorflow as tf  # pylint: disable=g-bad-import-order
-
+from absl import flags
 from official.resnet.keras import keras_benchmark
 from official.resnet.keras import keras_imagenet_main
 

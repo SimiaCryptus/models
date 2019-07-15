@@ -1,8 +1,21 @@
 from __future__ import division
 from __future__ import print_function
-from builtins import zip
-from builtins import range
+
+import threading
+import time
+import traceback
+import warnings
 from builtins import object
+from builtins import range
+from builtins import zip
+
+import numpy as np
+import tensorflow as tf
+from replay import ReplayBuffer
+
+import util
+
+
 # Copyright 2018 The TensorFlow Authors All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,13 +30,6 @@ from builtins import object
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ==============================================================================
-
-import traceback, threading, time, warnings
-import tensorflow as tf
-import numpy as np
-
-import util
-from replay import ReplayBuffer
 
 class Learner(object):
     """

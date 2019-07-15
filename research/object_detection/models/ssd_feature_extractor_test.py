@@ -15,12 +15,11 @@
 
 """Base test class SSDFeatureExtractors."""
 
+import itertools
 from abc import abstractmethod
 
-import itertools
 import numpy as np
 import tensorflow as tf
-
 from google.protobuf import text_format
 from object_detection.builders import hyperparams_builder
 from object_detection.protos import hyperparams_pb2

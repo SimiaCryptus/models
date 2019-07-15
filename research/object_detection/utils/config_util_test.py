@@ -17,9 +17,7 @@
 import os
 
 import tensorflow as tf
-
 from google.protobuf import text_format
-
 from object_detection.protos import eval_pb2
 from object_detection.protos import image_resizer_pb2
 from object_detection.protos import input_reader_pb2

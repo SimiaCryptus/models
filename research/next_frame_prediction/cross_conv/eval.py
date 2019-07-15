@@ -19,12 +19,11 @@ import os
 import sys
 import time
 
-import numpy as np
-from six.moves import xrange
-import tensorflow as tf
-
 import model as cross_conv_model
+import numpy as np
 import reader
+import tensorflow as tf
+from six.moves import xrange
 
 FLAGS = tf.flags.FLAGS
 tf.flags.DEFINE_string('log_root', '/tmp/moving_obj', 'The root dir of output.')

@@ -19,7 +19,6 @@ Implements Actor Critic, PCL (vanilla PCL, Unified PCL, Trust PCL), and TRPO.
 """
 
 import tensorflow as tf
-import numpy as np
 
 
 class Objective(object):

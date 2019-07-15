@@ -20,10 +20,9 @@ from __future__ import print_function
 
 import os
 
-from absl.testing import parameterized
 import numpy as np
 import tensorflow as tf
-
+from absl.testing import parameterized
 from object_detection.tpu_exporters import export_saved_model_tpu_lib
 
 flags = tf.app.flags

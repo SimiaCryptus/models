@@ -17,16 +17,12 @@
 
 import time
 
-import tensorflow as tf
-
 import code_loader
 import config_helper
-
+import tensorflow as tf
 # pylint: disable=unused-import
-from entropy_coder.all_models import all_models
 # pylint: enable=unused-import
 from entropy_coder.model import model_factory
-
 
 FLAGS = tf.app.flags.FLAGS
 

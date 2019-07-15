@@ -23,10 +23,8 @@ import math
 
 import numpy as np
 import tensorflow as tf
-
-from learned_optimizer.optimizer import utils
 from learned_optimizer.optimizer import trainable_optimizer as opt
-
+from learned_optimizer.optimizer import utils
 
 # Default was 1e-3
 tf.app.flags.DEFINE_float("crnn_rnn_readout_scale", 0.5,

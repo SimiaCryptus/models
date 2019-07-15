@@ -21,8 +21,6 @@ from __future__ import print_function
 import os
 
 import tensorflow as tf
-import tensorflow.contrib.slim as slim
-
 from tensorflow.contrib.slim.python.slim.data import dataset
 from tensorflow.contrib.slim.python.slim.data import dataset_data_provider
 from tensorflow.contrib.slim.python.slim.data import tfexample_decoder

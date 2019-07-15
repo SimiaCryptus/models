@@ -24,7 +24,6 @@ from __future__ import print_function
 
 import numpy as np
 import tensorflow as tf
-
 from absl import flags
 from bandits.core.bayesian_nn import BayesianNN
 

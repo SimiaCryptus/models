@@ -14,13 +14,11 @@
 # ==============================================================================
 """Construct the spec for the CONLL2017 Parser baseline."""
 
-from absl import flags
 import tensorflow as tf
-
-from tensorflow.python.platform import gfile
-
+from absl import flags
 from dragnn.protos import spec_pb2
 from dragnn.python import spec_builder
+from tensorflow.python.platform import gfile
 
 FLAGS = flags.FLAGS
 

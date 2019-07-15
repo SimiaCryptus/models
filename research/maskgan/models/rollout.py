@@ -20,15 +20,13 @@ from __future__ import division
 from __future__ import print_function
 
 import collections
-
-from six.moves import xrange
 import tensorflow as tf
-
 from losses import losses
 from model_utils import helper
 from model_utils import model_construction
 from model_utils import model_losses
 from model_utils import model_optimization
+from six.moves import xrange
 
 FLAGS = tf.app.flags.FLAGS
 

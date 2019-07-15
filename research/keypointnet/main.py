@@ -27,14 +27,15 @@ from __future__ import division
 from __future__ import print_function
 
 import math
+import os
+import sys
+
 import matplotlib.pyplot as plt
 import numpy as np
-import os
-from scipy import misc
-import sys
 import tensorflow as tf
 import tensorflow.contrib.slim as slim
 import utils
+from scipy import misc
 
 FLAGS = tf.app.flags.FLAGS
 

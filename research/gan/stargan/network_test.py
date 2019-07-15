@@ -13,9 +13,8 @@
 # limitations under the License.
 # ==============================================================================
 
-import tensorflow as tf
-
 import network
+import tensorflow as tf
 
 
 class NetworkTest(tf.test.TestCase):

@@ -40,11 +40,10 @@ from __future__ import print_function
 
 import time
 
-import tensorflow as tf
-import numpy as np
-
-from model import NamignizerModel
 import data_utils
+import numpy as np
+import tensorflow as tf
+from model import NamignizerModel
 
 
 class SmallConfig(object):

@@ -22,7 +22,6 @@ import os
 
 import numpy as np
 import tensorflow as tf
-
 from delf import aggregation_config_pb2
 from delf import feature_aggregation_extractor
 

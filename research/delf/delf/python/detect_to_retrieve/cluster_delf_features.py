@@ -35,10 +35,9 @@ import time
 
 import numpy as np
 import tensorflow as tf
-
-from tensorflow.python.platform import app
 from delf import feature_io
 from delf.python.detect_to_retrieve import dataset
+from tensorflow.python.platform import app
 
 cmd_args = None
 

@@ -20,10 +20,9 @@ from __future__ import print_function
 
 import json
 
+import tensorflow as tf
 from absl import app
 from absl import flags
-import tensorflow as tf
-
 from official.bert import classifier_data_lib
 from official.bert import squad_lib
 

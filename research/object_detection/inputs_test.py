@@ -20,11 +20,10 @@ from __future__ import print_function
 
 import functools
 import os
-from absl.testing import parameterized
 
 import numpy as np
 import tensorflow as tf
-
+from absl.testing import parameterized
 from object_detection import inputs
 from object_detection.core import preprocessor
 from object_detection.core import standard_fields as fields

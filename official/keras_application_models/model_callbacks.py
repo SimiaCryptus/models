@@ -27,7 +27,6 @@ from __future__ import print_function
 import time
 
 import tensorflow as tf  # pylint: disable=g-bad-import-order
-
 from official.utils.logs import logger
 
 # Metrics to log after each batch and epoch

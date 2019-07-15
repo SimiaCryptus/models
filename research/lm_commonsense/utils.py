@@ -20,6 +20,7 @@ from __future__ import print_function
 
 import json
 import os
+
 import numpy as np
 import tensorflow as tf
 

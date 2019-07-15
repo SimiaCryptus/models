@@ -15,9 +15,9 @@
 
 """Tests for object_detection.utils.object_detection_evaluation."""
 
-from absl.testing import parameterized
 import numpy as np
 import tensorflow as tf
+from absl.testing import parameterized
 from object_detection import eval_util
 from object_detection.core import standard_fields
 from object_detection.utils import object_detection_evaluation

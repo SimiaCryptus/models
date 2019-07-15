@@ -17,12 +17,11 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-import tensorflow as tf  # pylint: disable=g-bad-import-order
-
 import coords
 import go
-from sgf_wrapper import replay_sgf, translate_sgf_move, make_sgf
+import tensorflow as tf  # pylint: disable=g-bad-import-order
 import utils_test
+from sgf_wrapper import replay_sgf, translate_sgf_move, make_sgf
 
 JAPANESE_HANDICAP_SGF = '''(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]RU[Japanese]
 SZ[9]HA[2]RE[Void]KM[5.50]PW[test_white]PB[test_black]AB[gc][cg];W[ee];B[dg])'''

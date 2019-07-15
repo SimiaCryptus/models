@@ -24,8 +24,8 @@ import os
 import sys
 import tarfile
 
-from six.moves import urllib
 import tensorflow as tf
+from six.moves import urllib
 
 DATA_URL = 'https://www.cs.toronto.edu/~kriz/cifar-10-binary.tar.gz'
 

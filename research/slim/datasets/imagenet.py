@@ -33,10 +33,10 @@ from __future__ import division
 from __future__ import print_function
 
 import os
-from six.moves import urllib
-import tensorflow as tf
 
+import tensorflow as tf
 from datasets import dataset_utils
+from six.moves import urllib
 
 slim = tf.contrib.slim
 

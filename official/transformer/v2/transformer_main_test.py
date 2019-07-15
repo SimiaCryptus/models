@@ -22,10 +22,9 @@ import os
 import re
 import unittest
 
+import tensorflow as tf
 from absl import flags
 from absl.testing import flagsaver
-import tensorflow as tf
-
 from official.transformer.v2 import misc
 from official.transformer.v2 import transformer_main as tm
 

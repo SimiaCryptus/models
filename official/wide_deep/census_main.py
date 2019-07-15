@@ -16,10 +16,9 @@
 
 import os
 
+import tensorflow as tf
 from absl import app as absl_app
 from absl import flags
-import tensorflow as tf
-
 from official.utils.flags import core as flags_core
 from official.utils.logs import logger
 from official.wide_deep import census_dataset

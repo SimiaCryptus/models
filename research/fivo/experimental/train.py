@@ -21,13 +21,12 @@ from __future__ import print_function
 
 from collections import defaultdict
 
-import numpy as np
-import tensorflow as tf
-
 import bounds
 import data
 import models
+import numpy as np
 import summary_utils as summ
+import tensorflow as tf
 
 tf.logging.set_verbosity(tf.logging.INFO)
 

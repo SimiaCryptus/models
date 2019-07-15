@@ -23,16 +23,16 @@ import math
 import os
 import time
 
+import tensorflow as tf
 # pylint: disable=g-bad-import-order
 from absl import flags
 from absl.testing import flagsaver
-import tensorflow as tf
-# pylint: enable=g-bad-import-order
-
 from official.bert import modeling
 from official.bert import run_classifier
 from official.bert.benchmark import benchmark_utils
 from official.utils.misc import distribution_utils
+
+# pylint: enable=g-bad-import-order
 
 # pylint: disable=line-too-long
 PRETRAINED_CHECKPOINT_PATH = 'gs://cloud-tpu-checkpoints/bert/tf_20/uncased_L-24_H-1024_A-16/bert_model.ckpt'

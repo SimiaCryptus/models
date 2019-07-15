@@ -20,13 +20,12 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-from datetime import datetime
-import os.path
 import time
+from datetime import datetime
 
 import numpy as np
+import os.path
 import tensorflow as tf
-
 from inception import image_processing
 from inception import inception_model as inception
 from inception.slim import slim

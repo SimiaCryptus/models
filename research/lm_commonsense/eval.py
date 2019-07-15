@@ -20,6 +20,7 @@ from __future__ import print_function
 
 import os
 import pickle as pkl
+
 import numpy as np
 import tensorflow as tf
 import utils

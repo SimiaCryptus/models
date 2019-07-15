@@ -16,15 +16,14 @@
 from __future__ import print_function
 
 import os
-import h5py
-import numpy as np
-from six.moves import xrange
 
+import numpy as np
+import tensorflow as tf
+from six.moves import xrange
 from synthetic_data_utils import generate_data, generate_rnn
 from synthetic_data_utils import get_train_n_valid_inds
 from synthetic_data_utils import nparray_and_transpose
 from synthetic_data_utils import spikify_data, split_list_by_inds
-import tensorflow as tf
 from utils import write_datasets
 
 DATA_DIR = "rnn_synth_data_v1.0"

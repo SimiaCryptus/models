@@ -1,5 +1,18 @@
 from __future__ import print_function
+
+# import moviepy.editor as mpy
+import sys
 from builtins import range
+
+import envwrap
+import numpy as np
+import tensorflow as tf
+import valuerl
+import worldmodel
+from config import config
+
+import util
+
 # Copyright 2018 The TensorFlow Authors All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,16 +27,6 @@ from builtins import range
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ==============================================================================
-
-import numpy as np
-import tensorflow as tf
-# import moviepy.editor as mpy
-import time, os, traceback, multiprocessing, portalocker, sys
-
-import envwrap
-import util
-import valuerl, worldmodel
-from config import config
 
 MODEL_NAME = config["name"]
 LOG_PATH = util.create_directory("output/" + config["env"] + "/" + MODEL_NAME + "/" + config["log_path"]) + "/" + MODEL_NAME

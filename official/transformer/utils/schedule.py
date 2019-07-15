@@ -22,7 +22,6 @@ import math
 
 import tensorflow as tf
 
-
 _TRAIN, _EVAL = tf.estimator.ModeKeys.TRAIN, tf.estimator.ModeKeys.EVAL
 
 

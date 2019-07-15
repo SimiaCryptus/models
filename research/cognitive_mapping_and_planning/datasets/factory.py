@@ -16,17 +16,14 @@
 r"""Wrapper for selecting the navigation environment that we want to train and
 test on.
 """
-import numpy as np
-import os, glob
-import platform
-
+import glob
 import logging
-from tensorflow.python.platform import app
-from tensorflow.python.platform import flags
+import os
 
-import render.swiftshader_renderer as renderer 
+import render.swiftshader_renderer as renderer
 import src.file_utils as fu
 import src.utils as utils
+
 
 def get_dataset(dataset_name):
   if dataset_name == 'sbpd':

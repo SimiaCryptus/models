@@ -19,8 +19,8 @@ r"""Utility functions for Real NVP.
 # pylint: disable=dangerous-default-value
 
 import numpy
-from six.moves import xrange
 import tensorflow as tf
+from six.moves import xrange
 from tensorflow.python.framework import ops
 
 DEFAULT_BN_LAG = .0

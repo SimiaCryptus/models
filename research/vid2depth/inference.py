@@ -37,14 +37,16 @@ from __future__ import division
 from __future__ import print_function
 
 import os
-from absl import app
-from absl import flags
-from absl import logging
+
 import matplotlib.pyplot as plt
 import model
 import numpy as np
 import scipy.misc
 import tensorflow as tf
+from absl import app
+from absl import flags
+from absl import logging
+
 import util
 
 gfile = tf.gfile

@@ -4,7 +4,57 @@
 package object_detection.protos;
 
 public final class StringIntLabelMapOuterClass {
-  private StringIntLabelMapOuterClass() {}
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_object_detection_protos_StringIntLabelMapItem_descriptor;
+  private static final
+  com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_object_detection_protos_StringIntLabelMapItem_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_object_detection_protos_StringIntLabelMap_descriptor;
+  private static final
+  com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_object_detection_protos_StringIntLabelMap_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.FileDescriptor
+      descriptor;
+
+  static {
+    java.lang.String[] descriptorData = {
+        "\n\032string_int_label_map.proto\022\027object_det" +
+            "ection.protos\"G\n\025StringIntLabelMapItem\022\014" +
+            "\n\004name\030\001 \001(\t\022\n\n\002id\030\002 \001(\005\022\024\n\014display_name" +
+            "\030\003 \001(\t\"Q\n\021StringIntLabelMap\022<\n\004item\030\001 \003(" +
+            "\0132..object_detection.protos.StringIntLab" +
+            "elMapItem"
+    };
+    com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
+        new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
+          public com.google.protobuf.ExtensionRegistry assignDescriptors(
+              com.google.protobuf.Descriptors.FileDescriptor root) {
+            descriptor = root;
+            return null;
+          }
+        };
+    com.google.protobuf.Descriptors.FileDescriptor
+        .internalBuildGeneratedFileFrom(descriptorData,
+            new com.google.protobuf.Descriptors.FileDescriptor[]{
+            }, assigner);
+    internal_static_object_detection_protos_StringIntLabelMapItem_descriptor =
+        getDescriptor().getMessageTypes().get(0);
+    internal_static_object_detection_protos_StringIntLabelMapItem_fieldAccessorTable = new
+        com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_object_detection_protos_StringIntLabelMapItem_descriptor,
+        new java.lang.String[]{"Name", "Id", "DisplayName",});
+    internal_static_object_detection_protos_StringIntLabelMap_descriptor =
+        getDescriptor().getMessageTypes().get(1);
+    internal_static_object_detection_protos_StringIntLabelMap_fieldAccessorTable = new
+        com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_object_detection_protos_StringIntLabelMap_descriptor,
+        new java.lang.String[]{"Item",});
+  }
+
+  private StringIntLabelMapOuterClass() {
+  }
+
   public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistryLite registry) {
   }
@@ -14,6 +64,12 @@ public final class StringIntLabelMapOuterClass {
     registerAllExtensions(
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
+
+  public static com.google.protobuf.Descriptors.FileDescriptor
+  getDescriptor() {
+    return descriptor;
+  }
+
   public interface StringIntLabelMapItemOrBuilder extends
       // @@protoc_insertion_point(interface_extends:object_detection.protos.StringIntLabelMapItem)
       com.google.protobuf.MessageOrBuilder {
@@ -27,6 +83,7 @@ public final class StringIntLabelMapOuterClass {
      * <code>optional string name = 1;</code>
      */
     boolean hasName();
+
     /**
      * <pre>
      * String name. The most common practice is to set this to a MID or synsets
@@ -36,6 +93,7 @@ public final class StringIntLabelMapOuterClass {
      * <code>optional string name = 1;</code>
      */
     java.lang.String getName();
+
     /**
      * <pre>
      * String name. The most common practice is to set this to a MID or synsets
@@ -45,7 +103,7 @@ public final class StringIntLabelMapOuterClass {
      * <code>optional string name = 1;</code>
      */
     com.google.protobuf.ByteString
-        getNameBytes();
+    getNameBytes();
 
     /**
      * <pre>
@@ -56,6 +114,7 @@ public final class StringIntLabelMapOuterClass {
      * <code>optional int32 id = 2;</code>
      */
     boolean hasId();
+
     /**
      * <pre>
      * Integer id that maps to the string name above. Label ids should start from
@@ -74,6 +133,7 @@ public final class StringIntLabelMapOuterClass {
      * <code>optional string display_name = 3;</code>
      */
     boolean hasDisplayName();
+
     /**
      * <pre>
      * Human readable string label.
@@ -82,6 +142,7 @@ public final class StringIntLabelMapOuterClass {
      * <code>optional string display_name = 3;</code>
      */
     java.lang.String getDisplayName();
+
     /**
      * <pre>
      * Human readable string label.
@@ -90,31 +151,87 @@ public final class StringIntLabelMapOuterClass {
      * <code>optional string display_name = 3;</code>
      */
     com.google.protobuf.ByteString
-        getDisplayNameBytes();
+    getDisplayNameBytes();
   }
+
+  public interface StringIntLabelMapOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:object_detection.protos.StringIntLabelMap)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>repeated .object_detection.protos.StringIntLabelMapItem item = 1;</code>
+     */
+    java.util.List<object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem>
+    getItemList();
+
+    /**
+     * <code>repeated .object_detection.protos.StringIntLabelMapItem item = 1;</code>
+     */
+    object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem getItem(int index);
+
+    /**
+     * <code>repeated .object_detection.protos.StringIntLabelMapItem item = 1;</code>
+     */
+    int getItemCount();
+
+    /**
+     * <code>repeated .object_detection.protos.StringIntLabelMapItem item = 1;</code>
+     */
+    java.util.List<? extends object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItemOrBuilder>
+    getItemOrBuilderList();
+
+    /**
+     * <code>repeated .object_detection.protos.StringIntLabelMapItem item = 1;</code>
+     */
+    object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItemOrBuilder getItemOrBuilder(
+        int index);
+  }
+
   /**
    * Protobuf type {@code object_detection.protos.StringIntLabelMapItem}
    */
-  public  static final class StringIntLabelMapItem extends
+  public static final class StringIntLabelMapItem extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:object_detection.protos.StringIntLabelMapItem)
       StringIntLabelMapItemOrBuilder {
-  private static final long serialVersionUID = 0L;
+    public static final int NAME_FIELD_NUMBER = 1;
+    public static final int ID_FIELD_NUMBER = 2;
+    public static final int DISPLAY_NAME_FIELD_NUMBER = 3;
+    @java.lang.Deprecated
+    public static final com.google.protobuf.Parser<StringIntLabelMapItem>
+        PARSER = new com.google.protobuf.AbstractParser<StringIntLabelMapItem>() {
+      public StringIntLabelMapItem parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new StringIntLabelMapItem(input, extensionRegistry);
+      }
+    };
+    private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:object_detection.protos.StringIntLabelMapItem)
+    private static final object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem DEFAULT_INSTANCE;
+
+    static {
+      DEFAULT_INSTANCE = new object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem();
+    }
+
+    private int bitField0_;
+    private volatile java.lang.Object name_;
+    private int id_;
+    private volatile java.lang.Object displayName_;
+    private byte memoizedIsInitialized = -1;
+
     // Use StringIntLabelMapItem.newBuilder() to construct.
     private StringIntLabelMapItem(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
+
     private StringIntLabelMapItem() {
       name_ = "";
       id_ = 0;
       displayName_ = "";
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
     private StringIntLabelMapItem(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -170,21 +287,122 @@ public final class StringIntLabelMapOuterClass {
         makeExtensionsImmutable();
       }
     }
+
     public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
+    getDescriptor() {
       return object_detection.protos.StringIntLabelMapOuterClass.internal_static_object_detection_protos_StringIntLabelMapItem_descriptor;
     }
 
+    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+
+    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+
+    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+
+    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+
+    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+
+    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+
+    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+
+    public static Builder newBuilder(object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+
+    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<StringIntLabelMapItem> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
+    internalGetFieldAccessorTable() {
       return object_detection.protos.StringIntLabelMapOuterClass.internal_static_object_detection_protos_StringIntLabelMapItem_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem.class, object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem.Builder.class);
     }
 
-    private int bitField0_;
-    public static final int NAME_FIELD_NUMBER = 1;
-    private volatile java.lang.Object name_;
     /**
      * <pre>
      * String name. The most common practice is to set this to a MID or synsets
@@ -196,6 +414,7 @@ public final class StringIntLabelMapOuterClass {
     public boolean hasName() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
+
     /**
      * <pre>
      * String name. The most common practice is to set this to a MID or synsets
@@ -209,7 +428,7 @@ public final class StringIntLabelMapOuterClass {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
@@ -218,6 +437,7 @@ public final class StringIntLabelMapOuterClass {
         return s;
       }
     }
+
     /**
      * <pre>
      * String name. The most common practice is to set this to a MID or synsets
@@ -227,10 +447,10 @@ public final class StringIntLabelMapOuterClass {
      * <code>optional string name = 1;</code>
      */
     public com.google.protobuf.ByteString
-        getNameBytes() {
+    getNameBytes() {
       java.lang.Object ref = name_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         name_ = b;
@@ -240,8 +460,6 @@ public final class StringIntLabelMapOuterClass {
       }
     }
 
-    public static final int ID_FIELD_NUMBER = 2;
-    private int id_;
     /**
      * <pre>
      * Integer id that maps to the string name above. Label ids should start from
@@ -253,6 +471,7 @@ public final class StringIntLabelMapOuterClass {
     public boolean hasId() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
+
     /**
      * <pre>
      * Integer id that maps to the string name above. Label ids should start from
@@ -265,8 +484,6 @@ public final class StringIntLabelMapOuterClass {
       return id_;
     }
 
-    public static final int DISPLAY_NAME_FIELD_NUMBER = 3;
-    private volatile java.lang.Object displayName_;
     /**
      * <pre>
      * Human readable string label.
@@ -277,6 +494,7 @@ public final class StringIntLabelMapOuterClass {
     public boolean hasDisplayName() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
+
     /**
      * <pre>
      * Human readable string label.
@@ -289,7 +507,7 @@ public final class StringIntLabelMapOuterClass {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
@@ -298,6 +516,7 @@ public final class StringIntLabelMapOuterClass {
         return s;
       }
     }
+
     /**
      * <pre>
      * Human readable string label.
@@ -306,10 +525,10 @@ public final class StringIntLabelMapOuterClass {
      * <code>optional string display_name = 3;</code>
      */
     public com.google.protobuf.ByteString
-        getDisplayNameBytes() {
+    getDisplayNameBytes() {
       java.lang.Object ref = displayName_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         displayName_ = b;
@@ -319,7 +538,6 @@ public final class StringIntLabelMapOuterClass {
       }
     }
 
-    private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -330,7 +548,7 @@ public final class StringIntLabelMapOuterClass {
     }
 
     public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
+        throws java.io.IOException {
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1, name_);
       }
@@ -353,7 +571,7 @@ public final class StringIntLabelMapOuterClass {
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, id_);
+            .computeInt32Size(2, id_);
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, displayName_);
@@ -366,7 +584,7 @@ public final class StringIntLabelMapOuterClass {
     @java.lang.Override
     public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
-       return true;
+        return true;
       }
       if (!(obj instanceof object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem)) {
         return super.equals(obj);
@@ -417,83 +635,10 @@ public final class StringIntLabelMapOuterClass {
       return hash;
     }
 
-    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem parseFrom(
-        java.nio.ByteBuffer data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem parseFrom(
-        java.nio.ByteBuffer data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input);
-    }
-    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
+    public Builder newBuilderForType() {
+      return newBuilder();
     }
 
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder() {
-      return DEFAULT_INSTANCE.toBuilder();
-    }
-    public static Builder newBuilder(object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem prototype) {
-      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-    }
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
@@ -505,6 +650,16 @@ public final class StringIntLabelMapOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<StringIntLabelMapItem> getParserForType() {
+      return PARSER;
+    }
+
+    public object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
     /**
      * Protobuf type {@code object_detection.protos.StringIntLabelMapItem}
      */
@@ -512,17 +667,10 @@ public final class StringIntLabelMapOuterClass {
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:object_detection.protos.StringIntLabelMapItem)
         object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItemOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return object_detection.protos.StringIntLabelMapOuterClass.internal_static_object_detection_protos_StringIntLabelMapItem_descriptor;
-      }
-
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return object_detection.protos.StringIntLabelMapOuterClass.internal_static_object_detection_protos_StringIntLabelMapItem_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem.class, object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem.Builder.class);
-      }
+      private int bitField0_;
+      private java.lang.Object name_ = "";
+      private int id_;
+      private java.lang.Object displayName_ = "";
 
       // Construct using object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem.newBuilder()
       private Builder() {
@@ -534,11 +682,25 @@ public final class StringIntLabelMapOuterClass {
         super(parent);
         maybeForceBuilderInitialization();
       }
+
+      public static final com.google.protobuf.Descriptors.Descriptor
+      getDescriptor() {
+        return object_detection.protos.StringIntLabelMapOuterClass.internal_static_object_detection_protos_StringIntLabelMapItem_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internalGetFieldAccessorTable() {
+        return object_detection.protos.StringIntLabelMapOuterClass.internal_static_object_detection_protos_StringIntLabelMapItem_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem.class, object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem.Builder.class);
+      }
+
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
+            .alwaysUseFieldBuilders) {
         }
       }
+
       public Builder clear() {
         super.clear();
         name_ = "";
@@ -551,7 +713,7 @@ public final class StringIntLabelMapOuterClass {
       }
 
       public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
+      getDescriptorForType() {
         return object_detection.protos.StringIntLabelMapOuterClass.internal_static_object_detection_protos_StringIntLabelMapItem_descriptor;
       }
 
@@ -591,32 +753,38 @@ public final class StringIntLabelMapOuterClass {
       public Builder clone() {
         return (Builder) super.clone();
       }
+
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
           java.lang.Object value) {
         return (Builder) super.setField(field, value);
       }
+
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return (Builder) super.clearField(field);
       }
+
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return (Builder) super.clearOneof(oneof);
       }
+
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
           int index, java.lang.Object value) {
         return (Builder) super.setRepeatedField(field, index, value);
       }
+
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
           java.lang.Object value) {
         return (Builder) super.addRepeatedField(field, value);
       }
+
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem) {
-          return mergeFrom((object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem)other);
+          return mergeFrom((object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem) other);
         } else {
           super.mergeFrom(other);
           return this;
@@ -664,9 +832,7 @@ public final class StringIntLabelMapOuterClass {
         }
         return this;
       }
-      private int bitField0_;
 
-      private java.lang.Object name_ = "";
       /**
        * <pre>
        * String name. The most common practice is to set this to a MID or synsets
@@ -678,6 +844,7 @@ public final class StringIntLabelMapOuterClass {
       public boolean hasName() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
+
       /**
        * <pre>
        * String name. The most common practice is to set this to a MID or synsets
@@ -700,27 +867,7 @@ public final class StringIntLabelMapOuterClass {
           return (java.lang.String) ref;
         }
       }
-      /**
-       * <pre>
-       * String name. The most common practice is to set this to a MID or synsets
-       * id.
-       * </pre>
-       *
-       * <code>optional string name = 1;</code>
-       */
-      public com.google.protobuf.ByteString
-          getNameBytes() {
-        java.lang.Object ref = name_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          name_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
+
       /**
        * <pre>
        * String name. The most common practice is to set this to a MID or synsets
@@ -732,13 +879,55 @@ public final class StringIntLabelMapOuterClass {
       public Builder setName(
           java.lang.String value) {
         if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000001;
+          throw new NullPointerException();
+        }
+        bitField0_ |= 0x00000001;
         name_ = value;
         onChanged();
         return this;
       }
+
+      /**
+       * <pre>
+       * String name. The most common practice is to set this to a MID or synsets
+       * id.
+       * </pre>
+       *
+       * <code>optional string name = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+      getNameBytes() {
+        java.lang.Object ref = name_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b =
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          name_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      /**
+       * <pre>
+       * String name. The most common practice is to set this to a MID or synsets
+       * id.
+       * </pre>
+       *
+       * <code>optional string name = 1;</code>
+       */
+      public Builder setNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        bitField0_ |= 0x00000001;
+        name_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <pre>
        * String name. The most common practice is to set this to a MID or synsets
@@ -753,26 +942,7 @@ public final class StringIntLabelMapOuterClass {
         onChanged();
         return this;
       }
-      /**
-       * <pre>
-       * String name. The most common practice is to set this to a MID or synsets
-       * id.
-       * </pre>
-       *
-       * <code>optional string name = 1;</code>
-       */
-      public Builder setNameBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000001;
-        name_ = value;
-        onChanged();
-        return this;
-      }
 
-      private int id_ ;
       /**
        * <pre>
        * Integer id that maps to the string name above. Label ids should start from
@@ -784,6 +954,7 @@ public final class StringIntLabelMapOuterClass {
       public boolean hasId() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
+
       /**
        * <pre>
        * Integer id that maps to the string name above. Label ids should start from
@@ -795,6 +966,7 @@ public final class StringIntLabelMapOuterClass {
       public int getId() {
         return id_;
       }
+
       /**
        * <pre>
        * Integer id that maps to the string name above. Label ids should start from
@@ -809,6 +981,7 @@ public final class StringIntLabelMapOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <pre>
        * Integer id that maps to the string name above. Label ids should start from
@@ -824,7 +997,6 @@ public final class StringIntLabelMapOuterClass {
         return this;
       }
 
-      private java.lang.Object displayName_ = "";
       /**
        * <pre>
        * Human readable string label.
@@ -835,6 +1007,7 @@ public final class StringIntLabelMapOuterClass {
       public boolean hasDisplayName() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
+
       /**
        * <pre>
        * Human readable string label.
@@ -856,26 +1029,7 @@ public final class StringIntLabelMapOuterClass {
           return (java.lang.String) ref;
         }
       }
-      /**
-       * <pre>
-       * Human readable string label.
-       * </pre>
-       *
-       * <code>optional string display_name = 3;</code>
-       */
-      public com.google.protobuf.ByteString
-          getDisplayNameBytes() {
-        java.lang.Object ref = displayName_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          displayName_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
+
       /**
        * <pre>
        * Human readable string label.
@@ -886,13 +1040,53 @@ public final class StringIntLabelMapOuterClass {
       public Builder setDisplayName(
           java.lang.String value) {
         if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000004;
+          throw new NullPointerException();
+        }
+        bitField0_ |= 0x00000004;
         displayName_ = value;
         onChanged();
         return this;
       }
+
+      /**
+       * <pre>
+       * Human readable string label.
+       * </pre>
+       *
+       * <code>optional string display_name = 3;</code>
+       */
+      public com.google.protobuf.ByteString
+      getDisplayNameBytes() {
+        java.lang.Object ref = displayName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b =
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          displayName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      /**
+       * <pre>
+       * Human readable string label.
+       * </pre>
+       *
+       * <code>optional string display_name = 3;</code>
+       */
+      public Builder setDisplayNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        bitField0_ |= 0x00000004;
+        displayName_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <pre>
        * Human readable string label.
@@ -906,23 +1100,7 @@ public final class StringIntLabelMapOuterClass {
         onChanged();
         return this;
       }
-      /**
-       * <pre>
-       * Human readable string label.
-       * </pre>
-       *
-       * <code>optional string display_name = 3;</code>
-       */
-      public Builder setDisplayNameBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000004;
-        displayName_ = value;
-        onChanged();
-        return this;
-      }
+
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
@@ -937,90 +1115,46 @@ public final class StringIntLabelMapOuterClass {
       // @@protoc_insertion_point(builder_scope:object_detection.protos.StringIntLabelMapItem)
     }
 
-    // @@protoc_insertion_point(class_scope:object_detection.protos.StringIntLabelMapItem)
-    private static final object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem DEFAULT_INSTANCE;
-    static {
-      DEFAULT_INSTANCE = new object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem();
-    }
-
-    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    @java.lang.Deprecated public static final com.google.protobuf.Parser<StringIntLabelMapItem>
-        PARSER = new com.google.protobuf.AbstractParser<StringIntLabelMapItem>() {
-      public StringIntLabelMapItem parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new StringIntLabelMapItem(input, extensionRegistry);
-      }
-    };
-
-    public static com.google.protobuf.Parser<StringIntLabelMapItem> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<StringIntLabelMapItem> getParserForType() {
-      return PARSER;
-    }
-
-    public object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-
   }
 
-  public interface StringIntLabelMapOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:object_detection.protos.StringIntLabelMap)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>repeated .object_detection.protos.StringIntLabelMapItem item = 1;</code>
-     */
-    java.util.List<object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem> 
-        getItemList();
-    /**
-     * <code>repeated .object_detection.protos.StringIntLabelMapItem item = 1;</code>
-     */
-    object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem getItem(int index);
-    /**
-     * <code>repeated .object_detection.protos.StringIntLabelMapItem item = 1;</code>
-     */
-    int getItemCount();
-    /**
-     * <code>repeated .object_detection.protos.StringIntLabelMapItem item = 1;</code>
-     */
-    java.util.List<? extends object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItemOrBuilder> 
-        getItemOrBuilderList();
-    /**
-     * <code>repeated .object_detection.protos.StringIntLabelMapItem item = 1;</code>
-     */
-    object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItemOrBuilder getItemOrBuilder(
-        int index);
-  }
   /**
    * Protobuf type {@code object_detection.protos.StringIntLabelMap}
    */
-  public  static final class StringIntLabelMap extends
+  public static final class StringIntLabelMap extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:object_detection.protos.StringIntLabelMap)
       StringIntLabelMapOrBuilder {
-  private static final long serialVersionUID = 0L;
+    public static final int ITEM_FIELD_NUMBER = 1;
+    @java.lang.Deprecated
+    public static final com.google.protobuf.Parser<StringIntLabelMap>
+        PARSER = new com.google.protobuf.AbstractParser<StringIntLabelMap>() {
+      public StringIntLabelMap parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new StringIntLabelMap(input, extensionRegistry);
+      }
+    };
+    private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:object_detection.protos.StringIntLabelMap)
+    private static final object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap DEFAULT_INSTANCE;
+
+    static {
+      DEFAULT_INSTANCE = new object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap();
+    }
+
+    private java.util.List<object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem> item_;
+    private byte memoizedIsInitialized = -1;
+
     // Use StringIntLabelMap.newBuilder() to construct.
     private StringIntLabelMap(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
+
     private StringIntLabelMap() {
       item_ = java.util.Collections.emptyList();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
     private StringIntLabelMap(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1071,45 +1205,151 @@ public final class StringIntLabelMapOuterClass {
         makeExtensionsImmutable();
       }
     }
+
     public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
+    getDescriptor() {
       return object_detection.protos.StringIntLabelMapOuterClass.internal_static_object_detection_protos_StringIntLabelMap_descriptor;
     }
 
+    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+
+    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+
+    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+
+    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+
+    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+
+    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+
+    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+
+    public static Builder newBuilder(object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+
+    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<StringIntLabelMap> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
+    internalGetFieldAccessorTable() {
       return object_detection.protos.StringIntLabelMapOuterClass.internal_static_object_detection_protos_StringIntLabelMap_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap.class, object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap.Builder.class);
     }
 
-    public static final int ITEM_FIELD_NUMBER = 1;
-    private java.util.List<object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem> item_;
     /**
      * <code>repeated .object_detection.protos.StringIntLabelMapItem item = 1;</code>
      */
     public java.util.List<object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem> getItemList() {
       return item_;
     }
+
     /**
      * <code>repeated .object_detection.protos.StringIntLabelMapItem item = 1;</code>
      */
-    public java.util.List<? extends object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItemOrBuilder> 
-        getItemOrBuilderList() {
+    public java.util.List<? extends object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItemOrBuilder>
+    getItemOrBuilderList() {
       return item_;
     }
+
     /**
      * <code>repeated .object_detection.protos.StringIntLabelMapItem item = 1;</code>
      */
     public int getItemCount() {
       return item_.size();
     }
+
     /**
      * <code>repeated .object_detection.protos.StringIntLabelMapItem item = 1;</code>
      */
     public object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem getItem(int index) {
       return item_.get(index);
     }
+
     /**
      * <code>repeated .object_detection.protos.StringIntLabelMapItem item = 1;</code>
      */
@@ -1118,7 +1358,6 @@ public final class StringIntLabelMapOuterClass {
       return item_.get(index);
     }
 
-    private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -1129,7 +1368,7 @@ public final class StringIntLabelMapOuterClass {
     }
 
     public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
+        throws java.io.IOException {
       for (int i = 0; i < item_.size(); i++) {
         output.writeMessage(1, item_.get(i));
       }
@@ -1143,7 +1382,7 @@ public final class StringIntLabelMapOuterClass {
       size = 0;
       for (int i = 0; i < item_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, item_.get(i));
+            .computeMessageSize(1, item_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1153,7 +1392,7 @@ public final class StringIntLabelMapOuterClass {
     @java.lang.Override
     public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
-       return true;
+        return true;
       }
       if (!(obj instanceof object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap)) {
         return super.equals(obj);
@@ -1183,83 +1422,10 @@ public final class StringIntLabelMapOuterClass {
       return hash;
     }
 
-    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap parseFrom(
-        java.nio.ByteBuffer data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap parseFrom(
-        java.nio.ByteBuffer data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input);
-    }
-    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
+    public Builder newBuilderForType() {
+      return newBuilder();
     }
 
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder() {
-      return DEFAULT_INSTANCE.toBuilder();
-    }
-    public static Builder newBuilder(object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap prototype) {
-      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-    }
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
@@ -1271,6 +1437,16 @@ public final class StringIntLabelMapOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<StringIntLabelMap> getParserForType() {
+      return PARSER;
+    }
+
+    public object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
     /**
      * Protobuf type {@code object_detection.protos.StringIntLabelMap}
      */
@@ -1278,17 +1454,11 @@ public final class StringIntLabelMapOuterClass {
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:object_detection.protos.StringIntLabelMap)
         object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return object_detection.protos.StringIntLabelMapOuterClass.internal_static_object_detection_protos_StringIntLabelMap_descriptor;
-      }
-
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return object_detection.protos.StringIntLabelMapOuterClass.internal_static_object_detection_protos_StringIntLabelMap_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap.class, object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap.Builder.class);
-      }
+      private int bitField0_;
+      private java.util.List<object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem> item_ =
+          java.util.Collections.emptyList();
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem, object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem.Builder, object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItemOrBuilder> itemBuilder_;
 
       // Construct using object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap.newBuilder()
       private Builder() {
@@ -1300,12 +1470,26 @@ public final class StringIntLabelMapOuterClass {
         super(parent);
         maybeForceBuilderInitialization();
       }
+
+      public static final com.google.protobuf.Descriptors.Descriptor
+      getDescriptor() {
+        return object_detection.protos.StringIntLabelMapOuterClass.internal_static_object_detection_protos_StringIntLabelMap_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internalGetFieldAccessorTable() {
+        return object_detection.protos.StringIntLabelMapOuterClass.internal_static_object_detection_protos_StringIntLabelMap_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap.class, object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap.Builder.class);
+      }
+
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
+            .alwaysUseFieldBuilders) {
           getItemFieldBuilder();
         }
       }
+
       public Builder clear() {
         super.clear();
         if (itemBuilder_ == null) {
@@ -1318,7 +1502,7 @@ public final class StringIntLabelMapOuterClass {
       }
 
       public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
+      getDescriptorForType() {
         return object_detection.protos.StringIntLabelMapOuterClass.internal_static_object_detection_protos_StringIntLabelMap_descriptor;
       }
 
@@ -1353,32 +1537,38 @@ public final class StringIntLabelMapOuterClass {
       public Builder clone() {
         return (Builder) super.clone();
       }
+
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
           java.lang.Object value) {
         return (Builder) super.setField(field, value);
       }
+
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return (Builder) super.clearField(field);
       }
+
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return (Builder) super.clearOneof(oneof);
       }
+
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
           int index, java.lang.Object value) {
         return (Builder) super.setRepeatedField(field, index, value);
       }
+
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
           java.lang.Object value) {
         return (Builder) super.addRepeatedField(field, value);
       }
+
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap) {
-          return mergeFrom((object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap)other);
+          return mergeFrom((object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap) other);
         } else {
           super.mergeFrom(other);
           return this;
@@ -1405,9 +1595,9 @@ public final class StringIntLabelMapOuterClass {
               itemBuilder_ = null;
               item_ = other.item_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              itemBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getItemFieldBuilder() : null;
+              itemBuilder_ =
+                  com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                      getItemFieldBuilder() : null;
             } else {
               itemBuilder_.addAllMessages(other.item_);
             }
@@ -1439,19 +1629,13 @@ public final class StringIntLabelMapOuterClass {
         }
         return this;
       }
-      private int bitField0_;
 
-      private java.util.List<object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem> item_ =
-        java.util.Collections.emptyList();
       private void ensureItemIsMutable() {
         if (!((bitField0_ & 0x00000001) == 0x00000001)) {
           item_ = new java.util.ArrayList<object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem>(item_);
           bitField0_ |= 0x00000001;
-         }
+        }
       }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem, object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem.Builder, object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItemOrBuilder> itemBuilder_;
 
       /**
        * <code>repeated .object_detection.protos.StringIntLabelMapItem item = 1;</code>
@@ -1463,6 +1647,7 @@ public final class StringIntLabelMapOuterClass {
           return itemBuilder_.getMessageList();
         }
       }
+
       /**
        * <code>repeated .object_detection.protos.StringIntLabelMapItem item = 1;</code>
        */
@@ -1473,6 +1658,7 @@ public final class StringIntLabelMapOuterClass {
           return itemBuilder_.getCount();
         }
       }
+
       /**
        * <code>repeated .object_detection.protos.StringIntLabelMapItem item = 1;</code>
        */
@@ -1483,6 +1669,7 @@ public final class StringIntLabelMapOuterClass {
           return itemBuilder_.getMessage(index);
         }
       }
+
       /**
        * <code>repeated .object_detection.protos.StringIntLabelMapItem item = 1;</code>
        */
@@ -1500,6 +1687,7 @@ public final class StringIntLabelMapOuterClass {
         }
         return this;
       }
+
       /**
        * <code>repeated .object_detection.protos.StringIntLabelMapItem item = 1;</code>
        */
@@ -1514,6 +1702,7 @@ public final class StringIntLabelMapOuterClass {
         }
         return this;
       }
+
       /**
        * <code>repeated .object_detection.protos.StringIntLabelMapItem item = 1;</code>
        */
@@ -1530,6 +1719,7 @@ public final class StringIntLabelMapOuterClass {
         }
         return this;
       }
+
       /**
        * <code>repeated .object_detection.protos.StringIntLabelMapItem item = 1;</code>
        */
@@ -1547,6 +1737,7 @@ public final class StringIntLabelMapOuterClass {
         }
         return this;
       }
+
       /**
        * <code>repeated .object_detection.protos.StringIntLabelMapItem item = 1;</code>
        */
@@ -1561,6 +1752,7 @@ public final class StringIntLabelMapOuterClass {
         }
         return this;
       }
+
       /**
        * <code>repeated .object_detection.protos.StringIntLabelMapItem item = 1;</code>
        */
@@ -1575,6 +1767,7 @@ public final class StringIntLabelMapOuterClass {
         }
         return this;
       }
+
       /**
        * <code>repeated .object_detection.protos.StringIntLabelMapItem item = 1;</code>
        */
@@ -1590,6 +1783,7 @@ public final class StringIntLabelMapOuterClass {
         }
         return this;
       }
+
       /**
        * <code>repeated .object_detection.protos.StringIntLabelMapItem item = 1;</code>
        */
@@ -1603,6 +1797,7 @@ public final class StringIntLabelMapOuterClass {
         }
         return this;
       }
+
       /**
        * <code>repeated .object_detection.protos.StringIntLabelMapItem item = 1;</code>
        */
@@ -1616,6 +1811,7 @@ public final class StringIntLabelMapOuterClass {
         }
         return this;
       }
+
       /**
        * <code>repeated .object_detection.protos.StringIntLabelMapItem item = 1;</code>
        */
@@ -1623,27 +1819,31 @@ public final class StringIntLabelMapOuterClass {
           int index) {
         return getItemFieldBuilder().getBuilder(index);
       }
+
       /**
        * <code>repeated .object_detection.protos.StringIntLabelMapItem item = 1;</code>
        */
       public object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItemOrBuilder getItemOrBuilder(
           int index) {
         if (itemBuilder_ == null) {
-          return item_.get(index);  } else {
+          return item_.get(index);
+        } else {
           return itemBuilder_.getMessageOrBuilder(index);
         }
       }
+
       /**
        * <code>repeated .object_detection.protos.StringIntLabelMapItem item = 1;</code>
        */
-      public java.util.List<? extends object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItemOrBuilder> 
-           getItemOrBuilderList() {
+      public java.util.List<? extends object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItemOrBuilder>
+      getItemOrBuilderList() {
         if (itemBuilder_ != null) {
           return itemBuilder_.getMessageOrBuilderList();
         } else {
           return java.util.Collections.unmodifiableList(item_);
         }
       }
+
       /**
        * <code>repeated .object_detection.protos.StringIntLabelMapItem item = 1;</code>
        */
@@ -1651,6 +1851,7 @@ public final class StringIntLabelMapOuterClass {
         return getItemFieldBuilder().addBuilder(
             object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem.getDefaultInstance());
       }
+
       /**
        * <code>repeated .object_detection.protos.StringIntLabelMapItem item = 1;</code>
        */
@@ -1659,27 +1860,30 @@ public final class StringIntLabelMapOuterClass {
         return getItemFieldBuilder().addBuilder(
             index, object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem.getDefaultInstance());
       }
+
       /**
        * <code>repeated .object_detection.protos.StringIntLabelMapItem item = 1;</code>
        */
-      public java.util.List<object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem.Builder> 
-           getItemBuilderList() {
+      public java.util.List<object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem.Builder>
+      getItemBuilderList() {
         return getItemFieldBuilder().getBuilderList();
       }
+
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem, object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem.Builder, object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItemOrBuilder> 
-          getItemFieldBuilder() {
+          object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem, object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem.Builder, object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItemOrBuilder>
+      getItemFieldBuilder() {
         if (itemBuilder_ == null) {
           itemBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem, object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem.Builder, object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItemOrBuilder>(
-                  item_,
-                  ((bitField0_ & 0x00000001) == 0x00000001),
-                  getParentForChildren(),
-                  isClean());
+              item_,
+              ((bitField0_ & 0x00000001) == 0x00000001),
+              getParentForChildren(),
+              isClean());
           item_ = null;
         }
         return itemBuilder_;
       }
+
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
@@ -1694,91 +1898,6 @@ public final class StringIntLabelMapOuterClass {
       // @@protoc_insertion_point(builder_scope:object_detection.protos.StringIntLabelMap)
     }
 
-    // @@protoc_insertion_point(class_scope:object_detection.protos.StringIntLabelMap)
-    private static final object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap DEFAULT_INSTANCE;
-    static {
-      DEFAULT_INSTANCE = new object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap();
-    }
-
-    public static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    @java.lang.Deprecated public static final com.google.protobuf.Parser<StringIntLabelMap>
-        PARSER = new com.google.protobuf.AbstractParser<StringIntLabelMap>() {
-      public StringIntLabelMap parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new StringIntLabelMap(input, extensionRegistry);
-      }
-    };
-
-    public static com.google.protobuf.Parser<StringIntLabelMap> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<StringIntLabelMap> getParserForType() {
-      return PARSER;
-    }
-
-    public object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-
-  }
-
-  private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_object_detection_protos_StringIntLabelMapItem_descriptor;
-  private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_object_detection_protos_StringIntLabelMapItem_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_object_detection_protos_StringIntLabelMap_descriptor;
-  private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_object_detection_protos_StringIntLabelMap_fieldAccessorTable;
-
-  public static com.google.protobuf.Descriptors.FileDescriptor
-      getDescriptor() {
-    return descriptor;
-  }
-  private static  com.google.protobuf.Descriptors.FileDescriptor
-      descriptor;
-  static {
-    java.lang.String[] descriptorData = {
-      "\n\032string_int_label_map.proto\022\027object_det" +
-      "ection.protos\"G\n\025StringIntLabelMapItem\022\014" +
-      "\n\004name\030\001 \001(\t\022\n\n\002id\030\002 \001(\005\022\024\n\014display_name" +
-      "\030\003 \001(\t\"Q\n\021StringIntLabelMap\022<\n\004item\030\001 \003(" +
-      "\0132..object_detection.protos.StringIntLab" +
-      "elMapItem"
-    };
-    com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
-        new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
-          public com.google.protobuf.ExtensionRegistry assignDescriptors(
-              com.google.protobuf.Descriptors.FileDescriptor root) {
-            descriptor = root;
-            return null;
-          }
-        };
-    com.google.protobuf.Descriptors.FileDescriptor
-      .internalBuildGeneratedFileFrom(descriptorData,
-        new com.google.protobuf.Descriptors.FileDescriptor[] {
-        }, assigner);
-    internal_static_object_detection_protos_StringIntLabelMapItem_descriptor =
-      getDescriptor().getMessageTypes().get(0);
-    internal_static_object_detection_protos_StringIntLabelMapItem_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_object_detection_protos_StringIntLabelMapItem_descriptor,
-        new java.lang.String[] { "Name", "Id", "DisplayName", });
-    internal_static_object_detection_protos_StringIntLabelMap_descriptor =
-      getDescriptor().getMessageTypes().get(1);
-    internal_static_object_detection_protos_StringIntLabelMap_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_object_detection_protos_StringIntLabelMap_descriptor,
-        new java.lang.String[] { "Item", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

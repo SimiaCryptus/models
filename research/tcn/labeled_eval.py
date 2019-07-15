@@ -18,15 +18,17 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-from collections import defaultdict
 import os
-import numpy as np
-from sklearn.metrics.pairwise import pairwise_distances
-from six.moves import xrange
+from collections import defaultdict
+
 import data_providers
-from estimators.get_estimator import get_estimator
-from utils import util
+import numpy as np
 import tensorflow as tf
+from estimators.get_estimator import get_estimator
+from six.moves import xrange
+from sklearn.metrics.pairwise import pairwise_distances
+from utils import util
+
 tf.logging.set_verbosity(tf.logging.INFO)
 
 

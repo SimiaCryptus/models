@@ -20,7 +20,6 @@ from __future__ import print_function
 
 import numpy as np
 import tensorflow as tf
-
 from nets import inception
 
 slim = tf.contrib.slim

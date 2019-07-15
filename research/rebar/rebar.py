@@ -18,13 +18,13 @@ from __future__ import division
 from __future__ import print_function
 
 import functools
-import tensorflow as tf
-import numpy as np
-from scipy.misc import logsumexp
 
+import numpy as np
+import tensorflow as tf
 import tensorflow.contrib.slim as slim
-from tensorflow.python.ops import init_ops
 import utils as U
+from scipy.misc import logsumexp
+from tensorflow.python.ops import init_ops
 
 try:
   xrange          # Python 2

@@ -20,8 +20,8 @@ from __future__ import division
 from __future__ import print_function
 
 import tensorflow as tf
-from six.moves import xrange
 from models import attention_utils
+from six.moves import xrange
 
 FLAGS = tf.app.flags.FLAGS
 

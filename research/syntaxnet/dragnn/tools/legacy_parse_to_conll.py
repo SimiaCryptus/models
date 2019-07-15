@@ -19,21 +19,19 @@ r"""Runs a both a segmentation and parsing model on a CoNLL dataset.
 import re
 import time
 
-from absl import flags
 import tensorflow as tf
-
-from google.protobuf import text_format
-from tensorflow.python.client import timeline
-from tensorflow.python.platform import gfile
-
+from absl import flags
 from dragnn.protos import spec_pb2
 from dragnn.python import evaluation
 from dragnn.python import graph_builder
 from dragnn.python import sentence_io
 from dragnn.python import spec_builder
+from google.protobuf import text_format
 from syntaxnet import sentence_pb2
 from syntaxnet.ops import gen_parser_ops
 from syntaxnet.util import check
+from tensorflow.python.client import timeline
+from tensorflow.python.platform import gfile
 
 FLAGS = flags.FLAGS
 

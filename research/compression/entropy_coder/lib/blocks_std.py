@@ -15,11 +15,11 @@
 
 """Basic blocks for building tensorflow models."""
 
+import block_base
+import block_util
 import numpy as np
 import tensorflow as tf
 
-import block_base
-import block_util
 
 # pylint does not recognize block_base.BlockBase.__call__().
 # pylint: disable=not-callable

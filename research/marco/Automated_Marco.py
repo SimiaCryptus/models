@@ -14,11 +14,11 @@
 # limitations under the License.
 # ==============================================================================
 
-import tensorflow as tf 
-import csv 
-import os 
 import argparse
+import csv
+import os
 
+import tensorflow as tf
 
 """ 
 usage: 

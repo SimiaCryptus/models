@@ -31,11 +31,8 @@ from __future__ import division
 from __future__ import print_function
 
 import collections
-
-
 import numpy as np
 import tensorflow as tf
-
 from skip_thoughts import skip_thoughts_encoder
 
 

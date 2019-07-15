@@ -17,17 +17,15 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
+import math
 from functools import partial
 
-import math
-
-# Dependency imports
-
 import tensorflow as tf
-
 from domain_adaptation.datasets import dataset_factory
 from domain_adaptation.pixel_domain_adaptation import pixelda_preprocess
 from domain_adaptation.pixel_domain_adaptation import pixelda_task_towers
+
+# Dependency imports
 
 flags = tf.app.flags
 FLAGS = flags.FLAGS

@@ -19,11 +19,11 @@ See model.py for more details and usage.
 
 import six
 import tensorflow as tf
-from tensorflow.python.ops import math_ops
 from deeplab import common
 from deeplab import model
 from deeplab.datasets import data_generator
 from deeplab.utils import train_utils
+from tensorflow.python.ops import math_ops
 
 flags = tf.app.flags
 FLAGS = flags.FLAGS

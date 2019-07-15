@@ -24,8 +24,8 @@ from __future__ import division
 from __future__ import print_function
 
 import functools
-import tensorflow as tf
 
+import tensorflow as tf
 from fivo import nested_utils as nested
 from fivo import smc
 

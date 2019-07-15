@@ -19,7 +19,6 @@ from __future__ import division
 from __future__ import print_function
 
 import tensorflow as tf
-
 from delf import datum_io
 from delf import delf_v1
 from object_detection.core import box_list

@@ -20,10 +20,9 @@ from __future__ import print_function
 
 import os
 
+import evaluation as panopticapi_eval
 from absl import flags
 from absl.testing import absltest
-import evaluation as panopticapi_eval
-
 from deeplab.evaluation import eval_coco_format
 
 _TEST_DIR = 'deeplab/evaluation/testdata'

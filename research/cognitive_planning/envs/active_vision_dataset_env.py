@@ -22,26 +22,26 @@
    in each environment. For more details, refer:
    http://cs.unc.edu/~ammirato/active_vision_dataset_website/.
 """
-import tensorflow as tf
-import collections
 import copy
 import json
 import os
-from StringIO import StringIO
 import time
+
+import collections
+import cv2
+import gin
 import gym
-from gym.envs.registration import register
 import gym.spaces
+import label_map_util
 import networkx as nx
 import numpy as np
 import scipy.io as sio
-from absl import logging
-import gin
-import cv2
-import label_map_util
+import tensorflow as tf
 import visualization_utils as vis_util
+from StringIO import StringIO
+from absl import logging
 from envs import task_env
-
+from gym.envs.registration import register
 
 register(
     id='active-vision-env-v0',

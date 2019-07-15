@@ -20,7 +20,6 @@ from __future__ import division
 from __future__ import print_function
 
 import tensorflow as tf
-
 from deeplab.core import dense_prediction_cell
 
 

@@ -16,12 +16,8 @@
 """Tests for LSTM tensorflow blocks."""
 from __future__ import division
 
-import numpy as np
-import tensorflow as tf
-
-import block_base
-import blocks_std
 import blocks_lstm
+import tensorflow as tf
 
 
 class BlocksLSTMTest(tf.test.TestCase):

@@ -19,20 +19,20 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
+import os
 from abc import ABCMeta
 from abc import abstractmethod
-import os
-import numpy as np
-import numpy as np
+
 import data_providers
+import numpy as np
 import preprocessing
-from utils import util
 import tensorflow as tf
 import tensorflow.contrib.slim as slim
 from tensorflow.contrib.tpu.python.tpu import tpu_config
 from tensorflow.contrib.tpu.python.tpu import tpu_estimator
 from tensorflow.contrib.tpu.python.tpu import tpu_optimizer
 from tensorflow.python.training import session_run_hook
+from utils import util
 
 tf.app.flags.DEFINE_integer(
     'tf_random_seed', 0, 'Random seed.')

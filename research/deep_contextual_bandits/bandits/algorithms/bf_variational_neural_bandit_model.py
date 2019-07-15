@@ -24,10 +24,10 @@ from __future__ import print_function
 
 import numpy as np
 import tensorflow as tf
-# import tensorflow_probability as tfp
-
 from absl import flags
 from bandits.core.bayesian_nn import BayesianNN
+
+# import tensorflow_probability as tfp
 
 
 FLAGS = flags.FLAGS

@@ -13,14 +13,13 @@
 # limitations under the License.
 # ==============================================================================
 """Common utility functions for evaluation."""
-import collections
 import os
 import re
 import time
 
+import collections
 import numpy as np
 import tensorflow as tf
-
 from object_detection.core import box_list
 from object_detection.core import box_list_ops
 from object_detection.core import keypoint_ops

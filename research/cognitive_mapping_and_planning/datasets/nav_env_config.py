@@ -17,9 +17,9 @@
 
 Base config for stanford navigation enviornment.
 """
-import numpy as np
-import src.utils as utils
 import datasets.nav_env as nav_env
+import src.utils as utils
+
 
 def nav_env_base_config():
   """Returns the base config for stanford navigation environment.

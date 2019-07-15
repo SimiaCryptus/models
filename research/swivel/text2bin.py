@@ -40,11 +40,10 @@ have the same number of columns (i.e., be the same dimension).
 
 """
 
-from itertools import izip
-from getopt import GetoptError, getopt
-import os
 import struct
 import sys
+from getopt import GetoptError, getopt
+from itertools import izip
 
 try:
   opts, args = getopt(

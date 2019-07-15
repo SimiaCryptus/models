@@ -17,13 +17,11 @@
 
 import numpy as np
 import tensorflow as tf
-
+from dragnn.protos import spec_pb2
+from dragnn.python import network_units
 from google.protobuf import text_format
 from tensorflow.python.framework import test_util
 from tensorflow.python.platform import googletest
-
-from dragnn.protos import spec_pb2
-from dragnn.python import network_units
 
 
 class NetworkUnitsConverterTest(test_util.TensorFlowTestCase):

@@ -19,14 +19,16 @@ from __future__ import print_function
 
 import math
 import random
-# pylint: disable=g-bad-import-order
-import numpy as np
-from six.moves import xrange  # pylint: disable=redefined-builtin
-import soundfile
-import tensorflow as tf
-# pylint: enable=g-bad-import-order
 
 import data.featurizer as featurizer  # pylint: disable=g-bad-import-order
+# pylint: disable=g-bad-import-order
+import numpy as np
+import soundfile
+import tensorflow as tf
+from six.moves import xrange  # pylint: disable=redefined-builtin
+
+
+# pylint: enable=g-bad-import-order
 
 
 class AudioConfig(object):

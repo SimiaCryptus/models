@@ -18,12 +18,10 @@ from __future__ import print_function
 
 import os
 
-
-from absl import flags
+import data_provider
 import numpy as np
 import tensorflow as tf
-
-import data_provider
+from absl import flags
 
 
 class DataProviderTest(tf.test.TestCase):

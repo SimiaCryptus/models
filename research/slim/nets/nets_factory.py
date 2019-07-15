@@ -17,10 +17,10 @@
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
+
 import functools
 
 import tensorflow as tf
-
 from nets import alexnet
 from nets import cifarnet
 from nets import i3d
@@ -35,7 +35,6 @@ from nets import vgg
 from nets.mobilenet import mobilenet_v2
 from nets.nasnet import nasnet
 from nets.nasnet import pnasnet
-
 
 slim = tf.contrib.slim
 

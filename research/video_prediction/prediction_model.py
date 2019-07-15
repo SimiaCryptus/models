@@ -17,10 +17,9 @@
 
 import numpy as np
 import tensorflow as tf
-
 import tensorflow.contrib.slim as slim
-from tensorflow.contrib.layers.python import layers as tf_layers
 from lstm_ops import basic_conv_lstm_cell
+from tensorflow.contrib.layers.python import layers as tf_layers
 
 # Amount to use when lower bounding tensors
 RELU_SHIFT = 1e-12

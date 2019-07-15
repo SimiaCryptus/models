@@ -30,10 +30,10 @@ import uuid
 
 from absl import app as absl_app
 from absl import flags
-
 from official.benchmark import benchmark_uploader
 from official.utils.flags import core as flags_core
 from official.utils.logs import logger
+
 
 def main(_):
   if not flags.FLAGS.benchmark_log_dir:

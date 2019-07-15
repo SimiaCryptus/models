@@ -15,11 +15,10 @@
 
 """Tests for object_detection.meta_architectures.faster_rcnn_meta_arch."""
 import functools
-from absl.testing import parameterized
 
 import numpy as np
 import tensorflow as tf
-
+from absl.testing import parameterized
 from google.protobuf import text_format
 from object_detection.anchor_generators import grid_anchor_generator
 from object_detection.builders import box_predictor_builder

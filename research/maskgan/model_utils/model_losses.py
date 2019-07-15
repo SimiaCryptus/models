@@ -21,11 +21,10 @@ from __future__ import print_function
 
 # Dependency imports
 import numpy as np
-from six.moves import xrange
 import tensorflow as tf
-
 # Useful for REINFORCE baseline.
 from losses import losses
+from six.moves import xrange
 
 FLAGS = tf.app.flags.FLAGS
 

@@ -50,19 +50,20 @@ python train_supervised_active_vision.py
   --logtostderr
 """
 
-import collections
 import os
 import time
+
+import collections
+import embedders
+import gin
+import networkx as nx
+import numpy as np
+import policies
+import tasks
+import tensorflow as tf
 from absl import app
 from absl import flags
 from absl import logging
-import networkx as nx
-import numpy as np
-import tensorflow as tf
-import gin
-import embedders
-import policies
-import tasks
 from envs import active_vision_dataset_env
 from envs import task_env
 

@@ -17,9 +17,9 @@
 from __future__ import absolute_import
 from __future__ import division
 
-import tensorflow as tf
 from contextlib import contextmanager
 
+import tensorflow as tf
 from tensorflow.python.ops import variable_scope
 
 # sanity global state to ensure non recursive.

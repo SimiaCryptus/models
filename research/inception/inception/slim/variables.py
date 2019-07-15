@@ -83,7 +83,6 @@ from __future__ import division
 from __future__ import print_function
 
 import tensorflow as tf
-
 from inception.slim import scopes
 
 # Collection containing all the variables created using slim.variables

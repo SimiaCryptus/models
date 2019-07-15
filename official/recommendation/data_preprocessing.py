@@ -29,12 +29,12 @@ import numpy as np
 import pandas as pd
 import tensorflow as tf
 from absl import logging
-# pylint: enable=wrong-import-order
-
 from official.datasets import movielens
 from official.recommendation import constants as rconst
 from official.recommendation import data_pipeline
 from official.utils.logs import mlperf_helper
+
+# pylint: enable=wrong-import-order
 
 
 DATASET_TO_NUM_USERS_AND_ITEMS = {

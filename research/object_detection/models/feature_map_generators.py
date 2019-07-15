@@ -23,10 +23,12 @@ Object detection feature extractors usually are built by stacking two components
 Feature map generators build on the base feature extractors and produce a list
 of final feature maps.
 """
-import collections
 import functools
+
+import collections
 import tensorflow as tf
 from object_detection.utils import ops
+
 slim = tf.contrib.slim
 
 # Activation bound used for TPU v1. Activations will be clipped to

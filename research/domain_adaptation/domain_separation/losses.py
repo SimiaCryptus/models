@@ -25,12 +25,11 @@ The following domain adaptation loss functions are defined:
 - Correlation Loss on a batch.
 """
 from functools import partial
-import tensorflow as tf
 
-import grl_op_grads  # pylint: disable=unused-import
-import grl_op_shapes  # pylint: disable=unused-import
 import grl_ops
+import tensorflow as tf
 import utils
+
 slim = tf.contrib.slim
 
 

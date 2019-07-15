@@ -25,14 +25,20 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
+import os
 import time
+
+import numpy as np
+import tensorflow as tf
 from absl import app
 from absl import flags
-import numpy as np
-import os
-import tensorflow as tf
-
 from bandits.algorithms.bootstrapped_bnn_sampling import BootstrappedBNNSampling
+from bandits.algorithms.fixed_policy_sampling import FixedPolicySampling
+from bandits.algorithms.linear_full_posterior_sampling import LinearFullPosteriorSampling
+from bandits.algorithms.neural_linear_sampling import NeuralLinearPosteriorSampling
+from bandits.algorithms.parameter_noise_sampling import ParameterNoiseSampling
+from bandits.algorithms.posterior_bnn_sampling import PosteriorBNNSampling
+from bandits.algorithms.uniform_sampling import UniformSampling
 from bandits.core.contextual_bandit import run_contextual_bandit
 from bandits.data.data_sampler import sample_adult_data
 from bandits.data.data_sampler import sample_census_data
@@ -41,15 +47,9 @@ from bandits.data.data_sampler import sample_jester_data
 from bandits.data.data_sampler import sample_mushroom_data
 from bandits.data.data_sampler import sample_statlog_data
 from bandits.data.data_sampler import sample_stock_data
-from bandits.algorithms.fixed_policy_sampling import FixedPolicySampling
-from bandits.algorithms.linear_full_posterior_sampling import LinearFullPosteriorSampling
-from bandits.algorithms.neural_linear_sampling import NeuralLinearPosteriorSampling
-from bandits.algorithms.parameter_noise_sampling import ParameterNoiseSampling
-from bandits.algorithms.posterior_bnn_sampling import PosteriorBNNSampling
 from bandits.data.synthetic_data_sampler import sample_linear_data
 from bandits.data.synthetic_data_sampler import sample_sparse_linear_data
 from bandits.data.synthetic_data_sampler import sample_wheel_bandit_data
-from bandits.algorithms.uniform_sampling import UniformSampling
 
 # Set up your file routes to the data files.
 base_route = os.getcwd()

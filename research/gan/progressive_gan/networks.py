@@ -26,9 +26,8 @@ from __future__ import print_function
 
 import math
 
-import tensorflow as tf
-
 import layers
+import tensorflow as tf
 
 
 class ResolutionSchedule(object):

@@ -17,11 +17,12 @@
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
+
 import os
+
 import numpy as np
 import six
 import tensorflow as tf
-from tensorflow.core.framework import types_pb2
 from object_detection import export_tflite_ssd_graph_lib
 from object_detection import exporter
 from object_detection.builders import graph_rewriter_builder
@@ -30,7 +31,7 @@ from object_detection.core import model
 from object_detection.protos import graph_rewriter_pb2
 from object_detection.protos import pipeline_pb2
 from object_detection.protos import post_processing_pb2
-
+from tensorflow.core.framework import types_pb2
 
 if six.PY2:
   import mock  # pylint: disable=g-import-not-at-top

@@ -16,18 +16,13 @@
 """Compute the additional compression ratio after entropy coding."""
 
 import io
-import os
-
-import numpy as np
-import tensorflow as tf
 
 import config_helper
-
+import numpy as np
+import tensorflow as tf
 # pylint: disable=unused-import
-from entropy_coder.all_models import all_models
 # pylint: enable=unused-import
 from entropy_coder.model import model_factory
-
 
 # Checkpoint used to restore the model parameters.
 tf.app.flags.DEFINE_string('checkpoint', None,

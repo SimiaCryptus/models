@@ -26,16 +26,15 @@ from __future__ import print_function
 import os
 import time
 
-from absl import flags
-import numpy as np
-import tensorflow as tf
-from google.protobuf import text_format
-
 import build_model
 import configuration
 import input as seq2species_input
-from protos import seq2label_pb2
+import numpy as np
 import seq2label_utils
+import tensorflow as tf
+from absl import flags
+from google.protobuf import text_format
+from protos import seq2label_pb2
 
 # Define non-tunable parameters.
 flags.DEFINE_integer('num_filters', 1, 'Number of filters for conv model')

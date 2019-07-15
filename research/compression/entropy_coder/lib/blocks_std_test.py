@@ -19,13 +19,11 @@ from __future__ import division
 from __future__ import unicode_literals
 
 import math
-import os
-
-import numpy as np
-from six.moves import xrange
-import tensorflow as tf
 
 import blocks_std
+import numpy as np
+import tensorflow as tf
+from six.moves import xrange
 
 
 def _NumpyConv2D(x, f, strides, padding, rate=1):

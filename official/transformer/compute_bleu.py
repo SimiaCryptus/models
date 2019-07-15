@@ -28,14 +28,15 @@ import unicodedata
 
 # pylint: disable=g-bad-import-order
 import six
+import tensorflow as tf
 from absl import app as absl_app
 from absl import flags
-import tensorflow as tf
-# pylint: enable=g-bad-import-order
-
 from official.transformer.utils import metrics
 from official.transformer.utils import tokenizer
 from official.utils.flags import core as flags_core
+
+
+# pylint: enable=g-bad-import-order
 
 
 class UnicodeRegex(object):

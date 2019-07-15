@@ -19,14 +19,14 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-import urllib
 import gzip
 import os
-import config
 import struct
-import numpy as np
+import urllib
+
 import cPickle as pickle
-import datasets
+import config
+import numpy as np
 
 MNIST_URL = 'see README'
 MNIST_BINARIZED_URL = 'see README'

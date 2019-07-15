@@ -18,16 +18,15 @@ from __future__ import division
 from __future__ import print_function
 
 import json
+import os
 import random
 import sys
-import os
 
-import numpy as np
-import tensorflow as tf
-
-import rebar
 import datasets
 import logger as L
+import numpy as np
+import rebar
+import tensorflow as tf
 
 try:
   xrange          # Python 2

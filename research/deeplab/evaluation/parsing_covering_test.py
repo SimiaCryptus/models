@@ -18,11 +18,8 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-
-
-from absl.testing import absltest
 import numpy as np
-
+from absl.testing import absltest
 from deeplab.evaluation import parsing_covering
 from deeplab.evaluation import test_utils
 

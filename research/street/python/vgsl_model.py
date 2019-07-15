@@ -23,12 +23,11 @@ import decoder
 import errorcounter as ec
 import shapes
 import tensorflow as tf
+import tensorflow.contrib.slim as slim
 import vgsl_input
 import vgslspecs
-import tensorflow.contrib.slim as slim
 from tensorflow.core.framework import summary_pb2
 from tensorflow.python.platform import tf_logging as logging
-
 
 # Parameters for rate decay.
 # We divide the learning_rate_halflife by DECAY_STEPS_FACTOR and use DECAY_RATE

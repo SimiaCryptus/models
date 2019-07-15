@@ -13,10 +13,11 @@
 # limitations under the License.
 # ==============================================================================
 
-import tensorflow as tf
 import numpy as np
+import tensorflow as tf
 from learner import Learner
 from worldmodel import DeterministicWorldModel
+
 
 class WorldmodelLearner(Learner):
     """

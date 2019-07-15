@@ -18,12 +18,10 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-
-
+import eval  # pylint:disable=redefined-builtin
 from absl import flags
 from absl.testing import absltest
 from absl.testing import parameterized
-import eval  # pylint:disable=redefined-builtin
 
 
 class EvalTest(parameterized.TestCase):

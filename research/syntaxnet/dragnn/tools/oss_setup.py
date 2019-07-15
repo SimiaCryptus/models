@@ -20,7 +20,6 @@ from __future__ import print_function
 
 import os
 
-import setuptools
 import setuptools.dist
 
 include_tensorflow = os.path.isdir('tensorflow')

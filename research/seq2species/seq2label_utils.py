@@ -22,7 +22,6 @@ from __future__ import division
 from __future__ import print_function
 
 import numpy as np
-
 from protos import seq2label_pb2
 
 

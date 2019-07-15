@@ -20,9 +20,8 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-import tensorflow as tf
-
 import fivo.nested_utils as nested
+import tensorflow as tf
 
 
 def ess_criterion(log_weights, unused_t):

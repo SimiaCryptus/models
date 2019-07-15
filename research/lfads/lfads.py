@@ -61,19 +61,18 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
+import os
 
 import numpy as np
-import os
 import tensorflow as tf
+from distributions import KLCost_GaussianGaussian, Poisson
+from distributions import KLCost_GaussianGaussianProcessSampled
+from distributions import LearnableAutoRegressive1Prior
 from distributions import LearnableDiagonalGaussian, DiagonalGaussianFromInput
 from distributions import diag_gaussian_log_likelihood
-from distributions import KLCost_GaussianGaussian, Poisson
-from distributions import LearnableAutoRegressive1Prior
-from distributions import KLCost_GaussianGaussianProcessSampled
-
+from plot_lfads import plot_lfads
 from utils import init_linear, linear, list_t_bxn_to_tensor_bxtxn, write_data
 from utils import log_sum_exp, flatten
-from plot_lfads import plot_lfads
 
 
 class GRU(object):

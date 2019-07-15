@@ -23,10 +23,9 @@ import re
 import tempfile
 import time
 
-import tensorflow as tf  # pylint: disable=g-bad-import-order
-
 import go
 import numpy as np
+import tensorflow as tf  # pylint: disable=g-bad-import-order
 import utils
 
 tf.logging.set_verbosity(tf.logging.ERROR)

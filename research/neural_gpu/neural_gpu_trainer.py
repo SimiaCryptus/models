@@ -23,14 +23,13 @@ import sys
 import threading
 import time
 
-import numpy as np
-from six.moves import xrange
-import tensorflow as tf
-
-import program_utils
 import data_utils as data
 import neural_gpu as ngpu
+import numpy as np
+import program_utils
+import tensorflow as tf
 import wmt_utils as wmt
+from six.moves import xrange
 
 tf.app.flags.DEFINE_float("lr", 0.1, "Learning rate.")
 tf.app.flags.DEFINE_float("init_weight", 0.8, "Initial weights deviation.")

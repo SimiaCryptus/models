@@ -29,16 +29,16 @@ from __future__ import print_function
 import os
 import time
 
+import tensorflow as tf
 # pylint: disable=g-bad-import-order
 from absl import app as absl_app
 from absl import flags
-import tensorflow as tf
-# pylint: enable=g-bad-import-order
-
 from official.mnist import dataset as mnist_dataset
 from official.mnist import mnist
 from official.utils.flags import core as flags_core
 from official.utils.misc import model_helpers
+
+# pylint: enable=g-bad-import-order
 
 
 tfe = tf.contrib.eager

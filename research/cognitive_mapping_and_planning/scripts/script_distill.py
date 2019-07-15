@@ -26,28 +26,24 @@ blaze build --define=ION_GFX_OGLES20=1 -c opt --copt=-mavx --config=cuda_clang \
   --config_name 'v0+train' --gfs_user robot-intelligence-gpu
 
 """
-import sys, os, numpy as np
-import copy
-import argparse, pprint
-import time
 import cProfile
+import logging
+import numpy as np
+import os
+import time
 
-
+import datasets.nav_env as nav_env
+import src.file_utils as fu
+import src.utils as utils
 import tensorflow as tf
+import tfcode.distillation as distill
+from cfgs import config_distill
 from tensorflow.contrib import slim
 from tensorflow.python.framework import ops
-from tensorflow.contrib.framework.python.ops import variables 
-
-import logging
-from tensorflow.python.platform import gfile
 from tensorflow.python.platform import app
 from tensorflow.python.platform import flags
-from cfgs import config_distill
+from tensorflow.python.platform import gfile
 from tfcode import tf_utils
-import src.utils as utils
-import src.file_utils as fu
-import tfcode.distillation as distill 
-import datasets.nav_env as nav_env
 
 FLAGS = flags.FLAGS
 

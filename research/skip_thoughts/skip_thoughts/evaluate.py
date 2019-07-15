@@ -33,15 +33,13 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-
+import tensorflow as tf
+from skip_thoughts import configuration
+from skip_thoughts import encoder_manager
 from skipthoughts import eval_classification
 from skipthoughts import eval_msrp
 from skipthoughts import eval_sick
 from skipthoughts import eval_trec
-import tensorflow as tf
-
-from skip_thoughts import configuration
-from skip_thoughts import encoder_manager
 
 FLAGS = tf.flags.FLAGS
 

@@ -14,9 +14,8 @@
 # ==============================================================================
 """Tests for resources."""
 
-from tensorflow.python.platform import googletest
-
 from syntaxnet.util import resources
+from tensorflow.python.platform import googletest
 
 
 class ResourcesTest(googletest.TestCase):

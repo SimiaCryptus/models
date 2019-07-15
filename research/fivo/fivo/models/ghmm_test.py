@@ -21,7 +21,6 @@ from __future__ import print_function
 
 import numpy as np
 import tensorflow as tf
-
 from fivo.models.ghmm import GaussianHMM
 from fivo.models.ghmm import TrainableGaussianHMM
 

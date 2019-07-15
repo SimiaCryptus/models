@@ -19,12 +19,11 @@
 import math
 
 import numpy as np
-from six.moves import xrange
 import tensorflow as tf
-
 from domain_adaptation.datasets import dataset_factory
 from domain_adaptation.domain_separation import losses
 from domain_adaptation.domain_separation import models
+from six.moves import xrange
 
 slim = tf.contrib.slim
 

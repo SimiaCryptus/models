@@ -32,24 +32,21 @@ helper functions.
     each building and multiplexes between them as needed.
 """
 
-import numpy as np
+import logging
 import os
 import re
-import matplotlib.pyplot as plt
 
+import cv2
 import graph_tool as gt
-import graph_tool.topology
-
-from tensorflow.python.platform import gfile
-import logging
+import matplotlib.pyplot as plt
+import numpy as np
+import render.swiftshader_renderer as sru
+import src.depth_utils as du
 import src.file_utils as fu
-import src.utils as utils
 import src.graph_utils as gu
 import src.map_utils as mu
-import src.depth_utils as du
-import render.swiftshader_renderer as sru
+import src.utils as utils
 from render.swiftshader_renderer import SwiftshaderRenderer
-import cv2
 
 label_nodes_with_class           = gu.label_nodes_with_class
 label_nodes_with_class_geodesic  = gu.label_nodes_with_class_geodesic

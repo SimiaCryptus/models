@@ -31,10 +31,9 @@ import matplotlib.patches as patches
 import matplotlib.pyplot as plt
 import numpy as np
 import tensorflow as tf
-
-from tensorflow.python.platform import app
 from delf import box_io
 from delf import detector
+from tensorflow.python.platform import app
 
 cmd_args = None
 

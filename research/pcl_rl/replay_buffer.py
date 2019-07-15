@@ -19,6 +19,7 @@ Implements replay buffer in Python.
 """
 
 import random
+
 import numpy as np
 from six.moves import xrange
 

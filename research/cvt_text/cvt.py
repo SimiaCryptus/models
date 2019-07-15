@@ -20,12 +20,10 @@ from __future__ import division
 from __future__ import print_function
 
 import tensorflow as tf
-
 from base import configure
 from base import utils
 from training import trainer
 from training import training_progress
-
 
 FLAGS = tf.app.flags.FLAGS
 tf.app.flags.DEFINE_string('mode', 'train', '"train" or "eval')

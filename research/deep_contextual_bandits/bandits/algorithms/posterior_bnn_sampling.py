@@ -20,14 +20,13 @@ from __future__ import division
 from __future__ import print_function
 
 import numpy as np
-
-from bandits.core.bandit_algorithm import BanditAlgorithm
 from bandits.algorithms.bb_alpha_divergence_model import BBAlphaDivergence
 from bandits.algorithms.bf_variational_neural_bandit_model import BfVariationalNeuralBanditModel
-from bandits.core.contextual_dataset import ContextualDataset
 from bandits.algorithms.multitask_gp import MultitaskGP
 from bandits.algorithms.neural_bandit_model import NeuralBanditModel
 from bandits.algorithms.variational_neural_bandit_model import VariationalNeuralBanditModel
+from bandits.core.bandit_algorithm import BanditAlgorithm
+from bandits.core.contextual_dataset import ContextualDataset
 
 
 class PosteriorBNNSampling(BanditAlgorithm):

@@ -27,8 +27,8 @@ Classification losses:
  * BootstrappedSigmoidClassificationLoss
 """
 import abc
-import tensorflow as tf
 
+import tensorflow as tf
 from object_detection.core import box_list
 from object_detection.core import box_list_ops
 from object_detection.utils import ops

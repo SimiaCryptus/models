@@ -20,9 +20,8 @@ from __future__ import print_function
 
 # Dependency imports
 import tensorflow as tf
-
-from slim.datasets import mnist
 from domain_adaptation.datasets import mnist_m
+from slim.datasets import mnist
 
 slim = tf.contrib.slim
 

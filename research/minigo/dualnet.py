@@ -23,12 +23,11 @@ from __future__ import print_function
 
 import os
 
-import tensorflow as tf  # pylint: disable=g-bad-import-order
-
 import dualnet_model
 import features
 import preprocessing
 import symmetries
+import tensorflow as tf  # pylint: disable=g-bad-import-order
 
 
 class DualNetRunner(object):

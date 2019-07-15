@@ -28,7 +28,6 @@ import collections
 import numpy as np
 import sonnet as snt
 import tensorflow as tf
-
 from learning_unsupervised_learning import utils
 from learning_unsupervised_learning import variable_replace
 

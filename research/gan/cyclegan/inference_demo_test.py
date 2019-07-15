@@ -5,14 +5,13 @@ from __future__ import division
 from __future__ import print_function
 
 import os
-from absl import logging
-import numpy as np
+
 import PIL
-
-import tensorflow as tf
-
 import inference_demo
+import numpy as np
+import tensorflow as tf
 import train
+from absl import logging
 
 FLAGS = tf.flags.FLAGS
 mock = tf.test.mock

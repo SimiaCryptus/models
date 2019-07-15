@@ -1,5 +1,9 @@
 from __future__ import print_function
+
+import argparse
+import util
 from builtins import str
+
 # Copyright 2018 The TensorFlow Authors All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,8 +18,6 @@ from builtins import str
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ==============================================================================
-
-import argparse, json, util, traceback
 
 parser = argparse.ArgumentParser()
 parser.add_argument("config")

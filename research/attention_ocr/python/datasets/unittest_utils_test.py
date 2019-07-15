@@ -15,12 +15,10 @@
 
 """Tests for unittest_utils."""
 import StringIO
-
 import numpy as np
-from PIL import Image as PILImage
 import tensorflow as tf
-
 import unittest_utils
+from PIL import Image as PILImage
 
 
 class UnittestUtilsTest(tf.test.TestCase):

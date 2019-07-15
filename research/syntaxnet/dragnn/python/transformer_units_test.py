@@ -18,11 +18,9 @@
 
 import numpy as np
 import tensorflow as tf
-
+from dragnn.python import transformer_units
 from tensorflow.python.framework import test_util
 from tensorflow.python.platform import googletest
-
-from dragnn.python import transformer_units
 
 
 class TransformerTest(test_util.TensorFlowTestCase):

@@ -27,7 +27,6 @@ from __future__ import print_function
 
 import numpy as np
 import tensorflow as tf
-
 from learned_optimizer.problems import problem_spec as prob_spec
 
 tf.app.flags.DEFINE_float("l2_reg_scale", 1e-3,

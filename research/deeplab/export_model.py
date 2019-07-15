@@ -15,12 +15,12 @@
 """Exports trained model to TensorFlow frozen graph."""
 
 import os
-import tensorflow as tf
 
-from tensorflow.python.tools import freeze_graph
+import tensorflow as tf
 from deeplab import common
 from deeplab import input_preprocess
 from deeplab import model
+from tensorflow.python.tools import freeze_graph
 
 slim = tf.contrib.slim
 flags = tf.app.flags

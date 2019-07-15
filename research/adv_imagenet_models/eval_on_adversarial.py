@@ -20,12 +20,11 @@ from __future__ import division
 from __future__ import print_function
 
 import math
+
 import imagenet
 import inception_resnet_v2
-
 import tensorflow as tf
 from tensorflow.contrib.slim.nets import inception
-
 
 slim = tf.contrib.slim
 

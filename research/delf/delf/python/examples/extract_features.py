@@ -28,12 +28,11 @@ import sys
 import time
 
 import tensorflow as tf
-
+from delf import delf_config_pb2
+from delf import extractor
+from delf import feature_io
 from google.protobuf import text_format
 from tensorflow.python.platform import app
-from delf import delf_config_pb2
-from delf import feature_io
-from delf import extractor
 
 cmd_args = None
 

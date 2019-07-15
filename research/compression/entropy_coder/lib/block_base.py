@@ -15,10 +15,10 @@
 
 """Base class for Tensorflow building blocks."""
 
-import collections
 import contextlib
 import itertools
 
+import collections
 import tensorflow as tf
 
 _block_stacks = collections.defaultdict(lambda: [])

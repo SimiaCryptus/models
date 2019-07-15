@@ -24,7 +24,6 @@ from __future__ import print_function
 
 import numpy as np
 import tensorflow as tf
-
 from delf import aggregation_config_pb2
 
 _NORM_SQUARED_TOLERANCE = 1e-12

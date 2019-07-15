@@ -16,18 +16,12 @@
 
 """ Offline data generation for the KITTI dataset."""
 
+import glob
 import os
-from absl import app
-from absl import flags
-from absl import logging
-import numpy as np
+
 import cv2
-import os, glob
-
-import alignment
-from alignment import compute_overlap
-from alignment import align
-
+import numpy as np
+from absl import app
 
 SEQ_LENGTH = 3
 WIDTH = 416

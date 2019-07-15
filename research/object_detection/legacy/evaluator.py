@@ -19,8 +19,8 @@ DetectionModel.
 """
 
 import logging
-import tensorflow as tf
 
+import tensorflow as tf
 from object_detection import eval_util
 from object_detection.core import prefetcher
 from object_detection.core import standard_fields as fields

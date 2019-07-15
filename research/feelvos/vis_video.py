@@ -19,17 +19,15 @@
 import math
 import os
 import time
+
 import numpy as np
-
 import tensorflow as tf
-
 from feelvos import common
 from feelvos import model
 from feelvos.datasets import video_dataset
 from feelvos.utils import embedding_utils
 from feelvos.utils import eval_utils
 from feelvos.utils import video_input_generator
-
 
 slim = tf.contrib.slim
 flags = tf.app.flags

@@ -15,13 +15,10 @@
 
 """Tests for feature map generators."""
 
-from absl.testing import parameterized
-
 import numpy as np
 import tensorflow as tf
-
+from absl.testing import parameterized
 from google.protobuf import text_format
-
 from object_detection.builders import hyperparams_builder
 from object_detection.models import feature_map_generators
 from object_detection.protos import hyperparams_pb2

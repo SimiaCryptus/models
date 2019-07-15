@@ -19,7 +19,6 @@ from __future__ import print_function
 
 import tensorflow as tf  # pylint: disable=g-bad-import-order
 import tensorflow.contrib.eager as tfe  # pylint: disable=g-bad-import-order
-
 from official.mnist import mnist
 from official.mnist import mnist_eager
 from official.utils.misc import keras_utils

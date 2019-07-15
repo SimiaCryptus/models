@@ -12,9 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # =============================================================================
+import numpy as np
 import tensorflow as tf
 from spatial_transformer import transformer
-import numpy as np
 from tf_utils import weight_variable, bias_variable, dense_to_one_hot
 
 # %% Load data

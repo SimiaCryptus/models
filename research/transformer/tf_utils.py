@@ -13,9 +13,10 @@
 # limitations under the License.
 # ==============================================================================
 
+import numpy as np
 # %% Borrowed utils from here: https://github.com/pkmital/tensorflow_tutorials/
 import tensorflow as tf
-import numpy as np
+
 
 def conv2d(x, n_filters,
            k_h=5, k_w=5,

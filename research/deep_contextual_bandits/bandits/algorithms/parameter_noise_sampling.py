@@ -20,14 +20,12 @@ from __future__ import division
 from __future__ import print_function
 
 import numpy as np
-from scipy.special import logsumexp
 import tensorflow as tf
-
 from absl import flags
-
+from bandits.algorithms.neural_bandit_model import NeuralBanditModel
 from bandits.core.bandit_algorithm import BanditAlgorithm
 from bandits.core.contextual_dataset import ContextualDataset
-from bandits.algorithms.neural_bandit_model import NeuralBanditModel
+from scipy.special import logsumexp
 
 FLAGS = flags.FLAGS
 

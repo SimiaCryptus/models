@@ -18,11 +18,9 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-
-from absl.testing import absltest
 import numpy as np
 import six
-
+from absl.testing import absltest
 from deeplab.evaluation import panoptic_quality
 from deeplab.evaluation import test_utils
 

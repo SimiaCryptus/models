@@ -21,11 +21,10 @@ import collections
 import numpy as np
 import sonnet as snt
 import tensorflow as tf
-
-from learning_unsupervised_learning.architectures import common
 from learning_unsupervised_learning import optimizers
-from learning_unsupervised_learning import utils
 from learning_unsupervised_learning import summary_utils
+from learning_unsupervised_learning import utils
+from learning_unsupervised_learning.architectures import common
 
 OptState = collections.namedtuple('OptState',
                                   ['variables', 'opt_state', 'index'])

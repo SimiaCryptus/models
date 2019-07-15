@@ -24,8 +24,8 @@ tensor_dim: gets a shape dimension as a constant integer if known otherwise a
   runtime usable tensor value.
 tensor_shape: returns the full shape of a tensor as the tensor_dim.
 """
-from six.moves import xrange
 import tensorflow as tf
+from six.moves import xrange
 
 
 def rotate_dimensions(num_dims, src_dim, dest_dim):

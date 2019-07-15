@@ -29,14 +29,11 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-import os.path
-
-
 import nltk
 import nltk.tokenize
 import numpy as np
+import os.path
 import tensorflow as tf
-
 from skip_thoughts import skip_thoughts_model
 from skip_thoughts.data import special_words
 

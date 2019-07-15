@@ -19,7 +19,6 @@ from __future__ import division
 from __future__ import print_function
 
 import tensorflow as tf
-
 from dragnn.protos import export_pb2
 from dragnn.protos import spec_pb2
 from dragnn.python import network_units

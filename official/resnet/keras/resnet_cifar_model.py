@@ -24,10 +24,10 @@ from __future__ import division
 from __future__ import print_function
 
 import functools
+
 import tensorflow as tf
 from tensorflow.python.keras import backend
 from tensorflow.python.keras import layers
-
 
 BATCH_NORM_DECAY = 0.997
 BATCH_NORM_EPSILON = 1e-5

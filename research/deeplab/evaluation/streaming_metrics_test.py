@@ -19,13 +19,9 @@ from __future__ import division
 from __future__ import print_function
 
 import collections
-
-
-
 import numpy as np
 import six
 import tensorflow as tf
-
 from deeplab.evaluation import streaming_metrics
 from deeplab.evaluation import test_utils
 

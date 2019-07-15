@@ -18,26 +18,13 @@
 Sets up the mapper and the planner.
 """
 
-import sys, os, numpy as np
-import matplotlib.pyplot as plt
-import copy
-import argparse, pprint
-import time
-
-
+import numpy as np
 import tensorflow as tf
-
-from tensorflow.contrib import slim
-from tensorflow.contrib.slim import arg_scope
-
-import logging
-from tensorflow.python.platform import app
-from tensorflow.python.platform import flags
-from src import utils 
-import src.file_utils as fu
-import tfcode.nav_utils as nu 
-import tfcode.cmp_utils as cu 
 import tfcode.cmp_summary as cmp_s
+import tfcode.cmp_utils as cu
+import tfcode.nav_utils as nu
+from src import utils
+from tensorflow.contrib import slim
 from tfcode import tf_utils
 
 value_iteration_network = cu.value_iteration_network

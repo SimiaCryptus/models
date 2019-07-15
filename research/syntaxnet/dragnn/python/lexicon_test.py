@@ -15,19 +15,15 @@
 """Tests for SyntaxNet lexicon."""
 
 import os
+
 import os.path
-
 import tensorflow as tf
-
-from google.protobuf import text_format
-
 from dragnn.python import lexicon
-
-# Imported for FLAGS.tf_master, which is used in the lexicon module.
-
-from syntaxnet import parser_trainer
+from google.protobuf import text_format
 from syntaxnet import task_spec_pb2
 from syntaxnet import test_flags
+
+# Imported for FLAGS.tf_master, which is used in the lexicon module.
 
 
 _EXPECTED_CONTEXT = r"""

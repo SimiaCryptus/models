@@ -23,7 +23,6 @@ import tempfile
 import numpy as np
 import pandas as pd
 import tensorflow as tf
-
 # pylint: disable=g-bad-import-order
 from official.boosted_trees import train_higgs
 from official.utils.testing import integration

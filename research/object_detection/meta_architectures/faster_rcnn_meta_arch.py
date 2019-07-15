@@ -94,8 +94,8 @@ configured in the meta architecture:
 """
 import abc
 import functools
-import tensorflow as tf
 
+import tensorflow as tf
 from object_detection.anchor_generators import grid_anchor_generator
 from object_detection.builders import box_predictor_builder
 from object_detection.builders import hyperparams_builder

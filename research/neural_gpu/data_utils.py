@@ -21,10 +21,9 @@ import sys
 import time
 
 import numpy as np
-from six.moves import xrange
-import tensorflow as tf
-
 import program_utils
+import tensorflow as tf
+from six.moves import xrange
 
 FLAGS = tf.app.flags.FLAGS
 

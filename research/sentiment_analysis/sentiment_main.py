@@ -11,10 +11,9 @@ from __future__ import print_function
 
 import argparse
 
-import tensorflow as tf
-
-from data import dataset
 import sentiment_model
+import tensorflow as tf
+from data import dataset
 
 _DROPOUT_RATE = 0.95
 

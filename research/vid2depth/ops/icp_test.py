@@ -22,12 +22,12 @@ from __future__ import print_function
 import math
 import os
 
-from absl import flags
-from absl import logging
-from icp_op import icp
 import icp_util
 import numpy as np
 import tensorflow as tf
+from absl import flags
+from absl import logging
+from icp_op import icp
 
 FLAGS = flags.FLAGS
 

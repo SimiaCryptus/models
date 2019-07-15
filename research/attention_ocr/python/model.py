@@ -23,16 +23,16 @@ Usage example:
   # endpoints.predicted_chars is a tensor with predicted character codes.
   total_loss = model.create_loss(data, endpoints)
 """
-import sys
-import collections
 import logging
-import tensorflow as tf
-from tensorflow.contrib import slim
-from tensorflow.contrib.slim.nets import inception
+import sys
 
+import collections
 import metrics
 import sequence_layers
+import tensorflow as tf
 import utils
+from tensorflow.contrib import slim
+from tensorflow.contrib.slim.nets import inception
 
 OutputEndpoints = collections.namedtuple('OutputEndpoints', [
   'chars_logit', 'chars_log_prob', 'predicted_chars', 'predicted_scores',

@@ -20,14 +20,13 @@ from __future__ import print_function
 
 import os
 
-from absl import flags
 import numpy as np
 import scipy.misc
-from six.moves import xrange  # pylint: disable=redefined-builtin
 import tensorflow as tf
-
+from absl import flags
 from mnist import data_provider
 from mnist import networks
+from six.moves import xrange  # pylint: disable=redefined-builtin
 
 tfgan = tf.contrib.gan
 

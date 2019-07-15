@@ -19,8 +19,8 @@ Implements network which takes in input and produces actions
 and log probabilities given a sampling distribution parameterization.
 """
 
-import tensorflow as tf
 import numpy as np
+import tensorflow as tf
 
 
 class Policy(object):

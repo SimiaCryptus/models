@@ -33,7 +33,6 @@ import math
 
 # Dependency imports
 import numpy as np
-
 import tensorflow as tf
 
 slim = tf.contrib.slim

@@ -22,7 +22,6 @@ from __future__ import division
 from __future__ import print_function
 
 import tensorflow as tf
-
 from inception import inception_distributed_train
 from inception.imagenet_data import ImagenetData
 

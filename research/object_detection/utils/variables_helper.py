@@ -19,7 +19,6 @@ import logging
 import re
 
 import tensorflow as tf
-
 from tensorflow.python.ops import variables as tf_variables
 
 slim = tf.contrib.slim

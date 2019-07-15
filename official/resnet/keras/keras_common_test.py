@@ -16,10 +16,9 @@
 from __future__ import absolute_import
 from __future__ import print_function
 
-from mock import Mock
 import numpy as np
 import tensorflow as tf  # pylint: disable=g-bad-import-order
-
+from mock import Mock
 from official.resnet.keras import keras_common
 
 tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)

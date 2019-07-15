@@ -20,8 +20,6 @@ from __future__ import division
 from __future__ import print_function
 
 import tensorflow as tf
-
-import dragnn.python.load_mst_cc_impl
 from dragnn.mst.ops import gen_mst_ops
 from dragnn.python import digraph_ops
 from syntaxnet.util import check

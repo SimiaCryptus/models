@@ -18,10 +18,8 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-from absl.testing import parameterized
-
 import tensorflow as tf
-
+from absl.testing import parameterized
 from object_detection import eval_util
 from object_detection.core import standard_fields as fields
 from object_detection.protos import eval_pb2

@@ -15,13 +15,13 @@
 
 """Adapted from rllab maze_env.py."""
 
+import math
 import os
 import tempfile
 import xml.etree.ElementTree as ET
-import math
-import numpy as np
-import gym
 
+import gym
+import numpy as np
 from environments import maze_env_utils
 
 # Directory that contains mujoco xml files.

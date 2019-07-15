@@ -18,16 +18,14 @@ from __future__ import print_function
 import os
 import time
 
+import tensorflow as tf
 # pylint: disable=g-bad-import-order
 from absl import flags
-import tensorflow as tf
-
 from official.resnet import imagenet_main
-from official.resnet.ctl import ctl_imagenet_main
 from official.resnet.ctl import ctl_common
-from official.utils.testing.perfzero_benchmark import PerfZeroBenchmark
+from official.resnet.ctl import ctl_imagenet_main
 from official.utils.flags import core as flags_core
-
+from official.utils.testing.perfzero_benchmark import PerfZeroBenchmark
 
 MIN_TOP_1_ACCURACY = 0.76
 MAX_TOP_1_ACCURACY = 0.77

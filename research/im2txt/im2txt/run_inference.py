@@ -21,9 +21,7 @@ from __future__ import print_function
 import math
 import os
 
-
 import tensorflow as tf
-
 from im2txt import configuration
 from im2txt import inference_wrapper
 from im2txt.inference_utils import caption_generator

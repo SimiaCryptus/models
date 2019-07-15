@@ -20,13 +20,13 @@ DetectionModel.
 """
 
 import functools
-import tensorflow as tf
 
+import tensorflow as tf
+from deployment import model_deploy
 from object_detection.builders import optimizer_builder
 from object_detection.core import standard_fields as fields
 from object_detection.utils import ops as util_ops
 from object_detection.utils import variables_helper
-from deployment import model_deploy
 
 slim = tf.contrib.slim
 

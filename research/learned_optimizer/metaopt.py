@@ -15,19 +15,18 @@
 
 """Helper utilities for training and testing optimizers."""
 
-from collections import defaultdict
 import random
 import sys
 import time
+from collections import defaultdict
 
 import numpy as np
-from six.moves import xrange
 import tensorflow as tf
-
 from learned_optimizer.optimizer import trainable_optimizer
 from learned_optimizer.optimizer import utils
 from learned_optimizer.problems import datasets
 from learned_optimizer.problems import problem_generator
+from six.moves import xrange
 
 tf.app.flags.DEFINE_integer("ps_tasks", 0,
                             """Number of tasks in the ps job.

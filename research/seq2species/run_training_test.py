@@ -22,17 +22,16 @@ from __future__ import print_function
 import os
 import time
 
+import numpy as np
+import run_training
+import tensorflow as tf
+import test_utils
 from absl import flags
 from absl.testing import absltest
 from absl.testing import flagsaver
 from absl.testing import parameterized
-import numpy as np
-import tensorflow as tf
 from google.protobuf import text_format
-
-import run_training
 from protos import seq2label_pb2
-import test_utils
 
 FLAGS = flags.FLAGS
 

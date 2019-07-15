@@ -17,12 +17,10 @@
 
 import numpy as np
 import tensorflow as tf
-
+from dragnn.python import composite_optimizer
 from tensorflow.python.framework import test_util
 from tensorflow.python.platform import googletest
 from tensorflow.python.platform import tf_logging as logging
-
-from dragnn.python import composite_optimizer
 
 
 class MockAdamOptimizer(tf.train.AdamOptimizer):

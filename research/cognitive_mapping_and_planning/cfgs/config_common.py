@@ -13,12 +13,13 @@
 # limitations under the License.
 # ==============================================================================
 
-import os
-import numpy as np
 import logging
-import src.utils as utils
+
 import datasets.nav_env_config as nec
+import numpy as np
+import src.utils as utils
 from datasets import factory
+
 
 def adjust_args_for_mode(args, mode):
   if mode == 'train':

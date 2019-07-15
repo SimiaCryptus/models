@@ -19,7 +19,6 @@ from __future__ import division
 from __future__ import print_function
 
 import tensorflow as tf
-
 from dragnn.python import mst_ops
 from dragnn.python import network_units
 from syntaxnet.util import check

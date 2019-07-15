@@ -15,18 +15,17 @@
 
 """Batch reader to seq2seq attention model, with bucketing support."""
 
+import time
 from collections import namedtuple
 from random import shuffle
 from threading import Thread
-import time
-
-import numpy as np
-import six
-from six.moves import queue as Queue
-from six.moves import xrange
-import tensorflow as tf
 
 import data
+import numpy as np
+import six
+import tensorflow as tf
+from six.moves import queue as Queue
+from six.moves import xrange
 
 ModelInput = namedtuple('ModelInput',
                         'enc_input dec_input target enc_len dec_len '

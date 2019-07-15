@@ -15,16 +15,16 @@
 
 """Various function to manipulate graphs for computing distances.
 """
-import skimage.morphology
-import numpy as np
-import networkx as nx
 import itertools
 import logging
-from datasets.nav_env import get_path_ids
+
 import graph_tool as gt
-import graph_tool.topology
-import graph_tool.generation
+import networkx as nx
+import numpy as np
+import skimage.morphology
 import src.utils as utils
+from datasets.nav_env import get_path_ids
+
 
 # Compute shortest path from all nodes to or from all source nodes
 def get_distance_node_list(gtG, source_nodes, direction, weights=None):

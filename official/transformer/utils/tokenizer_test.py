@@ -14,11 +14,10 @@
 # ==============================================================================
 """Test Subtokenizer and string helper methods."""
 
-import collections
 import tempfile
 
+import collections
 import tensorflow as tf  # pylint: disable=g-bad-import-order
-
 from official.transformer.utils import tokenizer
 
 

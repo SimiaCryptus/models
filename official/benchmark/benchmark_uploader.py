@@ -26,10 +26,9 @@ from __future__ import print_function
 
 import json
 
+import tensorflow as tf
 from google.cloud import bigquery
 from google.cloud import exceptions
-
-import tensorflow as tf
 
 
 class BigQueryUploader(object):

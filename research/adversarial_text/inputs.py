@@ -20,11 +20,11 @@ from __future__ import print_function
 
 import os
 
-# Dependency imports
-
 import tensorflow as tf
-
 from data import data_utils
+
+
+# Dependency imports
 
 
 class VatxtInput(object):

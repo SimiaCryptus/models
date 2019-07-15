@@ -19,10 +19,9 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
+import models
 import numpy as np
 import tensorflow as tf
-
-import models
 
 
 def make_long_chain_dataset(

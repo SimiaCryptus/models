@@ -18,14 +18,13 @@ from abc import ABCMeta
 from abc import abstractmethod
 
 import tensorflow as tf
-from tensorflow.python.platform import tf_logging as logging
-
 from dragnn.protos import export_pb2
 from dragnn.python import dragnn_ops
 from dragnn.python import network_units
 from dragnn.python import runtime_support
 from syntaxnet.util import check
 from syntaxnet.util import registry
+from tensorflow.python.platform import tf_logging as logging
 
 
 def build_softmax_cross_entropy_loss(logits, gold):

@@ -31,11 +31,10 @@ import sys
 import tarfile
 
 import numpy as np
+import tensorflow as tf
+from datasets import dataset_utils
 from six.moves import cPickle
 from six.moves import urllib
-import tensorflow as tf
-
-from datasets import dataset_utils
 
 # The URL where the CIFAR data can be downloaded.
 _DATA_URL = 'https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz'

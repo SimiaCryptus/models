@@ -14,18 +14,16 @@
 # ==============================================================================
 """Tests for the DRAGNN spec builder."""
 
-import os.path
 import tempfile
 
+import os.path
 import tensorflow as tf
-
-from google.protobuf import text_format
 from dragnn.protos import spec_pb2
 from dragnn.python import spec_builder
+from google.protobuf import text_format
+
 
 # Imported for FLAGS.tf_master, which is used in the lexicon module.
-
-from syntaxnet import parser_trainer
 
 
 class SpecBuilderTest(tf.test.TestCase):

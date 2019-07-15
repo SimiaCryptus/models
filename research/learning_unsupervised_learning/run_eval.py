@@ -21,18 +21,15 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-from absl import flags
-from absl import app
-
-from learning_unsupervised_learning import evaluation
-from learning_unsupervised_learning import datasets
-from learning_unsupervised_learning import architectures
-from learning_unsupervised_learning import summary_utils
-from learning_unsupervised_learning import meta_objective
-
-import tensorflow as tf
 import sonnet as snt
-
+import tensorflow as tf
+from absl import app
+from absl import flags
+from learning_unsupervised_learning import architectures
+from learning_unsupervised_learning import datasets
+from learning_unsupervised_learning import evaluation
+from learning_unsupervised_learning import meta_objective
+from learning_unsupervised_learning import summary_utils
 from tensorflow.contrib.framework.python.framework import checkpoint_utils
 
 flags.DEFINE_string("checkpoint_dir", None, "Dir to load pretrained update rule from")

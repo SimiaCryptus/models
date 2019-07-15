@@ -17,20 +17,19 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-from collections import defaultdict
 import operator
 import os
 import random
 import shutil
 import string
 import tempfile
-
-# Dependency imports
-
-import tensorflow as tf
+from collections import defaultdict
 
 import graphs
+import tensorflow as tf
 from data import data_utils
+
+# Dependency imports
 
 flags = tf.app.flags
 FLAGS = flags.FLAGS

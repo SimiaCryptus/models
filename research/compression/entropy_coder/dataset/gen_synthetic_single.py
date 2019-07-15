@@ -16,13 +16,10 @@
 """Generate a single synthetic sample."""
 
 import io
-import os
 
 import numpy as np
-import tensorflow as tf
-
 import synthetic_model
-
+import tensorflow as tf
 
 FLAGS = tf.app.flags.FLAGS
 

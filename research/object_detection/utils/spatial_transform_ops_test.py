@@ -20,7 +20,6 @@ from __future__ import print_function
 
 import numpy as np
 import tensorflow as tf
-
 from object_detection.utils import spatial_transform_ops as spatial_ops
 from object_detection.utils import test_case
 

@@ -19,9 +19,9 @@ import os
 import random
 import re
 
-# Dependency imports
-
 import tensorflow as tf
+
+# Dependency imports
 
 EOS_TOKEN = '</s>'
 

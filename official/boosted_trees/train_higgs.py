@@ -47,14 +47,14 @@ import os
 
 # pylint: disable=g-bad-import-order
 import numpy as np
+import tensorflow as tf
 from absl import app as absl_app
 from absl import flags
-import tensorflow as tf
-# pylint: enable=g-bad-import-order
-
 from official.utils.flags import core as flags_core
 from official.utils.flags._conventions import help_wrap
 from official.utils.logs import logger
+
+# pylint: enable=g-bad-import-order
 
 NPZ_FILE = "HIGGS.csv.gz.npz"  # numpy compressed file containing "data" array
 

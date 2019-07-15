@@ -16,9 +16,9 @@
 """Tests for lstm_ssd_interleaved_mobilenet_v2_feature_extractor."""
 
 import itertools
+
 import numpy as np
 import tensorflow as tf
-
 from lstm_object_detection.models import lstm_ssd_interleaved_mobilenet_v2_feature_extractor
 from object_detection.models import ssd_feature_extractor_test
 

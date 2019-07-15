@@ -20,11 +20,11 @@ from __future__ import division
 from __future__ import print_function
 
 import os
-from absl import flags
-import tensorflow as tf
-from google.protobuf import text_format
 
 import input as seq2species_input
+import tensorflow as tf
+from absl import flags
+from google.protobuf import text_format
 from protos import seq2label_pb2
 
 FLAGS = flags.FLAGS

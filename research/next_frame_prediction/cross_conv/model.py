@@ -20,8 +20,8 @@ https://arxiv.org/pdf/1607.02586v1.pdf
 import math
 import sys
 
-from six.moves import xrange
 import tensorflow as tf
+from six.moves import xrange
 
 slim = tf.contrib.slim
 

@@ -19,10 +19,9 @@ from __future__ import division
 from __future__ import print_function
 
 import abc
+
 import collections
-
 import tensorflow as tf
-
 from morph_net.framework import op_regularizer_manager
 
 

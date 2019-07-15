@@ -18,12 +18,12 @@
 Allows for using batches of possibly identitically seeded environments.
 """
 
-import gym
-import numpy as np
 import random
 
-from six.moves import xrange
 import env_spec
+import gym
+import numpy as np
+from six.moves import xrange
 
 
 def get_env(env_str):

@@ -35,15 +35,13 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-
 import hashlib
 import io
 import os
 
-import numpy as np
 import PIL.Image as pil
+import numpy as np
 import tensorflow as tf
-
 from object_detection.utils import dataset_util
 from object_detection.utils import label_map_util
 from object_detection.utils.np_box_ops import iou

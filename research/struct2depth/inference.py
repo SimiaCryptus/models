@@ -32,16 +32,18 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
+import fnmatch
 import os
+
+# import matplotlib.pyplot as plt
+import model
+import nets
+import numpy as np
+import tensorflow as tf
 from absl import app
 from absl import flags
 from absl import logging
-#import matplotlib.pyplot as plt
-import model
-import numpy as np
-import fnmatch
-import tensorflow as tf
-import nets
+
 import util
 
 gfile = tf.gfile

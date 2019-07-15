@@ -16,17 +16,11 @@
 """Utility functions for setting up the CMP graph.
 """
 
-import os, numpy as np
-import matplotlib.pyplot as plt
-
+import numpy as np
 
 import tensorflow as tf
 
 from tensorflow.contrib import slim
-from tensorflow.contrib.slim import arg_scope
-import logging
-from src import utils
-import src.file_utils as fu
 from tfcode import tf_utils
 
 resnet_v2 = tf_utils.resnet_v2

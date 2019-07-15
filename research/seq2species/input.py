@@ -20,11 +20,10 @@ from __future__ import division
 from __future__ import print_function
 
 import numpy as np
+import seq2label_utils
 import tensorflow as tf
 from google.protobuf import text_format
-
 from protos import seq2label_pb2
-import seq2label_utils
 
 DNA_BASES = tuple('ACGT')
 NUM_DNA_BASES = len(DNA_BASES)

@@ -4,8 +4,8 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-import tensorflow as tf
 import data_provider
+import tensorflow as tf
 
 
 def provide_data(image_file_patterns, batch_size, patch_size):

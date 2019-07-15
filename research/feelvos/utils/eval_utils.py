@@ -15,8 +15,8 @@
 
 """Utility functions for evaluations."""
 
-import numpy as np
 import PIL
+import numpy as np
 import tensorflow as tf
 
 pascal_colormap = [

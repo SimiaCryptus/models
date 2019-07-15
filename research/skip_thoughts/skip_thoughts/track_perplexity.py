@@ -22,16 +22,13 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-from six.moves import range
-
 import math
-import os.path
 import time
 
-
 import numpy as np
+import os.path
 import tensorflow as tf
-
+from six.moves import range
 from skip_thoughts import configuration
 from skip_thoughts import skip_thoughts_model
 

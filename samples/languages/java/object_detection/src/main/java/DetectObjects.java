@@ -13,10 +13,15 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ==============================================================================*/
 
-import static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap;
-import static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem;
-
 import com.google.protobuf.TextFormat;
+import org.tensorflow.SavedModelBundle;
+import org.tensorflow.Tensor;
+import org.tensorflow.framework.MetaGraphDef;
+import org.tensorflow.framework.SignatureDef;
+import org.tensorflow.framework.TensorInfo;
+import org.tensorflow.types.UInt8;
+
+import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.awt.image.DataBufferByte;
 import java.io.File;
@@ -28,13 +33,9 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
 import java.util.Map;
-import javax.imageio.ImageIO;
-import org.tensorflow.SavedModelBundle;
-import org.tensorflow.Tensor;
-import org.tensorflow.framework.MetaGraphDef;
-import org.tensorflow.framework.SignatureDef;
-import org.tensorflow.framework.TensorInfo;
-import org.tensorflow.types.UInt8;
+
+import static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMap;
+import static object_detection.protos.StringIntLabelMapOuterClass.StringIntLabelMapItem;
 
 /**
  * Java inference for the Object Detection API at:
@@ -64,8 +65,8 @@ public class DetectObjects {
                   .run();
         }
         try (Tensor<Float> scoresT = outputs.get(0).expect(Float.class);
-            Tensor<Float> classesT = outputs.get(1).expect(Float.class);
-            Tensor<Float> boxesT = outputs.get(2).expect(Float.class)) {
+             Tensor<Float> classesT = outputs.get(1).expect(Float.class);
+             Tensor<Float> boxesT = outputs.get(2).expect(Float.class)) {
           // All these tensors have:
           // - 1 as the first dimension
           // - maxObjects as the second dimension
@@ -157,7 +158,7 @@ public class DetectObjects {
     bgr2rgb(data);
     final long BATCH_SIZE = 1;
     final long CHANNELS = 3;
-    long[] shape = new long[] {BATCH_SIZE, img.getHeight(), img.getWidth(), CHANNELS};
+    long[] shape = new long[]{BATCH_SIZE, img.getHeight(), img.getWidth(), CHANNELS};
     return Tensor.create(UInt8.class, shape, ByteBuffer.wrap(data));
   }
 

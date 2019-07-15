@@ -20,13 +20,12 @@ from __future__ import print_function
 
 import functools
 
-
-from absl import flags
-from absl import logging
-import tensorflow as tf
-
 import data_provider
 import networks
+import tensorflow as tf
+from absl import flags
+from absl import logging
+
 import util
 
 tfgan = tf.contrib.gan

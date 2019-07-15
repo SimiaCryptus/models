@@ -16,15 +16,13 @@
 
 import collections
 import tensorflow as tf
-
-from tensorflow.core.protobuf import saver_pb2
-from tensorflow.python.platform import tf_logging as logging
-
 from dragnn.protos import spec_pb2
 from dragnn.python import component
 from dragnn.python import composite_optimizer
 from dragnn.python import dragnn_ops
 from syntaxnet.util import check
+from tensorflow.core.protobuf import saver_pb2
+from tensorflow.python.platform import tf_logging as logging
 
 try:
   tf.NotDifferentiable('ExtractFixedFeatures')

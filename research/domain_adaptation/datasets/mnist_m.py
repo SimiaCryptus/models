@@ -23,9 +23,9 @@ from __future__ import division
 from __future__ import print_function
 
 import os
+
 # Dependency imports
 import tensorflow as tf
-
 from slim.datasets import dataset_utils
 
 slim = tf.contrib.slim

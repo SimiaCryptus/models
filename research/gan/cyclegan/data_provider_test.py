@@ -20,12 +20,10 @@ from __future__ import print_function
 
 import os
 
-from absl import flags
-import numpy as np
-
-import tensorflow as tf
-
 import data_provider
+import numpy as np
+import tensorflow as tf
+from absl import flags
 
 mock = tf.test.mock
 

@@ -32,7 +32,6 @@ from abc import ABCMeta
 from abc import abstractmethod
 
 import tensorflow as tf
-
 from object_detection.utils import ops
 
 

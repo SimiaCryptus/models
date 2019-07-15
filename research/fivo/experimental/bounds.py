@@ -19,8 +19,8 @@ from __future__ import print_function
 
 from collections import namedtuple
 
-import tensorflow as tf
 import summary_utils as summ
+import tensorflow as tf
 
 Loss = namedtuple("Loss", "name loss vars")
 Loss.__new__.__defaults__ = (tf.GraphKeys.TRAINABLE_VARIABLES,)

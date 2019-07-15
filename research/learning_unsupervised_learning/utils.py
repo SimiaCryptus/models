@@ -21,17 +21,14 @@ from __future__ import division
 from __future__ import print_function
 
 import contextlib
-import tensorflow as tf
-import sonnet as snt
-import itertools
 import functools
+import itertools
 
-from tensorflow.core.framework import node_def_pb2
-from tensorflow.python.framework import device as pydev
+import sonnet as snt
+import tensorflow as tf
+from sonnet.python.modules import util as snt_util
 from tensorflow.python.framework import errors
 from tensorflow.python.ops import variable_scope as variable_scope_ops
-from sonnet.python.modules import util as snt_util
-
 from tensorflow.python.util import nest
 
 

@@ -21,7 +21,6 @@ from __future__ import print_function
 
 import numpy as np
 import tensorflow as tf
-
 from learned_optimizer.problems import datasets
 from learned_optimizer.problems import model_adapter
 from learned_optimizer.problems import problem_generator as pg

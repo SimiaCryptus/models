@@ -30,12 +30,11 @@ from __future__ import print_function
 import os
 import string
 
-# Dependency imports
-
 import tensorflow as tf
-
 from data import data_utils
 from data import document_generators
+
+# Dependency imports
 
 data = data_utils
 flags = tf.app.flags

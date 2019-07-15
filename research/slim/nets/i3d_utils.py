@@ -21,7 +21,6 @@ from __future__ import print_function
 import numpy as np
 import tensorflow as tf
 
-
 # Orignaly, add_arg_scope = slim.add_arg_scope and layers = slim, now switch to
 # more update-to-date tf.contrib.* API.
 add_arg_scope = tf.contrib.framework.add_arg_scope

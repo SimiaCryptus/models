@@ -21,9 +21,8 @@ import sys
 
 import numpy as np
 import scipy.misc
-from six.moves import xrange
 import tensorflow as tf
-
+from six.moves import xrange
 
 tf.flags.DEFINE_string('data_filepattern', '', 'The raw images.')
 tf.flags.DEFINE_string('out_file', '',

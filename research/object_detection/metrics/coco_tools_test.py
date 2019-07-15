@@ -16,13 +16,11 @@
 import json
 import os
 import re
+
 import numpy as np
-
-from pycocotools import mask
-
 import tensorflow as tf
-
 from object_detection.metrics import coco_tools
+from pycocotools import mask
 
 
 class CocoToolsTest(tf.test.TestCase):

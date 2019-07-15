@@ -26,12 +26,10 @@ from __future__ import print_function
 
 import os
 
-
-from absl import logging
+import networks
 import numpy as np
 import tensorflow as tf
-
-import networks
+from absl import logging
 
 tfgan = tf.contrib.gan
 

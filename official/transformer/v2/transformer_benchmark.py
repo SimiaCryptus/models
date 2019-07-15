@@ -21,7 +21,6 @@ import os
 import time
 
 from absl import flags
-
 from official.transformer.v2 import misc
 from official.transformer.v2 import transformer_main as transformer_main
 from official.utils.flags import core as flags_core

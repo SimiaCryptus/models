@@ -21,9 +21,8 @@ samples with the same seed must be taken from the environment.
 
 """
 
-import tensorflow as tf
-
 import objective
+import tensorflow as tf
 
 
 class Reinforce(objective.Objective):

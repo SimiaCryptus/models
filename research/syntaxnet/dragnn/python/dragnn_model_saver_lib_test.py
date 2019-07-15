@@ -21,15 +21,14 @@ from __future__ import print_function
 import os
 
 import tensorflow as tf
-
-from google.protobuf import text_format
-from tensorflow.python.framework import test_util
-from tensorflow.python.platform import googletest
 from dragnn.protos import export_pb2
 from dragnn.protos import spec_pb2
 from dragnn.python import dragnn_model_saver_lib
+from google.protobuf import text_format
 from syntaxnet import sentence_pb2
 from syntaxnet import test_flags
+from tensorflow.python.framework import test_util
+from tensorflow.python.platform import googletest
 
 _DUMMY_TEST_SENTENCE = """
 token {

@@ -20,15 +20,13 @@ from __future__ import division
 from __future__ import print_function
 
 import collections
-from six.moves import xrange
 import tensorflow as tf
-
 from models import attention_utils
-
 # NAS Code..
 from nas_utils import configs
 from nas_utils import custom_cell
 from nas_utils import variational_dropout
+from six.moves import xrange
 
 FLAGS = tf.app.flags.FLAGS
 

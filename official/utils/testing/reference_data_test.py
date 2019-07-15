@@ -28,8 +28,6 @@ from __future__ import division
 from __future__ import print_function
 
 import sys
-import unittest
-import warnings
 
 import tensorflow as tf  # pylint: disable=g-bad-import-order
 from official.utils.testing import reference_data

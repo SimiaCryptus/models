@@ -16,8 +16,8 @@
 """Tests for object_detection.utils.dataset_util."""
 
 import os
-import tensorflow as tf
 
+import tensorflow as tf
 from object_detection.utils import dataset_util
 
 

@@ -22,7 +22,6 @@ from __future__ import division
 from __future__ import print_function
 
 import os
-import sys
 import tempfile
 import zipfile
 
@@ -30,14 +29,14 @@ import zipfile
 import numpy as np
 import pandas as pd
 import six
-from six.moves import urllib  # pylint: disable=redefined-builtin
+import tensorflow as tf
 from absl import app as absl_app
 from absl import flags
 from absl import logging
-import tensorflow as tf
-# pylint: enable=g-bad-import-order
-
 from official.utils.flags import core as flags_core
+from six.moves import urllib  # pylint: disable=redefined-builtin
+
+# pylint: enable=g-bad-import-order
 
 
 ML_1M = "ml-1m"

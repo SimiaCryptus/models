@@ -34,7 +34,6 @@ from __future__ import division
 from __future__ import print_function
 
 import tensorflow as tf
-
 from deeplab.core import nas_genotypes
 from deeplab.core.nas_cell import NASBaseCell
 from deeplab.core.utils import resize_bilinear

@@ -17,23 +17,20 @@
 
 
 import os
-import os.path
+import tempfile
 import time
+
+import os.path
+import tensorflow as tf
 from absl import app
 from absl import flags
-import tempfile
-import tensorflow as tf
-
-from tensorflow.python.platform import gfile
-from tensorflow.python.platform import tf_logging as logging
-
 from google.protobuf import text_format
-
-from syntaxnet import sentence_pb2
 from syntaxnet import graph_builder
 from syntaxnet import structured_graph_builder
-from syntaxnet.ops import gen_parser_ops
 from syntaxnet import task_spec_pb2
+from syntaxnet.ops import gen_parser_ops
+from tensorflow.python.platform import gfile
+from tensorflow.python.platform import tf_logging as logging
 
 FLAGS = flags.FLAGS
 

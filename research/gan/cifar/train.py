@@ -17,14 +17,11 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-
-from absl import flags
-from absl import logging
-import tensorflow as tf
-
 import data_provider
 import networks
-
+import tensorflow as tf
+from absl import flags
+from absl import logging
 
 tfgan = tf.contrib.gan
 

@@ -19,7 +19,6 @@ import math
 
 import numpy as np
 import tensorflow as tf
-
 from dragnn.python import mst_ops
 
 

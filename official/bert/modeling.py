@@ -21,6 +21,7 @@ from __future__ import print_function
 import copy
 import json
 import math
+
 import six
 import tensorflow as tf
 

@@ -1,8 +1,7 @@
 """Tests for check assertions."""
 
-from tensorflow.python.platform import googletest
-
 from syntaxnet.util import check
+from tensorflow.python.platform import googletest
 
 
 class RegistryTest(googletest.TestCase):

@@ -17,9 +17,9 @@
 
 from __future__ import print_function
 
+import nn_utils
 import numpy as np
 import tensorflow as tf
-import nn_utils
 
 
 class Graph():

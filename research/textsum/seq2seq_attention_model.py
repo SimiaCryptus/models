@@ -19,8 +19,8 @@ from collections import namedtuple
 
 import numpy as np
 import seq2seq_lib
-from six.moves import xrange
 import tensorflow as tf
+from six.moves import xrange
 
 HParams = namedtuple('HParams',
                      'mode, min_lr, lr, batch_size, '

@@ -4,18 +4,14 @@ from __future__ import division
 from __future__ import print_function
 
 import os.path
-
 import tensorflow as tf
-from google.protobuf import text_format
 from dragnn.protos import spec_pb2
 from dragnn.python import graph_builder
 from dragnn.python import lexicon
 from dragnn.python import spec_builder
 from dragnn.python import visualization
+from google.protobuf import text_format
 from syntaxnet import sentence_pb2
-
-import dragnn.python.load_dragnn_cc_impl
-import syntaxnet.load_parser_ops
 
 data_dir = os.path.join(
     os.path.dirname(os.path.abspath(__file__)), 'tutorial_data')

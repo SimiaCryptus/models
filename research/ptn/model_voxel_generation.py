@@ -21,12 +21,11 @@ from __future__ import print_function
 import abc
 import os
 
-import numpy as np
-from six.moves import xrange
-import tensorflow as tf
-
 import input_generator
+import numpy as np
+import tensorflow as tf
 import utils
+from six.moves import xrange
 
 slim = tf.contrib.slim
 

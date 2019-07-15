@@ -19,13 +19,11 @@
 # disable=no-name-in-module,unused-import,g-bad-import-order,maybe-no-member
 import os.path
 import tensorflow as tf
-
-from tensorflow.python.ops import variables
-
 from syntaxnet import graph_builder
 from syntaxnet import sparse_pb2
 from syntaxnet import test_flags
 from syntaxnet.ops import gen_parser_ops
+from tensorflow.python.ops import variables
 
 
 class GraphBuilderTest(tf.test.TestCase):

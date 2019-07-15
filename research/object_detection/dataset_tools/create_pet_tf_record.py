@@ -33,12 +33,11 @@ import os
 import random
 import re
 
-import contextlib2
-from lxml import etree
-import numpy as np
 import PIL.Image
+import contextlib2
+import numpy as np
 import tensorflow as tf
-
+from lxml import etree
 from object_detection.dataset_tools import tf_record_creation_util
 from object_detection.utils import dataset_util
 from object_detection.utils import label_map_util

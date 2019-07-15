@@ -21,12 +21,12 @@ Alex Graves et al. Connectionist Temporal Classification: Labelling Unsegmented
 Sequence Data with Recurrent Neural Networks.
 http://www.cs.toronto.edu/~graves/icml_2006.pdf
 """
-import collections
 import re
 
+import collections
 import errorcounter as ec
-from six.moves import xrange
 import tensorflow as tf
+from six.moves import xrange
 
 # Named tuple Part describes a part of a multi (1 or more) part code that
 # represents a utf-8 string. For example, Chinese character 'x' might be

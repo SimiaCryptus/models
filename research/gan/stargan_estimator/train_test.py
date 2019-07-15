@@ -20,10 +20,9 @@ from __future__ import print_function
 
 import os
 
-from absl import flags
 import tensorflow as tf
-
 import train
+from absl import flags
 
 FLAGS = flags.FLAGS
 mock = tf.test.mock

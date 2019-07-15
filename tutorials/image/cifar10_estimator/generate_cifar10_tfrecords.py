@@ -26,11 +26,11 @@ from __future__ import print_function
 import argparse
 import os
 import sys
-
 import tarfile
+
+import tensorflow as tf
 from six.moves import cPickle as pickle
 from six.moves import xrange  # pylint: disable=redefined-builtin
-import tensorflow as tf
 
 CIFAR_FILENAME = 'cifar-10-python.tar.gz'
 CIFAR_DOWNLOAD_URL = 'https://www.cs.toronto.edu/~kriz/' + CIFAR_FILENAME

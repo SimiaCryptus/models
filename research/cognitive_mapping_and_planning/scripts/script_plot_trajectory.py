@@ -24,16 +24,18 @@ to plot the view points.
       --imset test --alsologtostderr --base_dir output --out_dir vis
 
 """
-import os, sys, numpy as np, copy
+import copy
+import numpy as np
+import os
+
 import matplotlib
+
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 from matplotlib.gridspec import GridSpec
 
-import tensorflow as tf
 from tensorflow.contrib import slim
-import cv2
 import logging
 from tensorflow.python.platform import gfile
 from tensorflow.python.platform import app

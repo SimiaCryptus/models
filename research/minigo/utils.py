@@ -17,7 +17,6 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-from contextlib import contextmanager
 import functools
 import itertools
 import math
@@ -27,6 +26,7 @@ import random
 import re
 import string
 import time
+from contextlib import contextmanager
 
 import tensorflow as tf  # pylint: disable=g-bad-import-order
 

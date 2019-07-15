@@ -13,19 +13,12 @@
 # limitations under the License.
 # ==============================================================================
 
-import numpy as np
-
-
-import tensorflow as tf
-
-from tensorflow.contrib import slim
-
 import logging
-from tensorflow.python.platform import app
-from tensorflow.python.platform import flags
-from src import utils 
-import src.file_utils as fu
-import tfcode.nav_utils as nu 
+
+import numpy as np
+import tensorflow as tf
+import tfcode.nav_utils as nu
+from tensorflow.contrib import slim
 from tfcode import tf_utils
 
 setup_train_step_kwargs = nu.default_train_step_kwargs

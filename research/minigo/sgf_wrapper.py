@@ -26,10 +26,10 @@ from __future__ import print_function
 
 import coords
 import go
-from go import Position, PositionWithContext
 import numpy as np
 import sgf
 import utils
+from go import Position, PositionWithContext
 
 SGF_TEMPLATE = '''(;GM[1]FF[4]CA[UTF-8]AP[Minigo_sgfgenerator]RU[{ruleset}]
 SZ[{boardsize}]KM[{komi}]PW[{white_name}]PB[{black_name}]RE[{result}]

@@ -23,9 +23,8 @@ from __future__ import division
 from __future__ import print_function
 
 import tensorflow as tf
-from tensorflow.python.framework import ops
-
 from morph_net.network_regularizers import bilinear_cost_utils
+from tensorflow.python.framework import ops
 
 layers = tf.contrib.layers
 

@@ -15,13 +15,8 @@
 # ==============================================================================
 from __future__ import print_function
 
-import h5py
-import numpy as np
-import os
-
-from utils import write_datasets
-import matplotlib
 import matplotlib.pyplot as plt
+import numpy as np
 import scipy.signal
 
 

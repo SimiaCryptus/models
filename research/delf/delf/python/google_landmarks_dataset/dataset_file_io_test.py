@@ -21,7 +21,6 @@ from __future__ import print_function
 import os
 
 import tensorflow as tf
-
 from delf.python.google_landmarks_dataset import dataset_file_io
 
 

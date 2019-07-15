@@ -15,6 +15,7 @@
 """Auxiliary functions for domain adaptation related losses.
 """
 import math
+
 import tensorflow as tf
 
 

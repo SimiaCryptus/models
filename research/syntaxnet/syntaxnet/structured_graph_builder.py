@@ -16,13 +16,11 @@
 """Build structured parser models."""
 
 import tensorflow as tf
-
+from syntaxnet import graph_builder
+from syntaxnet.ops import gen_parser_ops
 from tensorflow.python.ops import control_flow_ops as cf
 from tensorflow.python.ops import state_ops
 from tensorflow.python.ops import tensor_array_ops
-
-from syntaxnet import graph_builder
-from syntaxnet.ops import gen_parser_ops
 
 tf.NotDifferentiable('BeamParseReader')
 tf.NotDifferentiable('BeamParser')

@@ -13,10 +13,9 @@
 # limitations under the License.
 # ==============================================================================
 """Model trainer for single or multi-replica training."""
+import vgsl_model
 from tensorflow import app
 from tensorflow.python.platform import flags
-
-import vgsl_model
 
 flags.DEFINE_string('master', '', 'Name of the TensorFlow master to use.')
 flags.DEFINE_string('train_dir', '/tmp/mdir',

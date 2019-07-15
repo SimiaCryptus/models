@@ -21,8 +21,8 @@ from __future__ import print_function
 import json
 import os
 
-from absl import logging
 import tensorflow as tf
+from absl import logging
 
 SUMMARY_TXT = 'training_summary.txt'
 

@@ -19,10 +19,12 @@ from __future__ import absolute_import
 from __future__ import division
 
 import os
+
 import numpy as np
+import tensorflow as tf
 from estimators.get_estimator import get_estimator
 from utils import util
-import tensorflow as tf
+
 tf.logging.set_verbosity(tf.logging.INFO)
 
 tf.flags.DEFINE_string(

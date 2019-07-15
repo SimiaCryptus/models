@@ -19,13 +19,14 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-import random
 import os
-import scipy.io
-import numpy as np
+
 import cPickle as pickle
-import tensorflow as tf
 import config
+import numpy as np
+import scipy.io
+import tensorflow as tf
+
 gfile = tf.gfile
 
 

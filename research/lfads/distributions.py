@@ -15,7 +15,8 @@
 # ==============================================================================
 import numpy as np
 import tensorflow as tf
-from utils import linear, log_sum_exp
+from utils import linear
+
 
 class Poisson(object):
   """Poisson distributon

@@ -19,10 +19,11 @@
 import io
 import math
 import os
-from StringIO import StringIO
-import numpy as np
+
 import PIL
+import numpy as np
 import tensorflow as tf
+from StringIO import StringIO
 
 FLAGS = tf.app.flags.FLAGS
 

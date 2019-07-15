@@ -22,10 +22,9 @@ Usage:
 python msssim.py --original_image=original.png --compared_image=distorted.png
 """
 import numpy as np
+import tensorflow as tf
 from scipy import signal
 from scipy.ndimage.filters import convolve
-import tensorflow as tf
-
 
 tf.flags.DEFINE_string('original_image', None, 'Path to PNG image.')
 tf.flags.DEFINE_string('compared_image', None, 'Path to PNG image.')

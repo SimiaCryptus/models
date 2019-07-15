@@ -19,10 +19,10 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-import collections
 import os
 import sys
 
+import collections
 import tensorflow as tf
 
 Py3 = sys.version_info[0] == 3

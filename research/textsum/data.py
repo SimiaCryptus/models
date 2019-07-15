@@ -22,7 +22,6 @@ import sys
 
 from tensorflow.core.example import example_pb2
 
-
 # Special tokens
 PARAGRAPH_START = '<p>'
 PARAGRAPH_END = '</p>'

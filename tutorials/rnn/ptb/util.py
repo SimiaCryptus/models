@@ -18,7 +18,6 @@ from __future__ import division
 from __future__ import print_function
 
 import tensorflow as tf
-
 from tensorflow.core.framework import variable_pb2
 from tensorflow.core.protobuf import rewriter_config_pb2
 

@@ -20,10 +20,9 @@ from __future__ import print_function
 import os
 import time
 
+import tensorflow as tf  # pylint: disable=g-bad-import-order
 from absl import flags
 from absl.testing import flagsaver
-import tensorflow as tf  # pylint: disable=g-bad-import-order
-
 from official.resnet import cifar10_main as cifar_main
 from official.resnet import imagenet_main
 from official.utils.flags import core as flags_core

@@ -12,11 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ==============================================================================
-from scipy import ndimage
-import tensorflow as tf
-from spatial_transformer import transformer
 import numpy as np
-import matplotlib.pyplot as plt
+import tensorflow as tf
+from scipy import ndimage
+from spatial_transformer import transformer
 
 # %% Create a batch of three images (1600 x 1200)
 # %% Image retrieved from:

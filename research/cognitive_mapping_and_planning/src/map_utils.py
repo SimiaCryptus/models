@@ -16,15 +16,15 @@
 """Various function to compute the ground truth map for training etc.
 """
 import copy
-import skimage.morphology
 import logging
+
+import PIL
+import cv2
 import numpy as np
 import scipy.ndimage
-import matplotlib.pyplot as plt
-import PIL
-
+import skimage.morphology
 import src.utils as utils
-import cv2
+
 
 def _get_xy_bounding_box(vertex, padding):
   """Returns the xy bounding box of the environment."""

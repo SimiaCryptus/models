@@ -24,15 +24,16 @@ import math
 import os
 import random
 import time
-from absl import app
-from absl import flags
-from absl import logging
-import numpy as np
-import tensorflow as tf
 
 import model
 import nets
+import numpy as np
 import reader
+import tensorflow as tf
+from absl import app
+from absl import flags
+from absl import logging
+
 import util
 
 gfile = tf.gfile

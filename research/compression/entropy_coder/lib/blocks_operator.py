@@ -15,9 +15,9 @@
 
 """Common blocks which work as operators on other blocks."""
 
+import block_base
 import tensorflow as tf
 
-import block_base
 
 # pylint: disable=not-callable
 

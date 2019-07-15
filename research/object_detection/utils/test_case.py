@@ -14,7 +14,6 @@
 # ==============================================================================
 """A convenience wrapper around tf.test.TestCase to enable TPU tests."""
 
-import os
 import tensorflow as tf
 from tensorflow.contrib import tpu
 

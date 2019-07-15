@@ -15,9 +15,6 @@
 
 """Activation and weight binarizer implementations."""
 
-import math
-
-import numpy as np
 import tensorflow as tf
 
 

@@ -32,13 +32,14 @@ from __future__ import print_function
 import itertools
 import multiprocessing
 import os
-from absl import app
-from absl import flags
-from absl import logging
+
 import dataset_loader
 import numpy as np
 import scipy.misc
 import tensorflow as tf
+from absl import app
+from absl import flags
+from absl import logging
 
 gfile = tf.gfile
 FLAGS = flags.FLAGS

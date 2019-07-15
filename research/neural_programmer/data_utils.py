@@ -19,6 +19,7 @@ from __future__ import print_function
 
 import copy
 import numbers
+
 import numpy as np
 import wiki_data
 

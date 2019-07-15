@@ -21,8 +21,8 @@ import os
 import time
 
 import go
-from gtp_wrapper import MCTSPlayer
 import sgf_wrapper
+from gtp_wrapper import MCTSPlayer
 
 
 def play_match(params, black_net, white_net, games, readouts,

@@ -16,8 +16,8 @@
 """Helper functions used in both train and inference."""
 
 import json
-import os.path
 
+import os.path
 import tensorflow as tf
 
 

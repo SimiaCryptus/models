@@ -21,7 +21,6 @@ from __future__ import print_function
 
 import sonnet as snt
 import tensorflow as tf
-
 from fivo import nested_utils as nested
 
 tfd = tf.contrib.distributions

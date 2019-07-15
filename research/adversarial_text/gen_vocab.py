@@ -16,16 +16,15 @@
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
-from six import iteritems
 
 from collections import defaultdict
 
-# Dependency imports
-
 import tensorflow as tf
-
 from data import data_utils
 from data import document_generators
+from six import iteritems
+
+# Dependency imports
 
 flags = tf.app.flags
 FLAGS = flags.FLAGS

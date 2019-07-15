@@ -13,10 +13,11 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-from six.moves import urllib
 import os
 import zipfile
+
 import tensorflow as tf
+from six.moves import urllib
 
 URL = 'https://storage.googleapis.com/download.tensorflow.org/models/inception5h.zip'
 LABELS_FILE = 'imagenet_comp_graph_label_strings.txt'

@@ -14,11 +14,10 @@
 # ==============================================================================
 """Tests for global objectives util functions."""
 
-# Dependency imports
-from absl.testing import parameterized
 import numpy as np
 import tensorflow as tf
-
+# Dependency imports
+from absl.testing import parameterized
 from global_objectives import util
 
 

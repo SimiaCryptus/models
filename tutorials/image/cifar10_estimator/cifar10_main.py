@@ -38,8 +38,8 @@ import cifar10_model
 import cifar10_utils
 import numpy as np
 import six
-from six.moves import xrange  # pylint: disable=redefined-builtin
 import tensorflow as tf
+from six.moves import xrange  # pylint: disable=redefined-builtin
 
 tf.logging.set_verbosity(tf.logging.INFO)
 

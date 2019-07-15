@@ -5,7 +5,6 @@ from __future__ import division
 from __future__ import print_function
 
 import tensorflow as tf
-
 from official.transformer.v2 import attention_layer
 from official.transformer.v2 import embedding_layer
 from official.transformer.v2 import ffn_layer

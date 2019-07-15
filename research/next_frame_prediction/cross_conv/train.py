@@ -17,11 +17,10 @@
 import os
 import sys
 
-import numpy as np
-import tensorflow as tf
-
 import model as cross_conv_model
+import numpy as np
 import reader
+import tensorflow as tf
 
 FLAGS = tf.flags.FLAGS
 tf.flags.DEFINE_string('master', '', 'Session address.')

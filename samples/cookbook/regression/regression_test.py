@@ -18,16 +18,14 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-import pandas as pd
-import tensorflow as tf
-from six.moves import StringIO
-
 import automobile_data
-
+import custom_regression
 import dnn_regression
 import linear_regression
 import linear_regression_categorical
-import custom_regression
+import pandas as pd
+import tensorflow as tf
+from six.moves import StringIO
 
 # pylint: disable=line-too-long
 FOUR_LINES = "\n".join([

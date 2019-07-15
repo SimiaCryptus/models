@@ -46,9 +46,8 @@ from __future__ import division
 from __future__ import print_function
 
 import os.path
-
-
 import tensorflow as tf
+
 
 # pylint: disable=unused-argument
 

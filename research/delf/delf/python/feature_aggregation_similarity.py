@@ -23,7 +23,6 @@ from __future__ import division
 from __future__ import print_function
 
 import numpy as np
-
 from delf import aggregation_config_pb2
 
 # Aliases for aggregation types.

@@ -20,15 +20,11 @@
 # disable=no-name-in-module,unused-import,g-bad-import-order,maybe-no-member
 import os.path
 import tensorflow as tf
-
-import syntaxnet.load_parser_ops
-
-from tensorflow.python.platform import tf_logging as logging
-
 from syntaxnet import sentence_pb2
 from syntaxnet import task_spec_pb2
 from syntaxnet import test_flags
 from syntaxnet.ops import gen_parser_ops
+from tensorflow.python.platform import tf_logging as logging
 
 CONLL_DOC1 = u'''1 बात _ n NN _ _ _ _ _
 2 गलत _ adj JJ _ _ _ _ _

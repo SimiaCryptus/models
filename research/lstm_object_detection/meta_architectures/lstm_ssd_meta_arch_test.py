@@ -21,22 +21,17 @@ from __future__ import print_function
 
 import functools
 
-import numpy as np
 import tensorflow as tf
-
-from lstm_object_detection.lstm import lstm_cells
 from lstm_object_detection.meta_architectures import lstm_ssd_meta_arch
 from object_detection.core import anchor_generator
 from object_detection.core import box_list
 from object_detection.core import losses
 from object_detection.core import post_processing
 from object_detection.core import region_similarity_calculator as sim_calc
-from object_detection.core import standard_fields as fields
 from object_detection.core import target_assigner
 from object_detection.models import feature_map_generators
 from object_detection.utils import test_case
 from object_detection.utils import test_utils
-
 
 slim = tf.contrib.slim
 

@@ -47,13 +47,15 @@ from __future__ import division
 from __future__ import print_function
 
 import multiprocessing
-from multiprocessing import Process
 import os
 import subprocess
 import sys
 import time
+from multiprocessing import Process
+
 import cv2
 import matplotlib
+
 matplotlib.use('TkAgg')
 from matplotlib import animation  # pylint: disable=g-import-not-at-top
 import matplotlib.pyplot as plt

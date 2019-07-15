@@ -20,9 +20,8 @@ from __future__ import print_function
 
 import numpy as np
 import pandas as pd
-
-from pycocotools import mask
 from object_detection.core import standard_fields
+from pycocotools import mask
 
 
 def _to_normalized_box(mask_np):

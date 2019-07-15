@@ -20,12 +20,10 @@ from __future__ import print_function
 
 import os
 
-
-
-from absl import flags
 import numpy as np
 import scipy.misc
 import six
+from absl import flags
 
 FLAGS = flags.FLAGS
 

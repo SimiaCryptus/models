@@ -30,14 +30,13 @@ import sys
 import matplotlib.image as mpimg
 import matplotlib.pyplot as plt
 import numpy as np
+import tensorflow as tf
+from delf import feature_io
 from scipy import spatial
 from skimage import feature
 from skimage import measure
 from skimage import transform
-import tensorflow as tf
-
 from tensorflow.python.platform import app
-from delf import feature_io
 
 cmd_args = None
 

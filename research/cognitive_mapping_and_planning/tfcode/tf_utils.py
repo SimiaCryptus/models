@@ -13,20 +13,16 @@
 # limitations under the License.
 # ==============================================================================
 
-import numpy as np
-import sys
-import tensorflow as tf
-import src.utils as utils
 import logging
+import sys
+
+import numpy as np
+import src.utils as utils
+import tensorflow as tf
 from tensorflow.contrib import slim
-from tensorflow.contrib.metrics.python.ops import confusion_matrix_ops
 from tensorflow.contrib.slim import arg_scope
 from tensorflow.contrib.slim.nets import resnet_v2
-from tensorflow.python.framework import dtypes
-from tensorflow.python.ops import array_ops
-from tensorflow.python.ops import check_ops
-from tensorflow.python.ops import math_ops
-from tensorflow.python.ops import variable_scope
+
 sys.path.insert(0, '../slim')
 from preprocessing import inception_preprocessing as ip
 

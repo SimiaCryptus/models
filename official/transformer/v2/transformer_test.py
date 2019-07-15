@@ -19,7 +19,6 @@ from __future__ import division
 from __future__ import print_function
 
 import tensorflow as tf
-
 from official.transformer.model import model_params
 from official.transformer.v2 import transformer
 

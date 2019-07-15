@@ -15,9 +15,9 @@
 """Utilities for generating program synthesis and evaluation data."""
 
 import contextlib
-import sys
-import random
 import os
+import random
+import sys
 
 try:
   import StringIO

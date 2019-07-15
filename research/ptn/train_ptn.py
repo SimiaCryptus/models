@@ -20,12 +20,10 @@ from __future__ import print_function
 
 import os
 
+import model_ptn
 import numpy as np
 import tensorflow as tf
-
 from tensorflow import app
-
-import model_ptn
 
 flags = tf.app.flags
 slim = tf.contrib.slim

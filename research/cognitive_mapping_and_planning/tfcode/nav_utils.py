@@ -19,19 +19,16 @@ Defines various loss functions for navigation agents,
 compute_losses_multi_or.
 """
 
-import os, numpy as np
+import numpy as np
+import os
+
 import matplotlib.pyplot as plt
-
-
+import src.file_utils as fu
 import tensorflow as tf
-
+from src import utils
 from tensorflow.contrib import slim
-from tensorflow.contrib.slim import arg_scope
 from tensorflow.contrib.slim.nets import resnet_v2
 from tensorflow.python.training import moving_averages
-import logging
-from src import utils 
-import src.file_utils as fu
 from tfcode import tf_utils
 
 

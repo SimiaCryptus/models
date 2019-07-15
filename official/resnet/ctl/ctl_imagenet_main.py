@@ -18,28 +18,20 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-import os
-import tempfile
-import datetime
-import time
-import numpy as np
-
+import tensorflow as tf
 from absl import app as absl_app
 from absl import flags
 from absl import logging
-
-import tensorflow as tf
-
 from official.resnet import imagenet_main
+from official.resnet.ctl import ctl_common
 from official.resnet.keras import keras_common
 from official.resnet.keras import keras_imagenet_main
 from official.resnet.keras import resnet_model
 from official.utils.flags import core as flags_core
 from official.utils.logs import logger
 from official.utils.misc import distribution_utils
-from official.utils.misc import model_helpers
-from official.resnet.ctl import ctl_common
 from official.utils.misc import keras_utils
+from official.utils.misc import model_helpers
 
 
 def parse_record_keras(raw_record, is_training, dtype):

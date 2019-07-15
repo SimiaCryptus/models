@@ -23,9 +23,10 @@ import glob
 import json
 import os
 import re
-from absl import logging
+
 import numpy as np
 import scipy.misc
+from absl import logging
 
 CITYSCAPES_CROP_BOTTOM = True  # Crop bottom 25% to remove the car hood.
 CITYSCAPES_CROP_PCT = 0.75

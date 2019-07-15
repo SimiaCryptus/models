@@ -20,15 +20,14 @@ from __future__ import print_function
 
 import os
 
-import numpy as np
-from six.moves import xrange
-import tensorflow as tf
-
 import input_generator
 import losses
 import metrics
+import numpy as np
+import tensorflow as tf
 import utils
 from nets import deeprotator_factory
+from six.moves import xrange
 
 slim = tf.contrib.slim
 

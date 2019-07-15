@@ -21,9 +21,10 @@ from __future__ import division
 from __future__ import print_function
 
 import os
+
 import numpy as np
-from sklearn import metrics
 import tensorflow as tf
+from sklearn import metrics
 
 # Part of speech tags used in the paths.
 POSTAGS = [

@@ -22,7 +22,6 @@ from __future__ import print_function
 import time
 
 import tensorflow as tf  # pylint: disable=g-bad-import-order
-
 from official.utils.logs import hooks
 from official.utils.testing import mock_lib
 

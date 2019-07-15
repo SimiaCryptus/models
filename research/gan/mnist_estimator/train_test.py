@@ -18,12 +18,10 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-
-from absl import flags
 import numpy as np
-
 import tensorflow as tf
 import train
+from absl import flags
 
 FLAGS = flags.FLAGS
 mock = tf.test.mock

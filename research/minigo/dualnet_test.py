@@ -20,12 +20,11 @@ from __future__ import print_function
 import os
 import tempfile
 
-import tensorflow as tf  # pylint: disable=g-bad-import-order
-
 import dualnet
 import go
 import model_params
 import preprocessing
+import tensorflow as tf  # pylint: disable=g-bad-import-order
 import utils_test
 
 tf.logging.set_verbosity(tf.logging.ERROR)

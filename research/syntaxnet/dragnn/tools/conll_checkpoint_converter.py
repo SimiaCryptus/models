@@ -25,13 +25,13 @@ from __future__ import division
 from __future__ import print_function
 
 import os
-from absl import flags
-import tensorflow as tf
 
-from google.protobuf import text_format
+import tensorflow as tf
+from absl import flags
 from dragnn.protos import spec_pb2
 from dragnn.python import dragnn_model_saver_lib as saver_lib
 from dragnn.python import spec_builder
+from google.protobuf import text_format
 
 FLAGS = flags.FLAGS
 

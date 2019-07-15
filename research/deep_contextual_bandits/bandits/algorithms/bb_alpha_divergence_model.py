@@ -25,12 +25,11 @@ from __future__ import division
 from __future__ import print_function
 
 import sys
+
 import numpy as np
 import tensorflow as tf
 from absl import flags
-
 from bandits.core.bayesian_nn import BayesianNN
-
 
 FLAGS = flags.FLAGS
 tfd = tf.contrib.distributions  # update to: tensorflow_probability.distributions

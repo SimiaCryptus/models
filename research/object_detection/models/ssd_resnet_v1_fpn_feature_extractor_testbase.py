@@ -15,9 +15,9 @@
 """Tests for ssd resnet v1 FPN feature extractors."""
 import abc
 import itertools
+
 import numpy as np
 import tensorflow as tf
-
 from object_detection.models import ssd_feature_extractor_test
 
 

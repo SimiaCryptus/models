@@ -14,10 +14,8 @@
 # ==============================================================================
 
 import os
+
 import tensorflow as tf
-
-from dragnn.python import dragnn_ops
-
 from dragnn.python import sentence_io
 from syntaxnet import sentence_pb2
 from syntaxnet import test_flags

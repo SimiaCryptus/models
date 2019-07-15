@@ -19,9 +19,10 @@
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
+
 import os
-from subprocess import call
 import sys
+from subprocess import call
 
 CONFIGS_PATH = 'configs'
 CONTEXT_CONFIGS_PATH = 'context/configs'

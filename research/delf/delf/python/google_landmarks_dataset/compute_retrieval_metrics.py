@@ -24,9 +24,9 @@ from __future__ import print_function
 import argparse
 import sys
 
-from tensorflow.python.platform import app
 from delf.python.google_landmarks_dataset import dataset_file_io
 from delf.python.google_landmarks_dataset import metrics
+from tensorflow.python.platform import app
 
 cmd_args = None
 

@@ -20,9 +20,8 @@ In some cases this is just an additional linear layer on the policy.
 In other cases, it is a completely separate neural network.
 """
 
-from six.moves import xrange
 import tensorflow as tf
-import numpy as np
+from six.moves import xrange
 
 
 class Baseline(object):

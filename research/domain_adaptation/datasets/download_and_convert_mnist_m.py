@@ -31,10 +31,7 @@ import random
 import sys
 
 # Dependency imports
-import numpy as np
-from six.moves import urllib
 import tensorflow as tf
-
 from slim.datasets import dataset_utils
 
 tf.app.flags.DEFINE_string(

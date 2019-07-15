@@ -19,9 +19,8 @@ from __future__ import division
 from __future__ import print_function
 
 import numpy as np
-from PIL import Image
 import tensorflow as tf
-
+from PIL import Image
 from delf import feature_extractor
 
 # Minimum dimensions below which DELF features are not extracted (empty

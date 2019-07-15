@@ -19,10 +19,8 @@ from __future__ import division
 from __future__ import print_function
 
 import numpy as np
-
 import tensorflow as tf
-from google3.third_party.tensorflow_models.gan.mnist  import util
-
+from google3.third_party.tensorflow_models.gan.mnist import util
 
 # pylint: disable=line-too-long
 # This is a real digit `5` from MNIST.

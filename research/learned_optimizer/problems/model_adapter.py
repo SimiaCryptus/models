@@ -21,7 +21,6 @@ from __future__ import print_function
 
 import mock
 import tensorflow as tf
-
 from learned_optimizer.problems import problem_generator as pg
 
 

@@ -15,9 +15,9 @@
 
 """BottleneckConvLSTMCell implementation."""
 
+import lstm_object_detection.lstm.utils as lstm_utils
 import tensorflow as tf
 from tensorflow.contrib.framework.python.ops import variables
-import lstm_object_detection.lstm.utils as lstm_utils
 
 slim = tf.contrib.slim
 

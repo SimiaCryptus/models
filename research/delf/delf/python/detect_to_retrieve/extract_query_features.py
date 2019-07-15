@@ -31,16 +31,15 @@ import sys
 import time
 
 import numpy as np
+import tensorflow as tf
 from PIL import Image
 from PIL import ImageFile
-import tensorflow as tf
-
-from google.protobuf import text_format
-from tensorflow.python.platform import app
 from delf import delf_config_pb2
+from delf import extractor
 from delf import feature_io
 from delf.python.detect_to_retrieve import dataset
-from delf import extractor
+from google.protobuf import text_format
+from tensorflow.python.platform import app
 
 cmd_args = None
 

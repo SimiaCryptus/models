@@ -37,9 +37,8 @@ from __future__ import print_function
 
 import re
 
-import tensorflow as tf
-
 import cifar10_input
+import tensorflow as tf
 
 FLAGS = tf.app.flags.FLAGS
 

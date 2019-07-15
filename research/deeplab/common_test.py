@@ -17,7 +17,6 @@
 import copy
 
 import tensorflow as tf
-
 from deeplab import common
 
 

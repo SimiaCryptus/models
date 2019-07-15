@@ -36,14 +36,13 @@ import socket
 import sys
 import time
 
-import tensorflow as tf  # pylint: disable=g-bad-import-order
-
 import dualnet
 import evaluation
 import go
 import model_params
 import preprocessing
 import selfplay_mcts
+import tensorflow as tf  # pylint: disable=g-bad-import-order
 import utils
 
 _TF_RECORD_SUFFIX = '.tfrecord.zz'

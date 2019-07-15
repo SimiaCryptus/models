@@ -18,10 +18,9 @@ import io
 import json
 import os
 
-import numpy as np
 import PIL.Image
+import numpy as np
 import tensorflow as tf
-
 from object_detection.dataset_tools import create_coco_tf_record
 
 

@@ -15,11 +15,10 @@
 
 """Tests of the block operators."""
 
-import numpy as np
-import tensorflow as tf
-
 import block_base
 import blocks_operator
+import numpy as np
+import tensorflow as tf
 
 
 class AddOneBlock(block_base.BlockBase):

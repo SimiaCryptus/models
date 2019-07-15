@@ -23,12 +23,12 @@ import time
 
 # pylint: disable=g-bad-import-order
 import numpy as np
+import tensorflow as tf
 from absl import flags
 from absl.testing import flagsaver
-import tensorflow as tf
-# pylint: enable=g-bad-import-order
-
 from official.utils.flags import core as flags_core
+
+# pylint: enable=g-bad-import-order
 
 FLAGS = flags.FLAGS
 

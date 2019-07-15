@@ -28,12 +28,10 @@ import hashlib
 import io
 import json
 import os
-import contextlib2
 
 import PIL.Image
-
+import contextlib2
 import tensorflow as tf
-
 from datasets import dataset_utils
 
 tf.logging.set_verbosity(tf.logging.INFO)

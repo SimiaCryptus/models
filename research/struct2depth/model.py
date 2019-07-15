@@ -20,13 +20,13 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-from absl import logging
-import numpy as np
-import tensorflow as tf
-
 import nets
+import numpy as np
 import project
 import reader
+import tensorflow as tf
+from absl import logging
+
 import util
 
 gfile = tf.gfile

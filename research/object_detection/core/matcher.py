@@ -32,8 +32,8 @@ The Match class is used to store the match results and it provides simple apis
 to query the results.
 """
 import abc
-import tensorflow as tf
 
+import tensorflow as tf
 from object_detection.utils import ops
 
 

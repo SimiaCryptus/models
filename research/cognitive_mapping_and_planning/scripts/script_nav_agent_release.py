@@ -37,29 +37,23 @@ Usage:
     --ps_tasks $num_ps --master $master_name --task $worker_id
 """
 
-import sys, os, numpy as np
-import copy
-import argparse, pprint
-import time
-import cProfile
-import platform
-
-
-import tensorflow as tf
-from tensorflow.contrib import slim
-from tensorflow.python.framework import ops
-from tensorflow.contrib.framework.python.ops import variables
-
 import logging
-from tensorflow.python.platform import gfile
-from tensorflow.python.platform import app
-from tensorflow.python.platform import flags
+import numpy as np
+import os
+import time
+
+import datasets.nav_env as nav_env
+import src.file_utils as fu
+import src.utils as utils
+import tensorflow as tf
+import tfcode.cmp as cmp
 from cfgs import config_cmp
 from cfgs import config_vision_baseline
-import datasets.nav_env as nav_env
-import src.file_utils as fu 
-import src.utils as utils
-import tfcode.cmp as cmp 
+from tensorflow.contrib import slim
+from tensorflow.contrib.framework.python.ops import variables
+from tensorflow.python.framework import ops
+from tensorflow.python.platform import app
+from tensorflow.python.platform import flags
 from tfcode import tf_utils
 from tfcode import vision_baseline_lstm
 

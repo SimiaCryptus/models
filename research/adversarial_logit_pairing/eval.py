@@ -21,13 +21,11 @@ from __future__ import print_function
 
 import os
 
-from absl import app
-from absl import flags
-
-import tensorflow as tf
-
 import adversarial_attack
 import model_lib
+import tensorflow as tf
+from absl import app
+from absl import flags
 from datasets import dataset_factory
 
 FLAGS = flags.FLAGS

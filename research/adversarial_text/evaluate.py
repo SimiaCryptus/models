@@ -21,11 +21,10 @@ from __future__ import print_function
 import math
 import time
 
-# Dependency imports
-
+import graphs
 import tensorflow as tf
 
-import graphs
+# Dependency imports
 
 flags = tf.app.flags
 FLAGS = flags.FLAGS

@@ -25,7 +25,6 @@ from __future__ import division
 from __future__ import print_function
 
 import tensorflow as tf  # pylint: disable=g-bad-import-order
-
 from official.utils.logs import hooks
 from official.utils.logs import logger
 from official.utils.logs import metric_hook

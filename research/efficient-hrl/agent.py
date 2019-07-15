@@ -16,13 +16,13 @@
 """A UVF agent.
 """
 
-import tensorflow as tf
-import gin.tf
-from agents import ddpg_agent
 # pylint: disable=unused-import
 import cond_fn
+import gin.tf
+import tensorflow as tf
+from agents import ddpg_agent
 from utils import utils as uvf_utils
-from context import gin_imports
+
 # pylint: enable=unused-import
 slim = tf.contrib.slim
 

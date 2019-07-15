@@ -19,11 +19,10 @@ from __future__ import print_function
 
 import itertools
 
-import tensorflow as tf  # pylint: disable=g-bad-import-order
-
 import coords
 import numpy as np
 import symmetries
+import tensorflow as tf  # pylint: disable=g-bad-import-order
 import utils_test
 
 tf.logging.set_verbosity(tf.logging.ERROR)

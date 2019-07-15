@@ -33,7 +33,6 @@ import random
 import sys
 
 import tensorflow as tf
-
 from datasets import dataset_utils
 
 # The URL where the Flowers data can be downloaded.

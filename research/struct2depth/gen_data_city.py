@@ -16,18 +16,13 @@
 
 """ Offline data generation for the Cityscapes dataset."""
 
+import glob
 import os
-from absl import app
-from absl import flags
-from absl import logging
-import numpy as np
+
 import cv2
-import os, glob
-
-import alignment
-from alignment import compute_overlap
+import numpy as np
+from absl import app
 from alignment import align
-
 
 SKIP = 2
 WIDTH = 416

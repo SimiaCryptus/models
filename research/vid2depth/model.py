@@ -19,13 +19,13 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-from absl import logging
 import nets
-from ops import icp_grad  # pylint: disable=unused-import
-from ops.icp_op import icp
 import project
 import reader
 import tensorflow as tf
+from absl import logging
+from ops.icp_op import icp
+
 import util
 
 gfile = tf.gfile

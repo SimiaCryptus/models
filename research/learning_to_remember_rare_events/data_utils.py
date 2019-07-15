@@ -23,15 +23,14 @@ Simply call
 import logging
 import os
 import subprocess
-from six.moves import cPickle as pickle
 
 import numpy as np
+import tensorflow as tf
 from scipy.misc import imresize
 from scipy.misc import imrotate
 from scipy.ndimage import imread
+from six.moves import cPickle as pickle
 from six.moves import xrange
-import tensorflow as tf
-
 
 MAIN_DIR = ''
 REPO_LOCATION = 'https://github.com/brendenlake/omniglot.git'

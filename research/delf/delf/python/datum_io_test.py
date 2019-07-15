@@ -22,7 +22,6 @@ import os
 
 import numpy as np
 import tensorflow as tf
-
 from delf import datum_io
 
 

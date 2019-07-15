@@ -17,7 +17,6 @@
 import tempfile
 
 import tensorflow as tf  # pylint: disable=g-bad-import-order
-
 from official.transformer import compute_bleu
 
 

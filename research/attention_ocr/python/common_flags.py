@@ -14,13 +14,12 @@
 # ==============================================================================
 
 """Define flags are common for both train.py and eval.py scripts."""
-import sys
-
-from tensorflow.python.platform import flags
 import logging
+import sys
 
 import datasets
 import model
+from tensorflow.python.platform import flags
 
 FLAGS = flags.FLAGS
 

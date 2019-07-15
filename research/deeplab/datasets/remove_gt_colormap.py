@@ -19,12 +19,11 @@ Removes the color map from the ground truth segmentation annotations and save
 the results to output_dir.
 """
 import glob
-import os.path
+
 import numpy as np
-
-from PIL import Image
-
+import os.path
 import tensorflow as tf
+from PIL import Image
 
 FLAGS = tf.app.flags.FLAGS
 

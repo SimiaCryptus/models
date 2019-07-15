@@ -20,9 +20,8 @@ These embeddings are used as keys to the memory component,
 which returns nearest neighbors.
 """
 
-import tensorflow as tf
-
 import memory
+import tensorflow as tf
 
 FLAGS = tf.flags.FLAGS
 

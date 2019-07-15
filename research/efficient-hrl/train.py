@@ -24,14 +24,14 @@ from __future__ import print_function
 
 import os
 import time
+
 import tensorflow as tf
+
 slim = tf.contrib.slim
 
 import gin.tf
 # pylint: disable=unused-import
 import train_utils
-import agent as agent_
-from agents import circular_buffer
 from utils import utils as uvf_utils
 from environments import create_maze_env
 # pylint: enable=unused-import

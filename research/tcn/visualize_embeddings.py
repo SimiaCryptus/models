@@ -37,14 +37,16 @@ from __future__ import print_function
 
 import os
 import random
+
 import cv2
 import numpy as np
+import tensorflow as tf
+from estimators.get_estimator import get_estimator
 from scipy.misc import imresize
 from scipy.misc import imsave
-from estimators.get_estimator import get_estimator
-from utils import util
-import tensorflow as tf
 from tensorflow.contrib.tensorboard.plugins import projector
+from utils import util
+
 tf.logging.set_verbosity(tf.logging.INFO)
 
 tf.flags.DEFINE_string(

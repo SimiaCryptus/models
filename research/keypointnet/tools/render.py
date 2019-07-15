@@ -21,19 +21,16 @@ Example usage:
 from __future__ import print_function
 
 import argparse
-import itertools
-import json
-from math import pi
+import math
 import os
 import random
 import sys
-from mathutils import Vector
-import math
-import mathutils
 import time
-import copy
+from math import pi
 
 import bpy
+import mathutils
+from mathutils import Vector
 
 sys.path.append(os.path.dirname(__file__))
 

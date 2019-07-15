@@ -51,9 +51,10 @@ The Example proto contains the following fields:
   image/segmentation/class/format: semantic segmentation file format.
 """
 import math
-import os.path
 import sys
+
 import build_data
+import os.path
 import tensorflow as tf
 
 FLAGS = tf.app.flags.FLAGS

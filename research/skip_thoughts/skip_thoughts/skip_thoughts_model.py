@@ -32,9 +32,7 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-
 import tensorflow as tf
-
 from skip_thoughts.ops import gru_cell
 from skip_thoughts.ops import input_ops
 

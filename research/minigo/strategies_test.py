@@ -19,13 +19,12 @@ from __future__ import print_function
 
 import unittest
 
-import tensorflow as tf  # pylint: disable=g-bad-import-order
-
 import coords
 import go
 import numpy as np
-from strategies import MCTSPlayerMixin, time_recommendation
+import tensorflow as tf  # pylint: disable=g-bad-import-order
 import utils_test
+from strategies import MCTSPlayerMixin, time_recommendation
 
 ALMOST_DONE_BOARD = utils_test.load_board('''
   .XO.XO.OO

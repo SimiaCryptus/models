@@ -15,9 +15,9 @@
 """Utilities for PixelDA model."""
 import math
 
-# Dependency imports
-
 import tensorflow as tf
+
+# Dependency imports
 
 slim = tf.contrib.slim
 

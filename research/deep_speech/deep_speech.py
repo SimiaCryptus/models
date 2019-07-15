@@ -18,20 +18,21 @@ from __future__ import division
 from __future__ import print_function
 
 import os
-# pylint: disable=g-bad-import-order
-from absl import app as absl_app
-from absl import flags
-import tensorflow as tf
-# pylint: enable=g-bad-import-order
 
 import data.dataset as dataset
 import decoder
 import deep_speech_model
+import tensorflow as tf
+# pylint: disable=g-bad-import-order
+from absl import app as absl_app
+from absl import flags
 from official.utils.flags import core as flags_core
 from official.utils.logs import hooks_helper
 from official.utils.logs import logger
 from official.utils.misc import distribution_utils
 from official.utils.misc import model_helpers
+
+# pylint: enable=g-bad-import-order
 
 # Default vocabulary file
 _VOCABULARY_FILE = os.path.join(

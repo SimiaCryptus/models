@@ -16,8 +16,8 @@
 import numpy as np
 import tensorflow as tf
 import tensorflow_fold as td
-from model_n2nmn import netgen_att
 from model_n2nmn import assembler
+from model_n2nmn import netgen_att
 from model_n2nmn.modules import Modules
 
 

@@ -39,18 +39,16 @@ then evaluation (in multi-class mode) can be invoked as follows:
   metrics = evaluator.ComputeMetrics()
 
 """
-from collections import OrderedDict
 import copy
 import time
-import numpy as np
+from collections import OrderedDict
 
+import numpy as np
+import tensorflow as tf
+from object_detection.utils import json_utils
 from pycocotools import coco
 from pycocotools import cocoeval
 from pycocotools import mask
-
-import tensorflow as tf
-
-from object_detection.utils import json_utils
 
 
 class COCOWrapper(coco.COCO):

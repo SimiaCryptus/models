@@ -16,8 +16,9 @@
 
 import sonnet as snt
 import tensorflow as tf
-from tensorflow.python.keras.datasets import mnist
 from learning_unsupervised_learning.datasets import common
+from tensorflow.python.keras.datasets import mnist
+
 
 class Mnist(snt.AbstractModule):
   def __init__(self, device, batch_size=128, name="Mnist"):

@@ -20,10 +20,9 @@ from __future__ import print_function
 
 import argparse
 
+import automobile_data
 import numpy as np
 import tensorflow as tf
-
-import automobile_data
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--batch_size', default=100, type=int, help='batch size')

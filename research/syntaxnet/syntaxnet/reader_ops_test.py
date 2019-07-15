@@ -16,17 +16,15 @@
 """Tests for reader_ops."""
 
 
-import os.path
 import numpy as np
+import os.path
 import tensorflow as tf
-
-from tensorflow.python.platform import tf_logging as logging
-
 from syntaxnet import dictionary_pb2
 from syntaxnet import graph_builder
 from syntaxnet import sparse_pb2
 from syntaxnet import test_flags
 from syntaxnet.ops import gen_parser_ops
+from tensorflow.python.platform import tf_logging as logging
 
 
 class ParsingReaderOpsTest(tf.test.TestCase):

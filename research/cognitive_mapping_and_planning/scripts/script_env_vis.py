@@ -18,8 +18,10 @@ PYTHONPATH='.' PYOPENGL_PLATFORM=egl python scripts/script_env_vis.py \
   --dataset_name sbpd --building_name area3
 """
 import sys
-import numpy as np
+
 import matplotlib
+import numpy as np
+
 matplotlib.use('TkAgg')
 from PIL import ImageTk, Image
 import Tkinter as tk

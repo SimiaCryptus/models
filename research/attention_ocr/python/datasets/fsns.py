@@ -16,11 +16,12 @@
 
 """Configuration to read FSNS dataset https://goo.gl/3Ldm8v."""
 
+import logging
 import os
 import re
+
 import tensorflow as tf
 from tensorflow.contrib import slim
-import logging
 
 DEFAULT_DATASET_DIR = os.path.join(os.path.dirname(__file__), 'data/fsns')
 

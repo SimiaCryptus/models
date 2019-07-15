@@ -23,7 +23,6 @@ model.
 import tensorflow as tf
 
 #from models.domain_adaptation.domain_separation
-import utils
 
 slim = tf.contrib.slim
 

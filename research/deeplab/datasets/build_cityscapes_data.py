@@ -61,10 +61,11 @@ The Example proto contains the following fields:
 """
 import glob
 import math
-import os.path
 import re
 import sys
+
 import build_data
+import os.path
 import tensorflow as tf
 
 FLAGS = tf.app.flags.FLAGS

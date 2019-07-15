@@ -13,18 +13,12 @@
 # limitations under the License.
 # ==============================================================================
 
-import pprint
-import os
-import numpy as np
-from tensorflow.python.platform import app
-from tensorflow.python.platform import flags
 import logging
-import src.utils as utils
+
 import cfgs.config_common as cc
-import datasets.nav_env_config as nec
-
-
+import src.utils as utils
 import tensorflow as tf
+from tensorflow.python.platform import flags
 
 FLAGS = flags.FLAGS
 

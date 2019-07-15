@@ -15,13 +15,13 @@
 
 """ResNet Train/Eval module.
 """
-import time
-import six
 import sys
+import time
 
 import cifar_input
 import numpy as np
 import resnet_model
+import six
 import tensorflow as tf
 
 FLAGS = tf.app.flags.FLAGS

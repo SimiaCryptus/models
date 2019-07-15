@@ -18,12 +18,11 @@
 import os
 import sys
 
-import numpy as np
-from six.moves import xrange
-import tensorflow as tf
-
-from google.protobuf import text_format
 import data_utils
+import numpy as np
+import tensorflow as tf
+from google.protobuf import text_format
+from six.moves import xrange
 
 FLAGS = tf.flags.FLAGS
 # General flags.

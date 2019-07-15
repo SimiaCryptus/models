@@ -19,11 +19,11 @@ from __future__ import division
 from __future__ import print_function
 
 from tempfile import mkdtemp
-import tensorflow as tf
 
+import tensorflow as tf
 from official.resnet import imagenet_main
-from official.resnet.ctl import ctl_imagenet_main
 from official.resnet.ctl import ctl_common
+from official.resnet.ctl import ctl_imagenet_main
 from official.utils.misc import keras_utils
 from official.utils.testing import integration
 # pylint: disable=ungrouped-imports

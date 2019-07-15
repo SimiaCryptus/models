@@ -23,7 +23,6 @@ from __future__ import print_function
 
 import numpy as np
 import tensorflow as tf
-
 from delf import box_pb2
 
 

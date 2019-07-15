@@ -13,17 +13,12 @@
 # limitations under the License.
 # ==============================================================================
 
-import os, sys
-import numpy as np
-from tensorflow.python.platform import app
-from tensorflow.python.platform import flags
 import logging
-import src.utils as utils
+
 import cfgs.config_common as cc
-
-
+import numpy as np
+import src.utils as utils
 import tensorflow as tf
-
 
 rgb_resnet_v2_50_path = 'data/init_models/resnet_v2_50/model.ckpt-5136169'
 d_resnet_v2_50_path = 'data/init_models/distill_rgb_to_d_resnet_v2_50/model.ckpt-120002'

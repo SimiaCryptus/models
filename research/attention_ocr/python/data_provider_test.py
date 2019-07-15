@@ -15,12 +15,11 @@
 
 """Tests for data_provider."""
 
+import data_provider
+import datasets
 import numpy as np
 import tensorflow as tf
 from tensorflow.contrib.slim import queues
-
-import datasets
-import data_provider
 
 
 class DataProviderTest(tf.test.TestCase):

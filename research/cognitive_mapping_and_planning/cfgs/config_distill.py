@@ -13,17 +13,10 @@
 # limitations under the License.
 # ==============================================================================
 
-import pprint
-import copy
-import os
-from tensorflow.python.platform import app
-from tensorflow.python.platform import flags
 import logging
-import src.utils as utils
+
 import cfgs.config_common as cc
-
-
-import tensorflow as tf
+import src.utils as utils
 
 rgb_resnet_v2_50_path = 'cache/resnet_v2_50_inception_preprocessed/model.ckpt-5136169'
 

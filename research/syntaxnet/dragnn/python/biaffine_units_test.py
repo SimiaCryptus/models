@@ -16,12 +16,10 @@
 
 
 import tensorflow as tf
-
-from google.protobuf import text_format
-
 from dragnn.protos import spec_pb2
 from dragnn.python import biaffine_units
 from dragnn.python import network_units
+from google.protobuf import text_format
 
 _BATCH_SIZE = 11
 _NUM_TOKENS = 22

@@ -20,14 +20,13 @@ from __future__ import division
 from __future__ import print_function
 
 from collections import Counter
+
 # Dependency imports
 import numpy as np
-from scipy.special import expit
-
 import tensorflow as tf
-
 from model_utils import helper
 from model_utils import n_gram
+from scipy.special import expit
 
 FLAGS = tf.app.flags.FLAGS
 

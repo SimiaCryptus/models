@@ -23,17 +23,10 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-import collections
 import numpy as np
-import sonnet as snt
 import tensorflow as tf
-from tensorflow.python.framework import function
-
 from learning_unsupervised_learning import utils
-
 from learning_unsupervised_learning.meta_objective import utils as meta_obj_utils
-
-from sklearn import svm
 from sklearn import linear_model
 
 

@@ -25,9 +25,9 @@ import multiprocessing
 import numpy as np
 import pandas as pd
 import tensorflow as tf
-# pylint: enable=wrong-import-order
-
 from official.utils.data import file_io
+
+# pylint: enable=wrong-import-order
 
 
 _RAW_ROW = "raw_row"

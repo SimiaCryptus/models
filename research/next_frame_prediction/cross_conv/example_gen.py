@@ -18,9 +18,8 @@ import random
 import sys
 
 import numpy as np
-from six.moves import xrange
 import tensorflow as tf
-
+from six.moves import xrange
 
 tf.flags.DEFINE_string('out_file', '',
                        'Output file for the tfrecords.')

@@ -16,9 +16,10 @@
 """Interface for the policy of the agents use for navigation."""
 
 import abc
+
+import embedders
 import tensorflow as tf
 from absl import logging
-import embedders
 from envs import task_env
 
 slim = tf.contrib.slim

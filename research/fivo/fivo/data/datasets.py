@@ -23,8 +23,8 @@ from __future__ import print_function
 import pickle
 
 import numpy as np
-from scipy.sparse import coo_matrix
 import tensorflow as tf
+from scipy.sparse import coo_matrix
 
 # The default number of threads used to process data in parallel.
 DEFAULT_PARALLELISM = 12

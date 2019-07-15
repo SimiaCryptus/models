@@ -15,12 +15,12 @@
 
 """Functions to read, decode and pre-process input data for the Model.
 """
-import collections
 import functools
+
+import collections
+import inception_preprocessing
 import tensorflow as tf
 from tensorflow.contrib import slim
-
-import inception_preprocessing
 
 # Tuple to store input data endpoints for the Model.
 # It has following fields (tensors):

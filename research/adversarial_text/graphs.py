@@ -20,13 +20,12 @@ from __future__ import print_function
 import csv
 import os
 
-# Dependency imports
-
-import tensorflow as tf
-
 import adversarial_losses as adv_lib
 import inputs as inputs_lib
 import layers as layers_lib
+import tensorflow as tf
+
+# Dependency imports
 
 flags = tf.app.flags
 FLAGS = flags.FLAGS

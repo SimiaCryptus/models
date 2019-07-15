@@ -25,8 +25,8 @@ import gzip
 import os
 import uuid
 
-from google.protobuf import json_format
 from dragnn.protos import trace_pb2
+from google.protobuf import json_format
 
 # Make a guess about where the IPython kernel root is.
 _IPYTHON_KERNEL_PATH = os.path.realpath(os.getcwd())

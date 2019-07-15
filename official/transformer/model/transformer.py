@@ -23,7 +23,6 @@ from __future__ import division
 from __future__ import print_function
 
 import tensorflow as tf  # pylint: disable=g-bad-import-order
-
 from official.transformer.model import attention_layer
 from official.transformer.model import beam_search
 from official.transformer.model import embedding_layer

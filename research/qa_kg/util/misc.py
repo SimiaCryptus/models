@@ -13,10 +13,11 @@
 # limitations under the License.
 # ==============================================================================
 
-from datetime import datetime
 import json
 import logging
 import os
+from datetime import datetime
+
 import tensorflow as tf
 import tensorflow.contrib.slim as slim
 

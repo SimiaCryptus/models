@@ -20,17 +20,15 @@ from __future__ import print_function
 
 import abc
 
-
 import numpy as np
 import tensorflow as tf
-from tensorflow.python.ops import nn
-from tensorflow.python.ops import tensor_array_ops as ta
-from tensorflow.python.platform import tf_logging as logging
-
 from dragnn.python import dragnn_ops
 from syntaxnet import syntaxnet_ops
 from syntaxnet.util import check
 from syntaxnet.util import registry
+from tensorflow.python.ops import nn
+from tensorflow.python.ops import tensor_array_ops as ta
+from tensorflow.python.platform import tf_logging as logging
 
 
 def linked_embeddings_name(channel_id):

@@ -56,13 +56,12 @@ Options:
 """
 
 import itertools
-import math
 import os
 import struct
 import sys
 
-from six.moves import xrange
 import tensorflow as tf
+from six.moves import xrange
 
 flags = tf.app.flags
 

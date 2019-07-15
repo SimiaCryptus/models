@@ -19,8 +19,7 @@ from __future__ import division
 from __future__ import print_function
 
 import functools
-import random
-import numpy as np
+
 import preprocessing
 import tensorflow as tf
 

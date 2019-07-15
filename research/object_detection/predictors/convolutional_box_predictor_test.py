@@ -15,7 +15,6 @@
 
 """Tests for object_detection.predictors.convolutional_box_predictor."""
 
-from absl.testing import parameterized
 import numpy as np
 import tensorflow as tf
 

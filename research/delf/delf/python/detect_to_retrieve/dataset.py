@@ -19,8 +19,8 @@ from __future__ import division
 from __future__ import print_function
 
 import numpy as np
-from scipy.io import matlab
 import tensorflow as tf
+from scipy.io import matlab
 
 _GROUND_TRUTH_KEYS = ['easy', 'hard', 'junk']
 

@@ -33,7 +33,6 @@ from __future__ import print_function
 
 import numpy as np
 import tensorflow as tf
-
 import vggish_input
 import vggish_params
 import vggish_postprocess

@@ -18,14 +18,10 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
+import collections
 import sonnet as snt
 import tensorflow as tf
-import numpy as np
-import collections
 from learning_unsupervised_learning import utils
-
-from tensorflow.python.util import nest
-
 from learning_unsupervised_learning import variable_replace
 
 

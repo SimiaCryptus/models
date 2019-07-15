@@ -21,6 +21,7 @@ from __future__ import print_function
 
 import collections
 import tensorflow as tf
+
 nest = tf.contrib.framework.nest
 
 from fivo import nested_utils

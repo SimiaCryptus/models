@@ -53,7 +53,6 @@ import sys
 
 from six.moves import xrange  # pylint: disable=redefined-builtin
 
-
 if __name__ == '__main__':
   if len(sys.argv) < 3:
     print('Invalid usage\n'

@@ -16,11 +16,10 @@
 """Tests for input_reader_builder."""
 
 import os
+
 import numpy as np
 import tensorflow as tf
-
 from google.protobuf import text_format
-
 from object_detection.builders import input_reader_builder
 from object_detection.core import standard_fields as fields
 from object_detection.protos import input_reader_pb2

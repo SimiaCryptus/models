@@ -20,10 +20,9 @@ from __future__ import print_function
 
 import os
 
+import model_rotator as model
 import tensorflow as tf
 from tensorflow import app
-
-import model_rotator as model
 
 flags = tf.app.flags
 slim = tf.contrib.slim

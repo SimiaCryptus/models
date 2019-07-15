@@ -1,5 +1,7 @@
 from __future__ import division
+
 from future import standard_library
+
 standard_library.install_aliases()
 from builtins import str
 from builtins import range
@@ -21,9 +23,10 @@ from past.utils import old_div
 
 import numpy as np
 import tensorflow as tf
-import os, random, gc, math, re
-import multiprocessing, types, shutil, pickle, json
-from collections import defaultdict, MutableMapping
+import os, math, re
+import shutil, json
+from collections import defaultdict
+
 
 def tanh_sample_info(mu, logsigma, stop_action_gradient=False, n_samples=1):
     if n_samples > 1:

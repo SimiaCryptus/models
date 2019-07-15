@@ -20,15 +20,13 @@ from __future__ import print_function
 
 import os
 
-
-from absl import app
-from absl import flags
-import numpy as np
 import PIL
-import tensorflow as tf
-
 import data_provider
 import networks
+import numpy as np
+import tensorflow as tf
+from absl import app
+from absl import flags
 
 tfgan = tf.contrib.gan
 

@@ -22,7 +22,6 @@ import functools
 import re
 
 import tensorflow as tf
-
 from dragnn.python import network_units
 from syntaxnet.util import check
 

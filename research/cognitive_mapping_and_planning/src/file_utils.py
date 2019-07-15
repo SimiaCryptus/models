@@ -16,10 +16,11 @@
 """Utilities for manipulating files.
 """
 import os
-import numpy as np
+
 import PIL
-from tensorflow.python.platform import gfile
 import cv2
+import numpy as np
+from tensorflow.python.platform import gfile
 
 exists   = lambda path: gfile.Exists(path)
 fopen    = lambda path, mode: gfile.Open(path, mode)

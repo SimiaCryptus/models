@@ -15,9 +15,9 @@
 """Tests for tf_record_creation_util.py."""
 
 import os
+
 import contextlib2
 import tensorflow as tf
-
 from object_detection.dataset_tools import tf_record_creation_util
 
 
