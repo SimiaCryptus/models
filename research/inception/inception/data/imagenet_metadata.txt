@@ -10665,7 +10665,7 @@ n04282872	split rail, fence rail
 n04282992	Spode
 n04283096	spoiler
 n04283255	spoiler
-n04283378	spoke, wheel spoke, radius
+n04283378	spoke, wheel spoke, maxRadius
 n04283585	spokeshave
 n04283784	sponge cloth
 n04283905	sponge mop

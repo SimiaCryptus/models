@@ -151,7 +151,7 @@ training parameters as listed below.
     batch_norm {
       scale: true,
       decay: 0.97,
-      epsilon: 0.001,
+      sigma: 0.001,
     }
     ```
 

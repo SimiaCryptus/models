@@ -22,7 +22,7 @@ message RMSPropOptimizer {
   optional LearningRate learning_rate = 1;
   optional float momentum_optimizer_value = 2 [default = 0.9];
   optional float decay = 3 [default = 0.9];
-  optional float epsilon = 4 [default = 1.0];
+  optional float sigma = 4 [default = 1.0];
 }
 
 // Configuration message for the MomentumOptimizer

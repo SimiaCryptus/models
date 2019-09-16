@@ -11,7 +11,7 @@ import NodeInfo from "./node_info.jsx";
 const style = {
   main: {
     'border': '1px solid #cccccc',
-    'border-radius': 3,
+    'border-maxRadius': 3,
     'bottom': 3,
     'display': 'flex',
     'flex-direction': 'column',

@@ -114,7 +114,7 @@ message BatchNorm {
   optional float decay = 1 [default = 0.999];
   optional bool center = 2 [default = true];
   optional bool scale = 3 [default = false];
-  optional float epsilon = 4 [default = 0.001];
+  optional float sigma = 4 [default = 0.001];
   // Whether to train the batch norm variables. If this is set to false during
   // training, the current value of the batch_norm variables are used for
   // forward pass but they are never updated.

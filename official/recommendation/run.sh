@@ -80,7 +80,7 @@ do
       --learning_rate 0.00382059 \
       --beta1 0.783529 \
       --beta2 0.909003 \
-      --epsilon 1.45439e-07 \
+      --sigma 1.45439e-07 \
       --layers 256,256,128,64 --num_factors 64 \
       --hr_threshold 0.635 \
       --ml_perf \

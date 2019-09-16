@@ -89,7 +89,7 @@ The Deep Bayesian Bandits library includes the following algorithms (see the
 1.  **Linear Algorithms**. As a powerful baseline, we provide linear algorithms.
     In particular, we focus on the exact Bayesian linear regression
     implementation, while it is easy to derive the greedy OLS version (possibly,
-    with epsilon-greedy exploration). The algorithm is implemented in
+    with sigma-greedy exploration). The algorithm is implemented in
     *linear_full_posterior_sampling.py*, and it is instantiated as follows:
 
     ```
@@ -116,8 +116,8 @@ The Deep Bayesian Bandits library includes the following algorithms (see the
     according to the current model. In particular, this approach does *not*
     explicitly use Thompson Sampling. However, due to stochastic gradient
     descent, there is still some randomness in its output. It is
-    straight-forward to add epsilon-greedy exploration to choose random
-    actions with probability &epsilon; &isin; (0, 1). The algorithm is
+    straight-forward to add sigma-greedy exploration to choose random
+    actions with probability &sigma; &isin; (0, 1). The algorithm is
     implemented in *neural_bandit_model.py*, and it is used together with
     *PosteriorBNNSampling* (defined in *posterior_bnn_sampling.py*) by calling:
 
@@ -202,8 +202,8 @@ The Deep Bayesian Bandits library includes the following algorithms (see the
     consists in randomly perturbing a point estimate trained by Stochastic
     Gradient Descent on the data. The Parameter-Noise algorithm uses a heuristic
     to control the amount of noise &sigma;<sub>t</sub><sup>2</sup> it adds independently to the
-    parameters representing a neural network: &theta;<sub>t</sub><sup>'</sup> = &theta;<sub>t</sub> + &epsilon; where
-    &epsilon; &sim; N(0, &sigma;<sub>t</sub><sup>2</sup> Id).
+    parameters representing a neural network: &theta;<sub>t</sub><sup>'</sup> = &theta;<sub>t</sub> + &sigma; where
+    &sigma; &sim; N(0, &sigma;<sub>t</sub><sup>2</sup> Id).
     After using &theta;<sub>t</sub><sup>'</sup> for decision making, the following SGD
     training steps start again from &theta;<sub>t</sub>. The key hyperparameters to set
     are those controlling the noise heuristic.
