@@ -16,7 +16,7 @@ Cryptography"](https://arxiv.org/abs/1610.06918).
 > encryption and decryption, and also how to apply these operations
 > selectively in order to meet confidentiality goals.
 
-This code allows you to train encoder/decoder/adversary network triplets
+This code allows you to train encoder/decoder/adversary network connections
 and evaluate their effectiveness on randomly generated input and key
 pairs.
 

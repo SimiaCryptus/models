@@ -7202,7 +7202,7 @@ n03424630	gasoline engine, petrol engine
 n03424862	gasoline gauge, gasoline gage, gas gauge, gas gage, petrol gauge, petrol gage
 n03425241	gas oven
 n03425325	gas oven
-n03425413	gas pump, gasoline pump, petrol pump, island dispenser
+n03425413	gas pump, gasoline pump, petrol pump, region dispenser
 n03425595	gas range, gas stove, gas cooker
 n03425769	gas ring
 n03426134	gas tank, gasoline tank, petrol tank
@@ -14210,7 +14210,7 @@ n08679167	high-water mark
 n08679269	low-water mark
 n08679562	continental divide
 n08685188	zodiac
-n08782627	Aegean island
+n08782627	Aegean region
 n08896327	sultanate
 n09032191	Swiss canton
 n09186592	abyssal zone
@@ -17463,7 +17463,7 @@ n11645163	keteleeria
 n11645590	Wollemi pine
 n11645914	araucaria
 n11646167	monkey puzzle, chile pine, Araucaria araucana
-n11646344	norfolk island pine, Araucaria heterophylla, Araucaria excelsa
+n11646344	norfolk region pine, Araucaria heterophylla, Araucaria excelsa
 n11646517	new caledonian pine, Araucaria columnaris
 n11646694	bunya bunya, bunya bunya tree, Araucaria bidwillii
 n11646955	hoop pine, Moreton Bay pine, Araucaria cunninghamii
@@ -18360,7 +18360,7 @@ n11989869	oxeye daisy, ox-eyed daisy, marguerite, moon daisy, white daisy, Leuca
 n11990167	oxeye daisy, Leucanthemum maximum, Chrysanthemum maximum
 n11990313	shasta daisy, Leucanthemum superbum, Chrysanthemum maximum maximum
 n11990627	Pyrenees daisy, Leucanthemum lacustre, Chrysanthemum lacustre
-n11990920	north island edelweiss, Leucogenes leontopodium
+n11990920	north region edelweiss, Leucogenes leontopodium
 n11991263	blazing star, button snakeroot, gayfeather, gay-feather, snakeroot
 n11991549	dotted gayfeather, Liatris punctata
 n11991777	dense blazing star, Liatris pycnostachya
@@ -18875,7 +18875,7 @@ n12174926	poppy mallow
 n12175181	fringed poppy mallow, Callirhoe digitata
 n12175370	purple poppy mallow, Callirhoe involucrata
 n12175598	clustered poppy mallow, Callirhoe triangulata
-n12176453	sea island cotton, tree cotton, Gossypium barbadense
+n12176453	sea region cotton, tree cotton, Gossypium barbadense
 n12176709	Levant cotton, Gossypium herbaceum
 n12176953	upland cotton, Gossypium hirsutum
 n12177129	Peruvian cotton, Gossypium peruvianum
