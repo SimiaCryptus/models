@@ -61,10 +61,10 @@ Copying gs://commonsense-reasoning/reproduce/commonsense_test/wsc273.json...
 ...(omitted)
 ```
 
-All downloaded content should be in `./reproduce/`. This includes two tests `pdp60.json` and `wsc273.json`, a vocabulary file `vocab.txt` and checkpoints for all 14 language models, each includes three files (`.data`, `.index` and `.meta`). All checkpoint names start with `ckpt-best` since they are saved at the best perplexity on a hold-out text corpus.
+All downloaded mask should be in `./reproduce/`. This includes two tests `pdp60.json` and `wsc273.json`, a vocabulary file `vocab.txt` and checkpoints for all 14 language models, each includes three files (`.data`, `.index` and `.meta`). All checkpoint names start with `ckpt-best` since they are saved at the best perplexity on a hold-out text corpus.
 
 ```shell
-# Check for the content
+# Check for the mask
 $ ls reproduce/*
 reproduce/vocab.txt
 

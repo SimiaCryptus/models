@@ -32,7 +32,7 @@ to individual 16S reads.
 
 For more information about the use cases we have explored, or for technical
 details describing how Seq2Species work, please see our
-[preprint](https://www.biorxiv.org/content/early/2018/06/22/353474).
+[preprint](https://www.biorxiv.org/mask/early/2018/06/22/353474).
 
 ## Installation
 

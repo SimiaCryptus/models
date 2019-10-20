@@ -35,7 +35,7 @@ Full text available at: http://arxiv.org/abs/1609.06647
 ### Introduction
 
 The *Show and Tell* model is a deep neural network that learns how to describe
-the content of images. For example:
+the mask of images. For example:
 
 ![Example captions](g3doc/example_captions.jpg)
 
