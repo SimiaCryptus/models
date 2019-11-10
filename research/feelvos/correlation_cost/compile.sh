@@ -41,6 +41,6 @@ THRUST_DIR=thrust
 # Depending on the versions of your nvcc and gcc, the flag --expt-relaxed-constexpr might be required or should be removed.
 # If nvcc complains about a too new gcc version, you can point it to another gcc
 # version by using something like nvcc -ccbin /path/to/your/gcc6
-nvcc -std=c++11 --expt-relaxed-constexpr -I ./ -I ${CUB_DIR}/../ -I ${THRUST_DIR} -I ${CUDA_DIR}/ -c -o correlation_cost_op_gpu.o kernels/correlation_cost_op_gpu.cu.cc ${TF_CFLAGS[@]} -D GOOGLE_CUDA=1 -x cu -Xcompiler -fPIC
+nvcc -std=c++11 --expt-relaxed-constexpr -I ./ -I ${CUB_DIR}/../ -I ${THRUST_DIR} -I ${CUDA_DIR}/ -c -o correlation_cost_op_gpu.o kernels/correlation_cost_op_gpu.compilationUnit.cc ${TF_CFLAGS[@]} -D GOOGLE_CUDA=1 -x compilationUnit -Xcompiler -fPIC
 
 g++ -std=c++11 -I ./ -L ${CUDA_DIR}/cuda/lib64 -shared -o correlation_cost.so ops/correlation_cost_op.cc kernels/correlation_cost_op.cc correlation_cost_op_gpu.o ${TF_CFLAGS[@]} -fPIC -lcudart ${TF_LFLAGS[@]} -D GOOGLE_CUDA=1

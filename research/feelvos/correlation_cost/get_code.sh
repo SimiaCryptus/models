@@ -29,4 +29,4 @@ wget https://raw.githubusercontent.com/tensorflow/tensorflow/91b163b9bd8dd0f8c26
 wget https://raw.githubusercontent.com/tensorflow/tensorflow/91b163b9bd8dd0f8c2631b4245a67dfd387536a6/tensorflow/contrib/correlation_cost/python/ops/correlation_cost_op.py -O python/ops/correlation_cost_op.py
 wget https://raw.githubusercontent.com/tensorflow/tensorflow/91b163b9bd8dd0f8c2631b4245a67dfd387536a6/tensorflow/contrib/correlation_cost/kernels/correlation_cost_op.cc -O kernels/correlation_cost_op.cc
 wget https://raw.githubusercontent.com/tensorflow/tensorflow/91b163b9bd8dd0f8c2631b4245a67dfd387536a6/tensorflow/contrib/correlation_cost/kernels/correlation_cost_op.h -O kernels/correlation_cost_op.h
-wget https://raw.githubusercontent.com/tensorflow/tensorflow/91b163b9bd8dd0f8c2631b4245a67dfd387536a6/tensorflow/contrib/correlation_cost/kernels/correlation_cost_op_gpu.cu.cc -O kernels/correlation_cost_op_gpu.cu.cc
+wget https://raw.githubusercontent.com/tensorflow/tensorflow/91b163b9bd8dd0f8c2631b4245a67dfd387536a6/tensorflow/contrib/correlation_cost/kernels/correlation_cost_op_gpu.compilationUnit.cc -O kernels/correlation_cost_op_gpu.compilationUnit.cc

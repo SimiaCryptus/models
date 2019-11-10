@@ -21,9 +21,9 @@
 #
 #
 
-sed -i "s/tensorflow\/contrib\/correlation_cost\///g" kernels/correlation_cost_op_gpu.cu.cc
+sed -i "s/tensorflow\/contrib\/correlation_cost\///g" kernels/correlation_cost_op_gpu.compilationUnit.cc
 sed -i "s/tensorflow\/contrib\/correlation_cost\///g" kernels/correlation_cost_op.cc
-sed -i "s/external\/cub_archive\//cub\//g" kernels/correlation_cost_op_gpu.cu.cc
+sed -i "s/external\/cub_archive\//cub\//g" kernels/correlation_cost_op_gpu.compilationUnit.cc
 
 sed -i "s/from tensorflow.contrib.util import loader/import tensorflow as tf/g" python/ops/correlation_cost_op.py
 grep -v "from tensorflow" python/ops/correlation_cost_op.py | grep -v resource_loader.get_path_to_datafile > correlation_cost_op.py.tmp && mv correlation_cost_op.py.tmp python/ops/correlation_cost_op.py

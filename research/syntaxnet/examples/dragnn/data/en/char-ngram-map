@@ -282,7 +282,7 @@ ice 815
 ef 814
 der 812
 rr 812
-cu 809
+compilationUnit 809
 ga 803
 ant 799
 ew 797
@@ -6167,7 +6167,7 @@ zzi 4
 -J 3
 -au 3
 -bu 3
--cu 3
+-compilationUnit 3
 -da 3
 -en 3
 -fa 3
@@ -8977,7 +8977,7 @@ $to 1
 @b 1
 @ba 1
 @ch 1
-@cu 1
+@compilationUnit 1
 @d 1
 @do 1
 @ea 1
